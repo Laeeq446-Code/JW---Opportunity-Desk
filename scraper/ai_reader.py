@@ -38,18 +38,56 @@ def key_of(t):
     return canon(t).replace(" ", "")[:80]
 
 
+TOOL = {"name": "record", "description": "Record the answer: one result object per item, in the order given.",
+        "input_schema": {"type": "object", "properties": {"items": {"type": "array", "items": {"type": "object"}}}, "required": ["items"]}}
+
+
+def salvage(txt):
+    """Fallback when the model answers in text: parse the array, else keep every object that parses."""
+    a, b = txt.find("["), txt.rfind("]")
+    try:
+        return json.loads(txt[a:b + 1])
+    except Exception:
+        out = []
+        for m in re.finditer(r"\{[^{}]*\}", txt):
+            try:
+                out.append(json.loads(m.group(0)))
+            except Exception:
+                pass
+        if not out:
+            raise ValueError("no readable JSON in reply")
+        return out
+
+
 def call(prompt, items):
-    body = {"model": MODEL, "max_tokens": 4000, "messages": [{"role": "user", "content": prompt + "\n\nPRODUCTS (id: name [SBU]. what it is)\n" + PRODUCTS + "\n\n" + items}]}
+    """One request. The answer comes back through a forced tool call, so it is always valid JSON."""
+    body = {"model": MODEL, "max_tokens": 8000, "tools": [TOOL], "tool_choice": {"type": "tool", "name": "record"},
+            "messages": [{"role": "user", "content": prompt + "\n\nGive the array to the record tool as items.\n\nPRODUCTS (id: name [SBU]. what it is)\n" + PRODUCTS + "\n\n" + items}]}
     for attempt in range(3):
-        r = requests.post("https://api.anthropic.com/v1/messages", timeout=120, json=body,
+        r = requests.post("https://api.anthropic.com/v1/messages", timeout=180, json=body,
                           headers={"x-api-key": KEY, "anthropic-version": "2023-06-01", "content-type": "application/json"})
         if r.status_code in (429, 529) or r.status_code >= 500:
             time.sleep(10 * (attempt + 1)); continue
         r.raise_for_status()
-        txt = "".join(b.get("text", "") for b in r.json().get("content", []) if b.get("type") == "text")
-        a, b = txt.find("["), txt.rfind("]")
-        return json.loads(txt[a:b + 1])
+        content = r.json().get("content", [])
+        for b in content:
+            if b.get("type") == "tool_use" and isinstance(b.get("input", {}).get("items"), list):
+                return b["input"]["items"]
+        return salvage("".join(b.get("text", "") for b in content if b.get("type") == "text"))
     raise RuntimeError("API busy")
+
+
+def read(prompt, head, rows, label):
+    """Read a batch. If the reply cannot be read, split the batch in halves so one bad item cannot sink the rest."""
+    try:
+        return call(prompt, head + "\n".join(rows))
+    except (requests.HTTPError, RuntimeError) as e:
+        print(f"  {label} batch failed:", e); return []
+    except Exception as e:
+        if len(rows) < 6:
+            print(f"  {label} batch failed:", e); return []
+        h = len(rows) // 2
+        return read(prompt, head, rows[:h], label) + read(prompt, head, rows[h:], label)
 
 
 def load(path, default):
@@ -75,12 +113,8 @@ pool = pool[:MAX]
 done = 0
 for i in range(0, len(pool), 25):
     batch = pool[i:i + 25]
-    items = "TENDERS (id | title | buyer | category | method | scope)\n" + "\n".join(
-        f"{t['id']} | {t['t'][:200]} | {t.get('bn') or t.get('b', '')} | {t.get('cat', '')} | {t.get('mth', '')} | {str(t.get('d', ''))[:300]}" for t in batch)
-    try:
-        out = call(PROMPTS["reader_tenders_v1"], items)
-    except Exception as e:
-        print("  batch failed:", e); continue
+    rows = [f"{t['id']} | {t['t'][:200]} | {t.get('bn') or t.get('b', '')} | {t.get('cat', '')} | {t.get('mth', '')} | {str(t.get('d', ''))[:300]}" for t in batch]
+    out = read(PROMPTS["reader_tenders_v1"], "TENDERS (id | title | buyer | category | method | scope)\n", rows, "tender")
     for o in out:
         if isinstance(o, dict) and o.get("id") in {t["id"] for t in batch}:
             LAB["labels"][o["id"]] = {"p": [p for p in (o.get("p") or []) if p in PIDS][:3], "f": o.get("f", ""), "c": o.get("c", ""), "ty": o.get("ty", ""), "w": str(o.get("w", ""))[:140], "at": stamp}
@@ -99,11 +133,8 @@ heads = [a for a in news.get("local", []) if key_of(a["t"]) not in SIG["labels"]
 accts = "\n".join(f"{a['id']}: {a['name']}" for a in CAT["accounts"] if a.get("digital"))
 for i in range(0, len(heads), 30):
     batch = heads[i:i + 30]
-    items = "BUYERS (id: name)\n" + accts + "\n\nHEADLINES (id | date | outlet | headline)\n" + "\n".join(f"{key_of(a['t'])} | {a.get('date', '')} | {a.get('src', '')} | {a['t']}" for a in batch)
-    try:
-        out = call(PROMPTS["reader_signals_v1"], items)
-    except Exception as e:
-        print("  signal batch failed:", e); continue
+    rows = [f"{key_of(a['t'])} | {a.get('date', '')} | {a.get('src', '')} | {a['t']}" for a in batch]
+    out = read(PROMPTS["reader_signals_v1"], "BUYERS (id: name)\n" + accts + "\n\nHEADLINES (id | date | outlet | headline)\n", rows, "signal")
     for o in out:
         if isinstance(o, dict) and o.get("id"):
             o["products"] = [p for p in (o.get("products") or []) if p in PIDS][:3]
@@ -111,4 +142,4 @@ for i in range(0, len(heads), 30):
             SIG["labels"][o["id"]] = o
 SIG["meta"] = {"model": MODEL, "prompt": "reader_signals_v1", "at": stamp}
 json.dump(SIG, open(sig_path, "w", encoding="utf-8"))
-print(f"ai_reader: headlines read {len(heads)}")
+print(f"ai_reader: headlines read {sum(1 for a in heads if key_of(a['t']) in SIG['labels'])} of {len(heads)}")
