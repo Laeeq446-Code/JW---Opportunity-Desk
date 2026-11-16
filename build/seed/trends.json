@@ -1,0 +1,195 @@
+[
+  {
+    "id": "TR01",
+    "country": "Singapore",
+    "title": "Scaling AI agents across the public service",
+    "when": "Later 2026",
+    "summary": "Singapore is preparing to scale public-sector use of AI agents, with an Institute of Digital Government building AI skills in officers.",
+    "source_url": "https://govinsider.asia/digital-government/using-ai-for-citizen-engagement/",
+    "pk_owner": "Pakistan Digital Authority / NITB",
+    "enabling_policy": "National AI Policy 2025",
+    "readiness": "Medium",
+    "products": [
+      "qai",
+      "gcloud",
+      "gsoc",
+      "qmsg"
+    ],
+    "pitch": "Sovereign-hosted citizen AI agent for federal services, delivered on Garaj with SMS fallback.",
+    "criteria": {
+      "live": true,
+      "recent": true,
+      "owner": true,
+      "policy": true
+    }
+  },
+  {
+    "id": "TR02",
+    "country": "Hong Kong",
+    "title": "AI agents piloted in departments; 1823 hotline folded into iAM Smart",
+    "when": "Pilots from Q4 2026",
+    "summary": "The Digital Policy Office plans AI-agent pilots in departments and moves the 1823 enquiry app into the iAM Smart platform.",
+    "source_url": "https://opengovasia.com/hong-kong-expands-ai-use-across-1823-and-government-services/",
+    "pk_owner": "ICT Administration / CDA",
+    "enabling_policy": "National Digital Masterplan",
+    "readiness": "Medium",
+    "products": [
+      "qai",
+      "omni",
+      "cvoice",
+      "gcloud"
+    ],
+    "pitch": "One Islamabad citizen helpline and app with an AI agent and SIMOSA-style journeys.",
+    "criteria": {
+      "live": true,
+      "recent": true,
+      "owner": true,
+      "policy": true
+    }
+  },
+  {
+    "id": "TR03",
+    "country": "South Korea",
+    "title": "AI City innovation technology projects",
+    "when": "2026",
+    "summary": "The land and transport ministry funds six AI City projects with about 30bn won.",
+    "source_url": "https://www.gminsights.com/es/industry-analysis/ai-in-government-and-public-services-market",
+    "pk_owner": "CDA / Capital Smart City",
+    "enabling_policy": "Smart Islamabad (Safe City PSDP)",
+    "readiness": "Medium",
+    "products": [
+      "iots",
+      "qiot",
+      "qai",
+      "cm2m",
+      "c5g"
+    ],
+    "pitch": "Two AI-city pilots in Islamabad sectors: smart parking and environmental sensing over 5G.",
+    "criteria": {
+      "live": true,
+      "recent": true,
+      "owner": true,
+      "policy": true
+    }
+  },
+  {
+    "id": "TR04",
+    "country": "Malaysia (Selangor)",
+    "title": "From Smart City to AI City",
+    "when": "Next phase after 2025",
+    "summary": "After 60 smart-city initiatives (2016–2025), Selangor plans data- and AI-led policy on centralised GPU infrastructure.",
+    "source_url": "https://www.nst.com.my/amp/news/nation/2026/08/1521397/selangor-looks-ai-boost-govt-services-efficiency",
+    "pk_owner": "PITB / CDA",
+    "enabling_policy": "Connected Punjab (GPU compute)",
+    "readiness": "Medium",
+    "products": [
+      "gcloud",
+      "qai",
+      "qiot"
+    ],
+    "pitch": "Provincial urban data platform on Garaj GPU capacity, fed by Quantica IoT.",
+    "criteria": {
+      "live": true,
+      "recent": true,
+      "owner": true,
+      "policy": true
+    }
+  },
+  {
+    "id": "TR05",
+    "country": "Cyprus",
+    "title": "Smart Citizen App linking residents to local authorities",
+    "when": "Phase 1 completes 2026",
+    "summary": "Citizens report issues and reach municipal services through one app under the Smart Cyprus project.",
+    "source_url": "https://fastforward.com.cy/policy/promise-100-new-services-and-artificial-intelligence-everywhere",
+    "pk_owner": "CDA / Metropolitan Corporation Islamabad",
+    "enabling_policy": "National Digital Masterplan",
+    "readiness": "High",
+    "products": [
+      "sim",
+      "jccol",
+      "omni",
+      "qai"
+    ],
+    "pitch": "Islamabad civic app with complaint tracking and JazzCash fee payments.",
+    "criteria": {
+      "live": true,
+      "recent": true,
+      "owner": true,
+      "policy": true
+    }
+  },
+  {
+    "id": "TR06",
+    "country": "Estonia (Nortal view)",
+    "title": "Agent-compatible digital public infrastructure",
+    "when": "Next 5 years",
+    "summary": "Argues governments must upgrade DPI so AI agents can use services safely, with audit and permission layers.",
+    "source_url": "https://www.civilserviceworld.com/news/article/why-agentcompatible-digital-public-infrastructure-is-the-next-investment-governments-cannot-defer",
+    "pk_owner": "Pakistan Digital Authority",
+    "enabling_policy": "Data Governance Policy 2026 (WASL exchange)",
+    "readiness": "Low–medium",
+    "products": [
+      "gsi",
+      "gcloud",
+      "gsoc",
+      "qai"
+    ],
+    "pitch": "Interoperability and API-gateway layer for the National Digital Masterplan, hosted in-country.",
+    "criteria": {
+      "live": false,
+      "recent": true,
+      "owner": true,
+      "policy": true
+    }
+  },
+  {
+    "id": "TR07",
+    "country": "India",
+    "title": "AI layered on digital public infrastructure",
+    "when": "Dec 2025 report",
+    "summary": "An NISG–EY report sets out how AI builds on India's identity, payments and data-exchange rails.",
+    "source_url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-in/insights/ai/documents/ey-harnessing-ai-and-digital-public-infrastructure-for-viksit-bharat.pdf",
+    "pk_owner": "MoITT / SBP / NADRA",
+    "enabling_policy": "NADRA Digital ID regulations; Raast",
+    "readiness": "Medium",
+    "products": [
+      "jccol",
+      "jcg2p",
+      "qai",
+      "sim"
+    ],
+    "pitch": "AI-assisted G2P and P2G rails: eligibility checks and fraud analytics on JazzCash flows.",
+    "criteria": {
+      "live": true,
+      "recent": true,
+      "owner": true,
+      "policy": true
+    }
+  },
+  {
+    "id": "TR08",
+    "country": "Global cities",
+    "title": "Digital twins, urban data platforms and AI agents as one stack",
+    "when": "2026",
+    "summary": "City planning teams are converging digital twins, spatial intelligence and agents, with audit trails required by buyers.",
+    "source_url": "https://aiagentstore.ai/ai-agent-news/topic/infrastructure-city/2026-05-12/detailed",
+    "pk_owner": "CDA / Capital Smart City",
+    "enabling_policy": "Smart Islamabad",
+    "readiness": "Low–medium",
+    "products": [
+      "iots",
+      "qiot",
+      "qai",
+      "gcloud",
+      "c5g"
+    ],
+    "pitch": "Islamabad digital twin starting with traffic and water assets, sensors on Quantica Infinity.",
+    "criteria": {
+      "live": false,
+      "recent": true,
+      "owner": true,
+      "policy": true
+    }
+  }
+]

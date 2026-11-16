@@ -1,0 +1,27 @@
+{
+  "_doc": "The scouting question and shortlist rule for Global trends. An idea is shortlisted when it meets at least min_criteria. The 'sbu' criterion is computed from products (2+ SBUs).",
+  "min_criteria": 4,
+  "criteria": [
+    {
+      "key": "live",
+      "label": "Live or funded abroad, with a public source"
+    },
+    {
+      "key": "recent",
+      "label": "Launched or updated in the last 24 months"
+    },
+    {
+      "key": "owner",
+      "label": "A Pakistani body could own it"
+    },
+    {
+      "key": "policy",
+      "label": "An enabling Pakistani policy or budget exists"
+    },
+    {
+      "key": "sbu",
+      "label": "Uses 2+ JazzWorld SBUs"
+    }
+  ],
+  "scout_prompt": "Find government digital initiatives launched, funded or expanded in the last 24 months in: Singapore, UAE, Saudi Arabia, Estonia, India, Indonesia, Malaysia, South Korea, Hong Kong, Kenya, Rwanda, Turkey, Bangladesh, Egypt, Cyprus.\nSources: official government sites, multilateral reports (World Bank, ADB, OECD, ITU, GSMA) and government-tech media (GovInsider, OpenGov Asia, Civil Service World).\nFor each initiative return: country, name, what it does, launch date, results, technologies, vendor model, source URL.\nThen for each, answer for Islamabad / Pakistan:\n1. Which Pakistani body would own it (ministry, PDA, CDA, provincial IT board)?\n2. Which existing Pakistani policy, law or budget enables it?\n3. Which JazzWorld products deliver it, and from how many SBUs?\n4. One-line pitch.\nKeep only initiatives that meet at least 4 of the 5 shortlist criteria. Never include an initiative without a source URL."
+}

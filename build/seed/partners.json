@@ -1,0 +1,95 @@
+[
+  {
+    "id": "PT01",
+    "name": "Huawei",
+    "categories": [
+      "civil",
+      "radio",
+      "devices"
+    ],
+    "capabilities": "Network and power infrastructure; deployed solar at 1,000 Jazz sites (2026)",
+    "source_url": "https://www.huawei.com/en/news/2026/4/solar-jazzworld"
+  },
+  {
+    "id": "PT02",
+    "name": "Ericsson",
+    "categories": [
+      "radio"
+    ],
+    "capabilities": "Microwave transmission under a strategic frame contract with Jazz",
+    "source_url": "https://www.telecomtv.com/content/access-evolution/ericsson-and-jazz-sign-strategic-microwave-frame-contract-to-enhance-network-infrastructure-54515/"
+  },
+  {
+    "id": "PT03",
+    "name": "Nokia",
+    "categories": [
+      "software"
+    ],
+    "capabilities": "Virtualised subscriber data management platform at Jazz",
+    "source_url": "https://www.developingtelecoms.com/telecom-technology/telecom-cloud-virtualization/20565-jazz-virtualises-subscriber-data-management-platform-with-nokia-solution.html"
+  },
+  {
+    "id": "PT04",
+    "name": "DynaSys Networks",
+    "categories": [
+      "iot"
+    ],
+    "capabilities": "IoT platform partner behind Quantica Infinity",
+    "source_url": "https://propakistani.pk/2025/05/12/jazz-partners-with-dynasys-to-accelerate-iot-driven-innovation-in-pakistan/"
+  },
+  {
+    "id": "PT05",
+    "name": "IceWarp",
+    "categories": [
+      "software"
+    ],
+    "capabilities": "Collaboration suite behind Garaj 24/7",
+    "source_url": "https://profit.pakistantoday.com.pk/?p=199364"
+  },
+  {
+    "id": "PT06",
+    "name": "Microsoft",
+    "categories": [
+      "microsoft"
+    ],
+    "capabilities": "Garaj is an Operator CSP for Microsoft",
+    "source_url": "https://www.brecorder.com/news/amp/40332771"
+  },
+  {
+    "id": "PT07",
+    "name": "VMware (Broadcom)",
+    "categories": [
+      "vmware"
+    ],
+    "capabilities": "Garaj holds VMware Premier Partner status",
+    "source_url": "https://www.brecorder.com/news/amp/40332771"
+  },
+  {
+    "id": "PT08",
+    "name": "Fortinet",
+    "categories": [
+      "fortinet"
+    ],
+    "capabilities": "Joined the Garaj Partner League",
+    "source_url": "https://www.phoneworld.com.pk/jazz-launches-garaj-partner-league-to-transform-the-local-it-technology-landscape/"
+  },
+  {
+    "id": "PT09",
+    "name": "Red Hat",
+    "categories": [
+      "linux"
+    ],
+    "capabilities": "Joined the Garaj Partner League",
+    "source_url": "https://www.phoneworld.com.pk/jazz-launches-garaj-partner-league-to-transform-the-local-it-technology-landscape/"
+  },
+  {
+    "id": "PT10",
+    "name": "Multilynx · Covalent · Inaara · Future Technologies",
+    "categories": [
+      "software",
+      "devices"
+    ],
+    "capabilities": "Local IT companies in the Garaj Partner League (resellers, MSPs, co-innovators)",
+    "source_url": "https://www.phoneworld.com.pk/jazz-launches-garaj-partner-league-to-transform-the-local-it-technology-landscape/"
+  }
+]

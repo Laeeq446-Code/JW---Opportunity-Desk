@@ -1,0 +1,26 @@
+{
+  "_doc": "Themes link news headlines to the catalogue. A headline joins a theme when its text matches the theme pattern (lower case, punctuation removed). Products are the JazzWorld products that deliver the theme. Owners are the Pakistani buyers (registry ids) that would own it here.",
+  "themes": [
+    {"id": "ai", "label": "AI agents and assistants for citizens", "rx": "\\b(ai agents?|agentic|chatbots?|virtual assistants?|ai assistants?|generative ai|genai|large language models?|llms?)\\b", "products": ["qai", "gcloud", "omni", "qmsg"], "owners": ["pda", "nitb", "moitt"]},
+    {"id": "dpi", "label": "Digital ID and public infrastructure", "rx": "\\b(digital public infrastructure|dpi|digital id|digital identity|e ?kyc|biometric|national id)\\b", "products": ["gcloud", "gsoc", "jccol", "sim"], "owners": ["nadra", "pda", "nitb"]},
+    {"id": "city", "label": "Smart and safe cities", "rx": "\\b(smart cit(y|ies)|safe cit(y|ies)|command and control|cctv|traffic (management|signals?)|e challan|digital twins?|urban data|surveillance cameras?)\\b", "products": ["iots", "qiot", "cm2m", "cfib", "gcloud"], "owners": ["ictpolice", "cda", "psca", "nhmp"]},
+    {"id": "cloud", "label": "Government cloud and data centres", "rx": "\\b(sovereign cloud|government cloud|cloud first|data cent(er|re)s?|hyperscale|cloud migration)\\b", "products": ["gcloud", "gdr", "gsoc"], "owners": ["moitt", "nitb", "pda", "ntc"]},
+    {"id": "pay", "label": "Digital payments and transfers", "rx": "\\b(digital payments?|g2p|cash transfers?|e ?payments?|instant payments?|qr payments?|raast|upi|bill payments?|cashless|e ?wallets?)\\b", "products": ["jccol", "jcg2p", "jcpg", "jcqr"], "owners": ["bisp", "fbr", "psw", "sbp"]},
+    {"id": "cyber", "label": "Cyber security operations", "rx": "\\b(cyber ?security|security operations cent(er|re)s?|soc|ransomware|cyber ?attacks?|cert)\\b", "products": ["gsoc", "gdr"], "owners": ["nitb", "ntc", "moitt", "sbp"]},
+    {"id": "conn", "label": "Broadband and rural connectivity", "rx": "\\b(broadband|fib(re|er)|5g|rural connectivity|satellite internet|universal service|digital divide|wi ?fi|connectivity)\\b", "products": ["crural", "cftth", "cfib", "c5g", "csdn"], "owners": ["usf", "moitt", "pta"]},
+    {"id": "iot", "label": "IoT for utilities and agriculture", "rx": "\\b(smart meters?|ami|iot|internet of things|sensors?|precision agriculture|smart agriculture|smart farming|water management|asset tracking)\\b", "products": ["qiot", "cm2m", "iots", "mmagri"], "owners": ["powerdiv", "wapda", "agripb"]},
+    {"id": "app", "label": "Citizen apps and service portals", "rx": "\\b(super ?apps?|citizen apps?|e ?services|one ?stop|government apps?|citizen portal|e ?governance|e ?government)\\b", "products": ["sim", "omni", "qmsg", "jccol"], "owners": ["pda", "nitb", "pitb", "kpitb"]},
+    {"id": "edu", "label": "Digital learning and skills", "rx": "\\b(edtech|digital learning|e ?learning|smart classrooms?|digital literacy|digital skills|skills training)\\b", "products": ["gn", "tam", "cnet", "c5g"], "owners": ["hec", "fde", "aiou", "ignite"]},
+    {"id": "health", "label": "Digital health", "rx": "\\b(telemedicine|telehealth|digital health|health records|e ?health|health insurance)\\b", "products": ["ins", "gcloud", "qmsg", "omni"], "owners": ["pid", "punjab", "kp", "sindh"]},
+    {"id": "inclusion", "label": "Financial inclusion and insurance", "rx": "\\b(financial inclusion|microfinance|micro ?insurance|crop insurance|livestock insurance|inclusion loans?|unbanked)\\b", "products": ["mmbl", "ins", "mmagri", "jsure"], "owners": ["sbp", "bisp", "ztbl"]},
+    {"id": "alert", "label": "Citizen alerts and early warning", "rx": "\\b(sms alerts?|early warning|emergency alerts?|cell broadcast|citizen alerts?|disaster alerts?)\\b", "products": ["qmsg", "omni"], "owners": ["ndma", "pmd"]}
+  ],
+  "local_types": [
+    {"type": "Loan approval", "rx": "\\b(loan|credit|financing|grant)\\b.*\\b(approv|sign|recommend)|\\b(adb|world bank|imf|aiib|isdb)\\b"},
+    {"type": "Budget", "rx": "\\b(budget|psdp|adp|allocat|rs ?\\d+(\\.\\d+)? ?(bn|billion|mn|million)|ecnec|cdwp)\\b"},
+    {"type": "Law", "rx": "\\b(act|bill|ordinance|law)\\b.*\\b(pass|approv|enact)"},
+    {"type": "Policy / roadmap", "rx": "\\b(policy|roadmap|strategy|framework|vision)\\b"},
+    {"type": "Ministerial announcement", "rx": "\\b(minister|pm|prime minister|cm|chief minister|chairman)\\b"},
+    {"type": "Project update", "rx": ".*"}
+  ]
+}

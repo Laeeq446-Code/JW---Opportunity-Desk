@@ -1,0 +1,76 @@
+{
+  "_doc": "Signal types and their plain-language explanation (shown by the i button). lag_months = typical months from signal to tender, used by the prediction rules; null = no auto prediction.",
+  "types": {
+    "Budget": {
+      "explanation": "Money approved for a programme in a fiscal year (PSDP, ADP, USF). Funded schemes must spend it, so tenders usually follow within the same fiscal year (July–June).",
+      "lag_months": [
+        0,
+        8
+      ]
+    },
+    "Policy / roadmap": {
+      "explanation": "A government strategy or masterplan that sets direction but no money yet. Tenders come later, once projects are carved out and funded: typically 6–24 months.",
+      "lag_months": [
+        6,
+        24
+      ]
+    },
+    "Law": {
+      "explanation": "An Act passed by the National Assembly or a provincial assembly. It creates obligations (for example, mandatory digital payments) that departments must buy systems to meet.",
+      "lag_months": [
+        0,
+        9
+      ]
+    },
+    "Regulation": {
+      "explanation": "Rules issued under a law or by a regulator (PPRA, PTA, SBP, NADRA). They change how buying happens or what buyers must comply with.",
+      "lag_months": null
+    },
+    "Loan approval": {
+      "explanation": "A World Bank, ADB or other lender has approved or cleared financing. The lender publishes a procurement plan; specific tenders follow in 3–12 months.",
+      "lag_months": [
+        3,
+        12
+      ]
+    },
+    "Donor facility": {
+      "explanation": "A pooled fund that countries apply to project by project. Each approved project becomes a new procurement pipeline.",
+      "lag_months": [
+        12,
+        24
+      ]
+    },
+    "Donor dialogue": {
+      "explanation": "Early talks between the government and a lender. No money yet; useful 12+ months ahead to shape requirements.",
+      "lag_months": [
+        12,
+        24
+      ]
+    },
+    "Pipeline": {
+      "explanation": "A project at concept or appraisal stage with a lender or the Planning Commission. Good time to meet the client before specs are written.",
+      "lag_months": [
+        9,
+        18
+      ]
+    },
+    "Project update": {
+      "explanation": "Progress or new scope on a project already funded. Often signals an add-on package or the next phase.",
+      "lag_months": [
+        0,
+        6
+      ]
+    },
+    "Ministerial announcement": {
+      "explanation": "A minister or chief minister announces an initiative or deadline. Creates urgency; check whether money is behind it.",
+      "lag_months": [
+        0,
+        6
+      ]
+    },
+    "Market": {
+      "explanation": "A competitor, partner or private investment. Not a tender, but it changes JazzWorld's position.",
+      "lag_months": null
+    }
+  }
+}

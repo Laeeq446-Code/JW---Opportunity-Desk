@@ -1,0 +1,356 @@
+[
+  {
+    "id": "PR01",
+    "title": "USF NG-BSD and NG-OFNS new lots (9 + 4 projects)",
+    "entity": "USF / MoITT",
+    "publisher": "Universal Service Fund",
+    "portal": "usf.org.pk + national newspapers; reverse auction for USF contributors",
+    "window_from": "2026-11",
+    "window_to": "2027-03",
+    "probability": 0.85,
+    "value_note": "Share of Rs6.56bn new-initiative budget",
+    "products": [
+      "crural",
+      "c5g",
+      "cfib",
+      "jccol",
+      "mmagri"
+    ],
+    "evidence": [
+      "G2",
+      "G1"
+    ],
+    "next_action": "Pre-survey target mauzas; price from the Jan–Feb 2026 wins.",
+    "method": "curated"
+  },
+  {
+    "id": "PR02",
+    "title": "Smart Islamabad fusion centre and command-and-control packages",
+    "entity": "ICT Police / CDA",
+    "publisher": "Safe City Islamabad (ICT Police), with CDA",
+    "portal": "PPRA EPMS + EPADS 2.0",
+    "window_from": "2026-11",
+    "window_to": "2027-02",
+    "probability": 0.7,
+    "value_note": "Within Rs2.7bn PSDP plus new scope",
+    "products": [
+      "iots",
+      "qai",
+      "gcloud",
+      "cfib",
+      "c5g",
+      "gsoc"
+    ],
+    "evidence": [
+      "G5",
+      "G6"
+    ],
+    "next_action": "Meet DG Safe City; position Garaj for video storage and 5G backhaul.",
+    "method": "curated"
+  },
+  {
+    "id": "PR03",
+    "title": "AI traffic signals, e-challan and citizen alerts (Islamabad)",
+    "entity": "Safe City Islamabad",
+    "publisher": "Safe City Islamabad / Islamabad Traffic Police",
+    "portal": "PPRA EPMS + EPADS 2.0",
+    "window_from": "2026-12",
+    "window_to": "2027-04",
+    "probability": 0.6,
+    "value_note": "Medium",
+    "products": [
+      "iots",
+      "cm2m",
+      "jccol",
+      "qmsg"
+    ],
+    "evidence": [
+      "G6"
+    ],
+    "next_action": "Bundle M2M SIMs, JazzCash challan collection and SMS alerts.",
+    "method": "curated"
+  },
+  {
+    "id": "PR04",
+    "title": "KP P2G payment gateway, QR onboarding and SMS notification packages",
+    "entity": "KP Finance / KPITB",
+    "publisher": "Finance Department KP and KPITB",
+    "portal": "KPPRA e-procurement",
+    "window_from": "2026-11",
+    "window_to": "2027-03",
+    "probability": 0.6,
+    "value_note": "Medium",
+    "products": [
+      "jccol",
+      "jcqr",
+      "qmsg",
+      "cfib"
+    ],
+    "evidence": [
+      "G9"
+    ],
+    "next_action": "Offer JazzCash gateway integration to the 34 departments in scope.",
+    "method": "curated"
+  },
+  {
+    "id": "PR05",
+    "title": "Connected Punjab: right-of-way platform, GPU compute, cashless packages",
+    "entity": "Govt of Punjab (World Bank)",
+    "publisher": "PITB, Punjab Revenue Authority, PRMPU",
+    "portal": "PPRA Punjab e-procurement + World Bank STEP",
+    "window_from": "2027-01",
+    "window_to": "2027-06",
+    "probability": 0.65,
+    "value_note": "Out of $249m programme",
+    "products": [
+      "cfib",
+      "gcloud",
+      "qai",
+      "jcqr",
+      "sme"
+    ],
+    "evidence": [
+      "G7"
+    ],
+    "next_action": "Track the programme's STEP procurement plan; brief PITB on Garaj GPU hosting.",
+    "method": "curated"
+  },
+  {
+    "id": "PR06",
+    "title": "FBR TADRA (ADB): storage to 3PB, video analytics, cloud",
+    "entity": "FBR / PRAL",
+    "publisher": "Pakistan Revenue Automation (PRAL) for FBR",
+    "portal": "EPADS 2.0 + ADB CMS (ICB)",
+    "window_from": "2027-01",
+    "window_to": "2027-09",
+    "probability": 0.55,
+    "value_note": "Large, within $200m",
+    "products": [
+      "gcloud",
+      "qai",
+      "qiot",
+      "gsoc",
+      "cfib"
+    ],
+    "evidence": [
+      "G4"
+    ],
+    "next_action": "Watch ECNEC approval; prepare Tier-III hosting and video-retention references.",
+    "method": "curated"
+  },
+  {
+    "id": "PR07",
+    "title": "Sindh provincial data centre (PPP or NTC-led)",
+    "entity": "Govt of Sindh",
+    "publisher": "Sindh S&IT Department / P&D Board, or NTC",
+    "portal": "SPPRA EPADS (or NTC tender if NTC-led)",
+    "window_from": "2027-01",
+    "window_to": "2027-08",
+    "probability": 0.45,
+    "value_note": "Large",
+    "products": [
+      "gcloud",
+      "cfib",
+      "gsoc",
+      "gsi"
+    ],
+    "evidence": [
+      "G18"
+    ],
+    "next_action": "Engage the review committee before it recommends PPP vs NTC.",
+    "method": "curated"
+  },
+  {
+    "id": "PR08",
+    "title": "Government data migration under the Data Governance Policy",
+    "entity": "Federal bodies holding offshore data",
+    "publisher": "Each ministry's Chief Data Officer, guided by PDA",
+    "portal": "EPADS 2.0",
+    "window_from": "2027-01",
+    "window_to": "2027-12",
+    "probability": 0.5,
+    "value_note": "Framework-type",
+    "products": [
+      "gcloud",
+      "gsoc",
+      "gsi"
+    ],
+    "evidence": [
+      "G15"
+    ],
+    "next_action": "Build a migration offer and a list of bodies using offshore hosting.",
+    "method": "curated"
+  },
+  {
+    "id": "PR09",
+    "title": "Public-sector cloud adoption packages under Cloud First",
+    "entity": "MoITT / Cloud Office",
+    "publisher": "MoITT Cloud Office",
+    "portal": "MoITT tenders page + EPADS 2.0",
+    "window_from": "2027-03",
+    "window_to": "2027-12",
+    "probability": 0.5,
+    "value_note": "Framework-type",
+    "products": [
+      "gcloud",
+      "gsoc",
+      "glic",
+      "gsi"
+    ],
+    "evidence": [
+      "H07",
+      "G13"
+    ],
+    "next_action": "Engage the winner of MoITT's cloud-ecosystem consultancy (closed 15 Oct).",
+    "method": "curated"
+  },
+  {
+    "id": "PR10",
+    "title": "DISCO digitisation: AMI and data platforms (ADB)",
+    "entity": "Power Division / 5 DISCOs",
+    "publisher": "PESCO, HAZECO and three other DISCOs",
+    "portal": "EPADS 2.0 + ADB CMS",
+    "window_from": "2027-04",
+    "window_to": "2027-12",
+    "probability": 0.45,
+    "value_note": "Within $130m",
+    "products": [
+      "qiot",
+      "cm2m",
+      "gcloud",
+      "qai"
+    ],
+    "evidence": [
+      "G8"
+    ],
+    "next_action": "Prepare an AMI connectivity offer with M2M SIM pricing at scale.",
+    "method": "curated"
+  },
+  {
+    "id": "PR11",
+    "title": "National health registry / unified patient records",
+    "entity": "Pakistan Digital Authority",
+    "publisher": "Pakistan Digital Authority with Ministry of National Health Services",
+    "portal": "EPADS 2.0",
+    "window_from": "2027-01",
+    "window_to": "2027-12",
+    "probability": 0.4,
+    "value_note": "Large",
+    "products": [
+      "gcloud",
+      "qai",
+      "sim",
+      "gsoc",
+      "ins"
+    ],
+    "evidence": [
+      "G3",
+      "G15"
+    ],
+    "next_action": "Brief PDA on sovereign hosting; pair FikrFree for insurance linkages.",
+    "method": "curated"
+  },
+  {
+    "id": "PR12",
+    "title": "AI compute and AI hub follow-ons (NAIEDP, NAAI)",
+    "entity": "MoITT",
+    "publisher": "MoITT / Ignite",
+    "portal": "MoITT tenders page + EPADS 2.0",
+    "window_from": "2027-01",
+    "window_to": "2027-12",
+    "probability": 0.45,
+    "value_note": "Medium–large",
+    "products": [
+      "qai",
+      "gcloud",
+      "gn",
+      "cfib"
+    ],
+    "evidence": [
+      "H10",
+      "G17",
+      "G13"
+    ],
+    "next_action": "Offer GPU hosting and connectivity for hub sites.",
+    "method": "curated"
+  },
+  {
+    "id": "PR13",
+    "title": "NADRA SIEM/EDR licence and support renewal",
+    "entity": "NADRA",
+    "publisher": "NADRA HQ procurement wing",
+    "portal": "EPADS 2.0 (NADRA Procurement Regulations 2025)",
+    "window_from": "2027-09",
+    "window_to": "2027-10",
+    "probability": 0.75,
+    "value_note": "Recurring",
+    "products": [
+      "gsoc"
+    ],
+    "evidence": [
+      "H01"
+    ],
+    "next_action": "Recurrence: offer managed SOC alongside the licence renewal.",
+    "method": "curated"
+  },
+  {
+    "id": "PR14",
+    "title": "NADRA VMware subscription renewal and storage/compute expansion",
+    "entity": "NADRA",
+    "publisher": "NADRA HQ procurement wing",
+    "portal": "EPADS 2.0",
+    "window_from": "2027-08",
+    "window_to": "2027-10",
+    "probability": 0.65,
+    "value_note": "Recurring",
+    "products": [
+      "gcloud",
+      "gsoc"
+    ],
+    "evidence": [
+      "H02",
+      "H03",
+      "H04"
+    ],
+    "next_action": "Recurrence: position Garaj (VMware Premier) for DR capacity.",
+    "method": "curated"
+  },
+  {
+    "id": "PR15",
+    "title": "Sindh IT Company SMS services: annual renewal",
+    "entity": "Sindh IT Company",
+    "publisher": "Sindh IT Company (SITC)",
+    "portal": "SPPRA EPADS",
+    "window_from": "2027-09",
+    "window_to": "2027-11",
+    "probability": 0.75,
+    "value_note": "Small, recurring",
+    "products": [
+      "qmsg"
+    ],
+    "evidence": [
+      "T08"
+    ],
+    "next_action": "Recurrence: re-bid timing based on the Nov 2026 cycle.",
+    "method": "curated"
+  },
+  {
+    "id": "PR16",
+    "title": "BISP firewall UTP subscription: annual renewal",
+    "entity": "BISP",
+    "publisher": "BISP IT wing",
+    "portal": "EPADS 2.0",
+    "window_from": "2027-09",
+    "window_to": "2027-11",
+    "probability": 0.7,
+    "value_note": "Small, recurring",
+    "products": [
+      "gsoc"
+    ],
+    "evidence": [
+      "T09"
+    ],
+    "next_action": "Recurrence: propose managed SOC instead of a bare licence renewal.",
+    "method": "curated"
+  }
+]

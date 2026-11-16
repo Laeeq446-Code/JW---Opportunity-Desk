@@ -1,0 +1,349 @@
+[
+  {
+    "id": "G1",
+    "date": "2026-10-13",
+    "type": "Budget",
+    "entity": "USF / MoITT",
+    "title": "USF says it has deployed $1.054bn in contracted subsidies; 158 of 185 projects done",
+    "summary": "Symposium in Islamabad focused on fibre, satellite, affordable smartphones and AI in rural areas.",
+    "benefit": "Confirms USF as Jazz's steadiest public buyer; the rural focus now includes smartphones and AI, which opens bundles beyond coverage.",
+    "tender_lag": "Rolling",
+    "source_name": "ProPakistani",
+    "source_url": "https://propakistani.pk/2026/10/13/usf-spends-over-1-billion-on-telecom-projects-in-pakistan/",
+    "products": [
+      "crural",
+      "c5g",
+      "cfib"
+    ]
+  },
+  {
+    "id": "G2",
+    "date": "2026-09-22",
+    "type": "Budget",
+    "entity": "USF / MoITT",
+    "title": "USF FY2026-27 budget of Rs32.90bn; 9 new NG-BSD and 4 NG-OFNS projects",
+    "summary": "Rs6.56bn earmarked for new initiatives; 15 contracted 4G schemes target 3.66m people across 21 districts.",
+    "benefit": "Thirteen new lots this fiscal year. Jazz won 5 USF lots in Jan–Feb 2026 and can reuse that pricing.",
+    "tender_lag": "0–6 months",
+    "source_name": "Express Tribune",
+    "source_url": "https://tribune.com.pk/story/2630874/usf-approves-rs329b-to-push-4g-projects",
+    "products": [
+      "crural",
+      "c5g",
+      "cfib"
+    ]
+  },
+  {
+    "id": "G3",
+    "date": "2026-09-29",
+    "type": "Policy / roadmap",
+    "entity": "Pakistan Digital Authority",
+    "title": "National Digital Masterplan advancing: governance, economy, society pillars",
+    "summary": "Sector plans for health, education and commerce; unified patient records and a national clinical registry discussed.",
+    "benefit": "Sovereign hosting, data platforms and citizen apps for sector plans; health registry is a large future hosting deal.",
+    "tender_lag": "6–24 months",
+    "source_name": "Mettis Global",
+    "source_url": "https://mettisglobal.news/Govt-plans-National-Digital-Masterplan-63807",
+    "products": [
+      "gcloud",
+      "qai",
+      "gsi",
+      "sim"
+    ]
+  },
+  {
+    "id": "G4",
+    "date": "2026-09-11",
+    "type": "Loan approval",
+    "entity": "FBR / ADB",
+    "title": "$200m ADB loan for FBR digitalisation recommended to ECNEC",
+    "summary": "Includes upgrading 850TB storage to 3PB for video-camera monitoring of production lines in sugar, cement, tobacco and textiles.",
+    "benefit": "Video storage, camera connectivity and analytics at factories: Garaj, IoT SIMs and Quantica in one bid.",
+    "tender_lag": "3–12 months",
+    "source_name": "Dawn",
+    "source_url": "https://www.dawn.com/news/2029139/pakistan-greenlights-200m-adb-loan-despite-questions-over-digitalisation-project",
+    "products": [
+      "gcloud",
+      "iots",
+      "qai",
+      "gsoc"
+    ]
+  },
+  {
+    "id": "G5",
+    "date": "2026-08-08",
+    "type": "Ministerial announcement",
+    "entity": "Interior / ICT Police / CDA",
+    "title": "Smart Islamabad: fusion centre, AI security system, new command and control centre",
+    "summary": "Safe City, CDA and EPA data to be integrated into one platform. Safe City expansion holds Rs2,699m in PSDP 2026-27.",
+    "benefit": "Islamabad is Jazz's home market: 5G backhaul, video hosting, IoT sensors and SOC for the fusion centre.",
+    "tender_lag": "0–6 months",
+    "source_name": "Dawn",
+    "source_url": "https://www.dawn.com/news/2021319",
+    "products": [
+      "iots",
+      "qiot",
+      "qai",
+      "gcloud",
+      "cfib",
+      "c5g"
+    ]
+  },
+  {
+    "id": "G6",
+    "date": "2026-07-18",
+    "type": "Project update",
+    "entity": "Safe City Islamabad / CDA",
+    "title": "AI-powered traffic signals planned across Islamabad",
+    "summary": "Part of the Safe City Expansion Project with CDA coordination.",
+    "benefit": "Signals need M2M SIMs and a platform; e-challans can be collected through JazzCash.",
+    "tender_lag": "3–9 months",
+    "source_name": "The Nation",
+    "source_url": "https://www.nation.com.pk/18-Jul-2026/safe-city-install-ai-powered-traffic-signals-across-islamabad",
+    "products": [
+      "iots",
+      "cm2m",
+      "qai",
+      "jccol"
+    ]
+  },
+  {
+    "id": "G7",
+    "date": "2026-05-24",
+    "type": "Loan approval",
+    "entity": "Govt of Punjab / World Bank",
+    "title": "Connected Punjab: $249m programme ($70m World Bank, $179m Punjab)",
+    "summary": "Three parts: fixed broadband right-of-way and deployment support; shared GPU compute and AI citizen services; cashless economy with digital invoicing and e-payments. Implemented by PITB, PRA and PRMPU.",
+    "benefit": "Touches three SBUs at once: fibre subsidies, GPU hosting on Garaj, and JazzCash for cashless payments.",
+    "tender_lag": "3–12 months",
+    "source_name": "PhoneWorld",
+    "source_url": "https://www.phoneworld.com.pk/punjab-to-launch-249m-digital-transformation-drive-with-world-bank-support/",
+    "products": [
+      "cfib",
+      "gcloud",
+      "qai",
+      "jcqr",
+      "sme"
+    ]
+  },
+  {
+    "id": "G8",
+    "date": "2026-06-02",
+    "type": "Pipeline",
+    "entity": "Power Division / ADB",
+    "title": "ADB proposes $130m to digitise five DISCOs",
+    "summary": "Concept cleared March 2026; fact-finding June 2026; digital technologies across distribution networks incl. PESCO and HAZECO.",
+    "benefit": "Smart-meter connectivity at scale (M2M SIMs) plus a data platform; meet DISCOs before specs are written.",
+    "tender_lag": "9–18 months",
+    "source_name": "Profit",
+    "source_url": "https://profit.pakistantoday.com.pk/2026/06/02/adb-proposes-dollar130-million-project-to-digitise-power-distribution-network-across-five-discos",
+    "products": [
+      "qiot",
+      "cm2m",
+      "gcloud",
+      "qai"
+    ]
+  },
+  {
+    "id": "G9",
+    "date": "2026-08-22",
+    "type": "Law",
+    "entity": "Govt of KP",
+    "title": "KP Promotion of Digital Payment Act 2026 approved",
+    "summary": "Businesses, schools and hospitals must accept digital payments; all P2G payments moved to cashless from 1 Sep 2026; public Wi-Fi in markets.",
+    "benefit": "Mandatory demand for QR acceptance and P2G gateways across 34 departments: JazzCash's largest legislated opening.",
+    "tender_lag": "0–9 months",
+    "source_name": "ProPakistani",
+    "source_url": "https://propakistani.pk/2026/08/22/kp-approves-digital-payment-law/",
+    "products": [
+      "jccol",
+      "jcqr",
+      "qmsg",
+      "csdn"
+    ]
+  },
+  {
+    "id": "G10",
+    "date": "2026-08-27",
+    "type": "Donor facility",
+    "entity": "ADB (CAREC)",
+    "title": "ADB BUILD: $400m facility for border upgrades and digital customs",
+    "summary": "Up to $50m per project; Pakistan can apply across border posts from Aug 2026 to Aug 2033.",
+    "benefit": "Border posts need connectivity, cameras and hosting; PLPA (Land Port Authority) is the likely client.",
+    "tender_lag": "12–24 months",
+    "source_name": "TechX",
+    "source_url": "https://techx.pk/adb-build-facility-pakistan-digital-trade-border/",
+    "products": [
+      "iots",
+      "gcloud",
+      "cfib",
+      "jccol"
+    ]
+  },
+  {
+    "id": "G11",
+    "date": "2026-07-24",
+    "type": "Market",
+    "entity": "Sky47 (private)",
+    "title": "Sky47 Karakoram-01, an 8.5MW AI-ready sovereign cloud, opened in Islamabad",
+    "summary": "Targets government, banking, telecom and healthcare workloads; a 5MW Karachi site is under construction.",
+    "benefit": "Direct competitor to Garaj for sovereign workloads, or a capacity partner for GPU-heavy bids.",
+    "tender_lag": "—",
+    "source_name": "Islamabad Scene",
+    "source_url": "https://www.islamabadscene.com/pakistan-launches-sky47-ai-and-cloud-platform-with-karakoram-01-ai-ready-data-center-in-islamabad/",
+    "products": [
+      "gcloud",
+      "qai"
+    ]
+  },
+  {
+    "id": "G12",
+    "date": "2026-10-14",
+    "type": "Regulation",
+    "entity": "PPRA",
+    "title": "New Public Procurement Rules 2026; awareness sessions for agencies and vendors",
+    "summary": "EPADS 2.0 is mandatory for federal procurement; agencies must still publish on EPMS.",
+    "benefit": "Bid teams must be registered and trained on EPADS 2.0; the radar should watch both EPADS and EPMS.",
+    "tender_lag": "Immediate",
+    "source_name": "PPRA",
+    "source_url": "https://ppra.gov.pk/announcements",
+    "products": []
+  },
+  {
+    "id": "G13",
+    "date": "2025-07-30",
+    "type": "Policy / roadmap",
+    "entity": "MoITT",
+    "title": "National AI Policy 2025: AI fund, AI council, compute and AI cloud for institutions",
+    "summary": "Targets 1m AI-trained professionals and 50,000 AI-enabled civic projects by 2030.",
+    "benefit": "AI cloud for at least 100 institutions is a hosting market Garaj can address.",
+    "tender_lag": "6–24 months",
+    "source_name": "MoITT",
+    "source_url": "https://www.moitt.gov.pk/SiteImage/Misc/files/National%20AI%20Policy.pdf",
+    "products": [
+      "qai",
+      "gcloud",
+      "gn"
+    ]
+  },
+  {
+    "id": "G14",
+    "date": "2026-10-13",
+    "type": "Donor dialogue",
+    "entity": "PVARA / World Bank",
+    "title": "Pakistan seeks World Bank support on tokenisation and digital bonds",
+    "summary": "75 firms have applied for virtual asset licences under the Virtual Assets Act 2026.",
+    "benefit": "Long-range: digital bond distribution and wallets could run through JazzCash.",
+    "tender_lag": "12+ months",
+    "source_name": "Profit",
+    "source_url": "https://profit.pakistantoday.com.pk/2026/10/13/pakistan-seeks-world-bank-support-for-digital-bonds-asset-tokenisation-as-75-firms-apply-for-virtual-asset-licences",
+    "products": [
+      "jccol",
+      "gcloud"
+    ]
+  },
+  {
+    "id": "G15",
+    "date": "2026-06-29",
+    "type": "Policy / roadmap",
+    "entity": "MoITT / PDA",
+    "title": "National Data Governance Policy 2026: sensitive government data must stay in Pakistan",
+    "summary": "Primary Data Registers, WASL data exchange, a Chief Data Officer in every public body; existing contracts holding government data to be updated within 12 months of the policy taking effect.",
+    "benefit": "Localisation favours in-country hosts like Garaj; the 12-month contract refresh creates migration deals.",
+    "tender_lag": "3–18 months",
+    "source_name": "Business Recorder",
+    "source_url": "https://www.brecorder.com/news/amp/40427660",
+    "products": [
+      "gcloud",
+      "gsoc",
+      "gsi"
+    ]
+  },
+  {
+    "id": "G16",
+    "date": "2026-06-13",
+    "type": "Budget",
+    "entity": "MoITT",
+    "title": "PSDP 2026-27 gives IT & Telecom Division Rs19.58bn (+20.7%)",
+    "summary": "Rs5bn for IT initiatives, Rs3bn for USF and R&D Fund programmes, Rs500m for PSEB.",
+    "benefit": "Sets the federal IT spending envelope for this fiscal year.",
+    "tender_lag": "0–8 months",
+    "source_name": "Business Recorder",
+    "source_url": "https://www.brecorder.com/news/40425309",
+    "products": [
+      "gsi",
+      "gcloud",
+      "crural"
+    ]
+  },
+  {
+    "id": "G17",
+    "date": "2026-02-13",
+    "type": "Budget",
+    "entity": "MoITT",
+    "title": "Proposed: $1bn National AI Ecosystem Development Program and Rs70bn Digital Infrastructure Connectivity Plan",
+    "summary": "NAIEDP 2026–2031 with $100m sought for FY27; connectivity plan 2026–2030 with Rs5bn sought for FY27.",
+    "benefit": "If funded, the largest AI-compute and connectivity pipelines in the country.",
+    "tender_lag": "6–24 months",
+    "source_name": "Business Recorder",
+    "source_url": "https://www.brecorder.com/news/amp/40407007",
+    "products": [
+      "qai",
+      "gcloud",
+      "cfib",
+      "crural"
+    ]
+  },
+  {
+    "id": "G18",
+    "date": "2026-07-31",
+    "type": "Ministerial announcement",
+    "entity": "Govt of Sindh / NTC",
+    "title": "Sindh to set up a provincial data centre with NTC; PPP or NTC contract under review",
+    "summary": "A committee will recommend the model within three months; P&D, IT department and NTC to draft the roadmap.",
+    "benefit": "If it goes PPP, Garaj can bid for hosting, DR and connectivity; otherwise partner with NTC.",
+    "tender_lag": "3–12 months",
+    "source_name": "Dawn",
+    "source_url": "https://www.dawn.com/news/2019611",
+    "products": [
+      "gcloud",
+      "cfib",
+      "gsoc"
+    ]
+  },
+  {
+    "id": "G19",
+    "date": "2026-06-11",
+    "type": "Project update",
+    "entity": "Govt of Sindh — S&IT",
+    "title": "Sindh launches a unified e-portal for all government departments",
+    "summary": "ADP scheme built with GCS Pvt Ltd for citizens, businesses and employees.",
+    "benefit": "Portals need OTP/SMS, payments and hosting: add-on sale to the department and its developer.",
+    "tender_lag": "0–6 months",
+    "source_name": "Business Recorder",
+    "source_url": "https://www.brecorder.com/news/40424886/sindh-launches-e-portal-to-digitalise-public-service",
+    "products": [
+      "qmsg",
+      "jccol",
+      "gcloud"
+    ]
+  },
+  {
+    "id": "G20",
+    "date": "2025-12-19",
+    "type": "Regulation",
+    "entity": "NADRA / PDA",
+    "title": "NADRA Digital ID and Data Exchange Layer regulations; PDA building DPI sub-stacks",
+    "summary": "New Digital ID Regulations 2025 and NDEL Regulations 2025; NADRA Procurement Regulations 2025 require competitive ICT buying.",
+    "benefit": "Digital ID and data exchange are rails for JazzCash KYC and citizen journeys; NADRA buys security and infrastructure every year.",
+    "tender_lag": "6–18 months",
+    "source_name": "Biometric Update",
+    "source_url": "https://www.biometricupdate.com/202512/pakistan-to-modernize-identity-system-digital-authority-creating-dpi-sub-stacks",
+    "products": [
+      "sim",
+      "jccol",
+      "gsoc",
+      "gcloud"
+    ]
+  }
+]

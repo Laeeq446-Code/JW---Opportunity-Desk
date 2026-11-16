@@ -1,0 +1,186 @@
+{
+  "_doc": "Cross-sell map: when a product is core to a tender, these products are suggested as add-ons (first 5 kept).",
+  "adjacency": {
+    "c5g": [
+      "cm2m",
+      "qmsg",
+      "jccol",
+      "sme"
+    ],
+    "cbrap": [
+      "qmsg",
+      "c5g"
+    ],
+    "cnet": [
+      "gsoc",
+      "cfib",
+      "csdn"
+    ],
+    "cfib": [
+      "csdn",
+      "gsoc",
+      "gdr",
+      "cmng"
+    ],
+    "cvoice": [
+      "omni",
+      "qmsg",
+      "gcloud"
+    ],
+    "csdn": [
+      "cfib",
+      "gsoc",
+      "cmng"
+    ],
+    "cmng": [
+      "cfib",
+      "gsoc",
+      "csdn"
+    ],
+    "cftth": [
+      "cnet",
+      "cmng",
+      "jccol"
+    ],
+    "crural": [
+      "c5g",
+      "jccol",
+      "mmdep",
+      "mmagri"
+    ],
+    "gcloud": [
+      "gdr",
+      "gsoc",
+      "cfib",
+      "glic"
+    ],
+    "gdr": [
+      "gcloud",
+      "gsoc",
+      "cfib"
+    ],
+    "gsoc": [
+      "gcloud",
+      "cmng",
+      "gdr"
+    ],
+    "glic": [
+      "gcloud",
+      "gsoc",
+      "sme"
+    ],
+    "gsi": [
+      "gcloud",
+      "gsoc",
+      "qai",
+      "omni"
+    ],
+    "hw": [
+      "c5g",
+      "glic",
+      "gsoc",
+      "sme"
+    ],
+    "qai": [
+      "gcloud",
+      "gsoc",
+      "qmsg"
+    ],
+    "qmsg": [
+      "omni",
+      "jccol",
+      "qai"
+    ],
+    "omni": [
+      "qmsg",
+      "qai",
+      "cvoice"
+    ],
+    "qmkt": [
+      "qmsg",
+      "tam",
+      "qai"
+    ],
+    "cm2m": [
+      "qiot",
+      "iots",
+      "gcloud"
+    ],
+    "qiot": [
+      "cm2m",
+      "iots",
+      "gcloud",
+      "qai"
+    ],
+    "iots": [
+      "qiot",
+      "cm2m",
+      "gcloud",
+      "jccol"
+    ],
+    "sme": [
+      "c5g",
+      "glic",
+      "jcqr",
+      "mmbl"
+    ],
+    "jccol": [
+      "jcpg",
+      "qmsg",
+      "jcqr"
+    ],
+    "jcg2p": [
+      "qmsg",
+      "mmdep",
+      "ins"
+    ],
+    "jcpg": [
+      "jccol",
+      "qmsg"
+    ],
+    "jcqr": [
+      "jccol",
+      "cm2m",
+      "qmsg"
+    ],
+    "jcmore": [
+      "jcg2p",
+      "mmdep"
+    ],
+    "mmbl": [
+      "jcg2p",
+      "ins",
+      "qmsg"
+    ],
+    "mmagri": [
+      "jsure",
+      "qiot",
+      "jcg2p"
+    ],
+    "mmdep": [
+      "jcg2p",
+      "ins"
+    ],
+    "ins": [
+      "jccol",
+      "qmsg"
+    ],
+    "jsure": [
+      "mmagri",
+      "ins"
+    ],
+    "tam": [
+      "qmkt",
+      "qmsg"
+    ],
+    "sim": [
+      "jccol",
+      "qmsg"
+    ],
+    "gn": [
+      "c5g",
+      "jcg2p",
+      "tam"
+    ]
+  }
+}

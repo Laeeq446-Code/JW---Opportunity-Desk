@@ -1,0 +1,16 @@
+{
+  "_doc": "SBU names and the catalog files products were built from. Product rows themselves live in seed/products.json and the database.",
+  "sbus": {
+    "conn": "Connectivity",
+    "ent": "Enterprise Solutions",
+    "fin": "Financial Services",
+    "plat": "Digital Platforms"
+  },
+  "catalog_files": {
+    "JB": "Jazz Business Product Deck 2026",
+    "JC": "JazzCash Business Solutions booklet 2025",
+    "MB": "Mobilink Bank Products Info Deck 2026",
+    "JS": "JazzSure Corporate Product Brochure",
+    "PUB": "Public sources (not in the files shared)"
+  }
+}

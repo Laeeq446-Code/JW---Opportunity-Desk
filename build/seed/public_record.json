@@ -1,0 +1,247 @@
+[
+  {
+    "id": "J01",
+    "title": "NADRA fee and passport fee collections",
+    "entity": "National Database & Registration Authority (NADRA)",
+    "date": null,
+    "outcome": "Existing client",
+    "value": "—",
+    "products": [
+      "jccol"
+    ],
+    "source_url": null,
+    "source_name": "JazzCash Business Solutions booklet 2025 (client portfolio)"
+  },
+  {
+    "id": "J02",
+    "title": "Traffic challan collections in Punjab, Islamabad and Karachi",
+    "entity": "Traffic Police (Punjab, Islamabad, Karachi)",
+    "date": null,
+    "outcome": "Existing client",
+    "value": "—",
+    "products": [
+      "jccol",
+      "jcqr"
+    ],
+    "source_url": null,
+    "source_name": "JazzCash Business Solutions booklet 2025 (client portfolio)"
+  },
+  {
+    "id": "J03",
+    "title": "Tax and government fee collections: FBR, PRA, Excise & Taxation, Board of Revenue, Govt of Punjab, Punjab Food Authority, Evacuee Trust Property Board",
+    "entity": "Federal Board of Revenue (FBR) and provincial revenue bodies",
+    "date": null,
+    "outcome": "Existing client",
+    "value": "—",
+    "products": [
+      "jccol"
+    ],
+    "source_url": null,
+    "source_name": "JazzCash Business Solutions booklet 2025 (client portfolio)"
+  },
+  {
+    "id": "J04",
+    "title": "Utility bill collections: IESCO, LESCO, PESCO, MEPCO, GEPCO, FESCO, HESCO, SEPCO, QESCO, K-Electric, SNGPL, SSGC and WASAs",
+    "entity": "Power distribution companies (DISCOs) and utilities",
+    "date": null,
+    "outcome": "Existing client",
+    "value": "—",
+    "products": [
+      "jccol"
+    ],
+    "source_url": null,
+    "source_name": "JazzCash Business Solutions booklet 2025 (client portfolio)"
+  },
+  {
+    "id": "J05",
+    "title": "Disbursements for BISP, Provincial Disaster Management Authority and Punjab Skills Development Fund",
+    "entity": "Benazir Income Support Programme (BISP)",
+    "date": null,
+    "outcome": "Existing client",
+    "value": "—",
+    "products": [
+      "jcg2p"
+    ],
+    "source_url": null,
+    "source_name": "JazzCash Business Solutions booklet 2025 (client portfolio)"
+  },
+  {
+    "id": "J06",
+    "title": "Education fee collections: AIOU, BISE Bahawalpur and Gujranwala, Islamia University Bahawalpur, NTS, OPF",
+    "entity": "Public universities, boards and testing bodies",
+    "date": null,
+    "outcome": "Existing client",
+    "value": "—",
+    "products": [
+      "jccol"
+    ],
+    "source_url": null,
+    "source_name": "JazzCash Business Solutions booklet 2025 (client portfolio)"
+  },
+  {
+    "id": "J07",
+    "title": "Online payments via JazzCash gateway for Pakistan Railways",
+    "entity": "Pakistan Railways",
+    "date": null,
+    "outcome": "Existing client",
+    "value": "—",
+    "products": [
+      "jcpg"
+    ],
+    "source_url": null,
+    "source_name": "JazzCash Business Solutions booklet 2025 (client portfolio)"
+  },
+  {
+    "id": "J08",
+    "title": "Loan repayment collections for NRSP, Kashf, Akhuwat and other MFIs",
+    "entity": "National Rural Support Programme (NRSP)",
+    "date": null,
+    "outcome": "Existing client",
+    "value": "—",
+    "products": [
+      "jccol"
+    ],
+    "source_url": null,
+    "source_name": "JazzCash Business Solutions booklet 2025 (client portfolio)"
+  },
+  {
+    "id": "P01",
+    "title": "Badin NG-BSD: 144 mauzas, 45 new sites",
+    "entity": "Universal Service Fund (USF)",
+    "date": "2026-02-17",
+    "outcome": "Won",
+    "value": "PKR 668 m",
+    "products": [
+      "crural",
+      "c5g"
+    ],
+    "source_url": "https://developingtelecoms.com/telecom-business/operator-news/19781-pakistans-jazz-wins-usf-contract-to-expand-connectivity-in-badin.html",
+    "source_name": null
+  },
+  {
+    "id": "P02",
+    "title": "Four NG-BSD projects across 9 districts (Chiniot, Abbottabad and small lots), 203 mauzas",
+    "entity": "Universal Service Fund (USF)",
+    "date": "2026-01-21",
+    "outcome": "Won",
+    "value": "PKR 1.16 bn",
+    "products": [
+      "crural",
+      "c5g"
+    ],
+    "source_url": "https://www.app.com.pk/national/usf-launches-pkr-1-16bn-broadband-projects-for-9-districts/",
+    "source_name": null
+  },
+  {
+    "id": "P03",
+    "title": "Garaj cloud, cybersecurity, connectivity, backup and DR for BPPRA",
+    "entity": "Balochistan Public Procurement Regulatory Authority (BPPRA)",
+    "date": "2026-06-10",
+    "outcome": "Partnership",
+    "value": "—",
+    "products": [
+      "gcloud",
+      "gdr",
+      "gsoc",
+      "cfib"
+    ],
+    "source_url": "https://propakistani.pk/2026/06/10/garaj-and-bppra-partner-to-modernize-digital-infrastructure-for-public-procurement-in-balochistan/",
+    "source_name": null
+  },
+  {
+    "id": "P04",
+    "title": "Zakat disbursements across Punjab via biometric agents with SMS alerts",
+    "entity": "Zakat & Ushr Department, Govt of Punjab",
+    "date": "2025-04-24",
+    "outcome": "Partnership",
+    "value": "—",
+    "products": [
+      "jcg2p",
+      "qmsg"
+    ],
+    "source_url": "https://jazz.com.pk/media-center/detail/jazzcash-and-punjab-zakat-ushr-department-join-hands-for-seamless-zakat-disbursements-across-punjab",
+    "source_name": null
+  },
+  {
+    "id": "P05",
+    "title": "BISP disbursements to 1.3 m+ beneficiaries in 14 districts (3 years)",
+    "entity": "Benazir Income Support Programme (BISP)",
+    "date": "2024-02-21",
+    "outcome": "Won",
+    "value": "—",
+    "products": [
+      "jcg2p"
+    ],
+    "source_url": "https://jazz.com.pk/media-center/detail/jazzcash-chosen-as-key-partner-for-benazir-income-support-program-bisp-fund-disbursements",
+    "source_name": null
+  },
+  {
+    "id": "P06",
+    "title": "M-3 and M-5 motorway 4G coverage, 134 km",
+    "entity": "Universal Service Fund (USF)",
+    "date": "2021-12-15",
+    "outcome": "Won",
+    "value": "PKR ~300 m",
+    "products": [
+      "crural",
+      "c5g"
+    ],
+    "source_url": "https://pakscoop.com/jazz-usf-will-provide-broadband-services-on-m-3-m-5-motorways",
+    "source_name": null
+  },
+  {
+    "id": "P07",
+    "title": "Multan and Khanewal broadband, 170 mauzas",
+    "entity": "Universal Service Fund (USF)",
+    "date": "2021-07-08",
+    "outcome": "Won",
+    "value": "PKR ~154 m",
+    "products": [
+      "crural",
+      "c5g"
+    ],
+    "source_url": "https://dnd.com.pk/usf-jazz-ink-contract-to-provide-broadband-services-in-multan-khanewal-districts/249401/",
+    "source_name": null
+  },
+  {
+    "id": "P08",
+    "title": "Jacobabad, Shikarpur and Kashmore 4G, 271 mauzas",
+    "entity": "Universal Service Fund (USF)",
+    "date": "2021-05-24",
+    "outcome": "Won",
+    "value": "—",
+    "products": [
+      "crural",
+      "c5g"
+    ],
+    "source_url": "https://digitalpakistan.pk/jazz-collaborates-with-usf-to-provide-4g-services-in-jacobabad-shikarpur-and-kashmore/",
+    "source_name": null
+  },
+  {
+    "id": "P09",
+    "title": "North Waziristan mobile broadband coverage",
+    "entity": "Universal Service Fund (USF)",
+    "date": null,
+    "outcome": "Won",
+    "value": "—",
+    "products": [
+      "crural",
+      "c5g"
+    ],
+    "source_url": "https://jazz.com.pk/media-center/jazz-wins-usf-contract-to-provide-mobile-broadband-coverage-in-north-waziristan/",
+    "source_name": null
+  },
+  {
+    "id": "P10",
+    "title": "Crop subsidy disbursements to farmers",
+    "entity": "Agriculture Department, Govt of Punjab",
+    "date": "2019-03-15",
+    "outcome": "Partnership",
+    "value": "—",
+    "products": [
+      "jcg2p"
+    ],
+    "source_url": "https://jazz.com.pk/media-center/detail/digitizing-agriculture-payments-jazzcash-joins-hands-with-the-government-of-punjab",
+    "source_name": null
+  }
+]

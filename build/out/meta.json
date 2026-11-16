@@ -1,0 +1,43 @@
+{
+ "sources": {
+  "EPADS": {
+   "name": "EPADS 2.0 federal e-procurement",
+   "url": "https://epads.gov.pk",
+   "pulled": "2026-11-12T06:42:30.867Z",
+   "rows": 945,
+   "note": "Every open federal procurement on the public board (10 listing pages)."
+  },
+  "EPMS": {
+   "name": "PPRA EPMS active tenders",
+   "url": "https://epms.ppra.gov.pk/public/tenders/active-tenders",
+   "pulled": "2026-11-12T06:35:48.354Z",
+   "rows": 1882,
+   "note": "Every active federal tender notice on the PPRA board (38 listing pages)."
+  },
+  "WB": {
+   "name": "World Bank procurement notices API (Pakistan)",
+   "url": "https://search.worldbank.org/api/v2/procnotices?format=json&project_ctry_name_exact=Pakistan",
+   "pulled": "2026-11-12T06:36:05.975Z",
+   "rows": 18,
+   "note": "Last 600 Pakistan notices read; open ones kept, ICT-related closed ones kept as history."
+  },
+  "PITB": {
+   "name": "Punjab Information Technology Board (PITB) tender notices",
+   "url": "https://pitb.gov.pk/tendernotices",
+   "pulled": "2026-11-12T06:41:28.253Z",
+   "rows": 5,
+   "note": "446 notices read back to 2023-11-03; closed ones kept as history."
+  },
+  "EPMS-H": {
+   "name": "PPRA EPMS history (Tender Desk scans, Feb to Jul 2026)",
+   "url": "https://epms.ppra.gov.pk",
+   "pulled": "2026-07-17",
+   "rows": 3175,
+   "note": "Federal tenders captured by the earlier Tender Desk scans. Used for demand history and renewal timing only."
+  }
+ },
+ "dups_removed": 255,
+ "today": "2026-11-12",
+ "open_total": 2595,
+ "hist_total": 3678
+}

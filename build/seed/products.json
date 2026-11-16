@@ -1,0 +1,1001 @@
+[
+  {
+    "id": "c5g",
+    "sbu": "conn",
+    "brand": "Jazz Business · GSM",
+    "name": "Corporate Mobile Plans & Group Data",
+    "source_file": "JB",
+    "description": "Postpaid Control and Elite plans, Prepaid Bizz, pooled Group Data (125 GB to 10 TB) and Smart Phone Plans with devices on instalments.",
+    "key_facts": [
+      "Elite plans live for Enterprise Sales and B2G",
+      "Group Data from PKR 8,000 (125 GB) to PKR 358,400 (10 TB)",
+      "Devices on instalments, PKR 30,000 to 400,000+"
+    ],
+    "government_use": "Officer and field-staff connections, device-plus-data bundles for inspectors, enforcement and parking staff.",
+    "references": "230+ cities, 30,000+ business customers",
+    "keywords": [
+      "mobile broadband",
+      "4g",
+      "5g",
+      "lte",
+      "mobile data",
+      "sim*",
+      "smartphone*",
+      "mobile phone*",
+      "handset*",
+      "postpaid",
+      "data pool",
+      "corporate connection*"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "cbrap",
+    "sbu": "conn",
+    "brand": "Jazz Business · GSM",
+    "name": "Managed Prepaid & Bulk Resource Platform (BRAP)",
+    "source_file": "JB",
+    "description": "Central control of prepaid lines for a workforce, and free Jazz data/minutes as rewards pushed by API, voucher or list.",
+    "key_facts": [
+      "PKR 50 per GB, PKR 1 per on-net minute",
+      "Reaches 79 m prepaid customers",
+      "One invoice for all child lines"
+    ],
+    "government_use": "Data incentives for programme beneficiaries, survey respondents, students, vaccination or registration drives.",
+    "references": "—",
+    "keywords": [
+      "incentive*",
+      "reward*",
+      "loyalty",
+      "airtime",
+      "data bundle*",
+      "free data",
+      "prepaid workforce"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "cnet",
+    "sbu": "conn",
+    "brand": "Jazz Business · Fixed",
+    "name": "Business Internet (DIA) & Hosting",
+    "source_file": "JB",
+    "description": "SLA-backed office internet and high-speed internet from 10 Gbps to 100+ Gbps, with DNS, website hosting, public IPs and DDoS mitigation.",
+    "key_facts": [
+      "10 Gbps to 100+ Gbps",
+      "Website hosting at 99.9% uptime",
+      "DDoS mitigation"
+    ],
+    "government_use": "Secretariat, university and hospital internet; citizen-portal hosting.",
+    "references": "—",
+    "keywords": [
+      "internet",
+      "bandwidth",
+      "dedicated internet",
+      "dia",
+      "ddos",
+      "dns",
+      "web hosting",
+      "website hosting",
+      "public ip*",
+      "asn"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "cfib",
+    "sbu": "conn",
+    "brand": "Jazz Business · Fixed",
+    "name": "Business Data: MPLS, IP VPN, Leased Lines & Dark Fibre",
+    "source_file": "JB",
+    "description": "MPLS across 250+ cities, IPLC/DPLC private circuits, IP VPN, IP transit, dark fibre and managed capacity on a 25,000 km self-healing backbone.",
+    "key_facts": [
+      "25,000 km of fibre",
+      "MPLS in 250+ cities",
+      "4 global PoPs: Singapore, UAE, France, UK"
+    ],
+    "government_use": "Inter-office WAN for ministries and provinces, CCTV backhaul, campus and data-centre links.",
+    "references": "—",
+    "keywords": [
+      "fiber",
+      "fibre",
+      "ofc",
+      "optical",
+      "mpls",
+      "wan",
+      "backhaul",
+      "connectivity",
+      "link*",
+      "iplc",
+      "dplc",
+      "vpn",
+      "dark fiber",
+      "dark fibre",
+      "leased line*",
+      "ip transit",
+      "radio link*",
+      "ism band",
+      "communication system",
+      "network"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "cvoice",
+    "sbu": "conn",
+    "brand": "Jazz Business · Fixed / Garaj",
+    "name": "Business Telephony & Contact Centre",
+    "source_file": "JB",
+    "description": "SIP, PRI and POTS, UAN and toll-free numbers, Business Line, and inbound/outbound contact-centre applications hosted on Garaj.",
+    "key_facts": [
+      "UAN and TFN with routing analytics",
+      "Contact centres hosted on Garaj"
+    ],
+    "government_use": "Citizen helplines (e.g. 1-numbers), complaint centres, emergency lines.",
+    "references": "—",
+    "keywords": [
+      "telephony",
+      "sip",
+      "pri",
+      "uan",
+      "toll free",
+      "tfn",
+      "call cent*",
+      "contact cent*",
+      "helpline",
+      "ip-pbx",
+      "pbx",
+      "ivr"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "csdn",
+    "sbu": "conn",
+    "brand": "Jazz Business · Fixed",
+    "name": "SD-WAN, Managed Wi-Fi & Office-in-a-Box",
+    "source_file": "JB",
+    "description": "Software-defined WAN, LAN and Wi-Fi with central control, plus Office-in-a-Box: internet, Wi-Fi, telephony and LAN in one box over 4G.",
+    "key_facts": [
+      "Office-in-a-Box installs with no technician",
+      "Central control and encryption"
+    ],
+    "government_use": "Secretariat and campus Wi-Fi, public Wi-Fi in markets (KP Digital Payment Act), quick-setup field offices.",
+    "references": "—",
+    "keywords": [
+      "wifi",
+      "wi-fi",
+      "wireless",
+      "hotspot*",
+      "sdwan",
+      "sd-wan",
+      "lan",
+      "sdlan",
+      "office-in-a-box"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "cmng",
+    "sbu": "conn",
+    "brand": "Jazz Business · Fixed",
+    "name": "Managed Network, NOCaaS & Professional Services",
+    "source_file": "JB",
+    "description": "Managed networks, NOC-as-a-Service with unified monitoring, plus network design, audit, optimisation, security audit and technology refresh.",
+    "key_facts": [
+      "24/7 monitoring and incident response",
+      "Security audit and TEC refresh"
+    ],
+    "government_use": "Hospital and department network SLAs, network audits, refresh programmes.",
+    "references": "—",
+    "keywords": [
+      "network monitoring",
+      "nms",
+      "noc",
+      "network audit",
+      "network design",
+      "network operations",
+      "managed service",
+      "switch*",
+      "core switch*",
+      "cisco",
+      "tec refresh",
+      "maintenance",
+      "service level agreement",
+      "sla"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "cftth",
+    "sbu": "conn",
+    "brand": "Jazz Business · Fixed",
+    "name": "FTTH Programme (B2B2C)",
+    "source_file": "JB",
+    "description": "IP transit, BRAS as a Service, Panel as a Service and vertical FTTH for ISPs, real estate, government and enterprise.",
+    "key_facts": [
+      "Managed last mile",
+      "For ISPs, housing schemes, towers and government"
+    ],
+    "government_use": "Government housing schemes, cantonments and smart-city fibre programmes.",
+    "references": "—",
+    "keywords": [
+      "ftth",
+      "fiber to the home",
+      "fibre to the home",
+      "housing",
+      "tower*",
+      "isp",
+      "bras"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "crural",
+    "sbu": "conn",
+    "brand": "Jazz",
+    "name": "Rural Broadband (USF NG-BSD)",
+    "source_file": "PUB",
+    "description": "Subsidised 4G rollout to unserved mauzas under Universal Service Fund reverse auctions.",
+    "key_facts": [
+      "9 USF wins on record in this page (2021–2026)"
+    ],
+    "government_use": "USF NG-BSD lots; motorway coverage.",
+    "references": "USF Badin, Chiniot, Abbottabad, Multan-Khanewal, M-3/M-5",
+    "keywords": [
+      "ng-bsd",
+      "underserved",
+      "unserved",
+      "rural",
+      "broadband",
+      "mauza*"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "gcloud",
+    "sbu": "ent",
+    "brand": "Garaj",
+    "name": "Garaj Sovereign Cloud (IaaS, Storage, DBaaS)",
+    "source_file": "JB",
+    "description": "Tier-3, multi-AZ sovereign cloud: compute (pay-as-you-go or reserved), S3-compatible storage, database as a service and multi-cloud, hosted in Pakistan.",
+    "key_facts": [
+      "3 Tier-3 data centres, 31 MW, 6,500 racks",
+      "5 cities: Islamabad, Karachi, Faisalabad, Lahore, Khairpur",
+      "500+ enterprise customers incl. government"
+    ],
+    "government_use": "Hosting under Cloud First and the 2026 Data Governance Policy's localisation rule.",
+    "references": "BPPRA Balochistan (2026)",
+    "keywords": [
+      "cloud",
+      "hosting",
+      "iaas",
+      "virtual*",
+      "vmware",
+      "server*",
+      "storage",
+      "software defined storage",
+      "sds",
+      "database as a service",
+      "dbaas",
+      "multi-cloud",
+      "compute",
+      "object storage",
+      "oracle",
+      "database appliance"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "gdr",
+    "sbu": "ent",
+    "brand": "Garaj",
+    "name": "Garaj Backup, DR & Digital Park Colocation",
+    "source_file": "JB",
+    "description": "Backup as a Service, Disaster Recovery as a Service with automated failover, and colocation in Jazz Digital Park, Pakistan's largest certified data centre.",
+    "key_facts": [
+      "Automated failover and failback, tested",
+      "Carrier-neutral colocation"
+    ],
+    "government_use": "DR sites for provincial data centres, regulators and registries.",
+    "references": "BPPRA backup and DR (2026)",
+    "keywords": [
+      "disaster recovery",
+      "backup",
+      "colocation",
+      "data center",
+      "data centre",
+      "datacenter",
+      "rack*",
+      "replication",
+      "business continuity"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "gsoc",
+    "sbu": "ent",
+    "brand": "Garaj",
+    "name": "Garaj Security & MSSP",
+    "source_file": "JB",
+    "description": "Network and endpoint security, identity and access management, and a 24/7 managed security service (threat detection, intrusion prevention, compliance).",
+    "key_facts": [
+      "24/7 threat detection and response",
+      "Compliance dashboards"
+    ],
+    "government_use": "SOC-as-a-service instead of one-off licence renewals; NADRA/BISP-type security estates.",
+    "references": "BPPRA cybersecurity (2026)",
+    "keywords": [
+      "soc",
+      "security",
+      "firewall*",
+      "fortinet",
+      "fortigate",
+      "utp",
+      "threat",
+      "cyber*",
+      "dns security",
+      "siem",
+      "edr",
+      "endpoint",
+      "identity",
+      "iam",
+      "access management",
+      "clearpass",
+      "network access control",
+      "intrusion"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "glic",
+    "sbu": "ent",
+    "brand": "Garaj",
+    "name": "Productivity & Licences (Microsoft 365, Odoo, Garaj 24/7)",
+    "source_file": "JB",
+    "description": "Licensed and managed Microsoft 365, Odoo ERP/CRM and other software licences, plus locally hosted Garaj 24/7 email and collaboration.",
+    "key_facts": [
+      "Microsoft 365 licensed and managed by Jazz",
+      "Odoo with 70+ modules"
+    ],
+    "government_use": "Licence renewals bundled with hosting and support.",
+    "references": "—",
+    "keywords": [
+      "email",
+      "collaboration",
+      "office 365",
+      "microsoft 365",
+      "microsoft",
+      "licen*",
+      "subscription*",
+      "suse",
+      "linux",
+      "sql",
+      "tableau",
+      "odoo"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "gsi",
+    "sbu": "ent",
+    "brand": "Garaj",
+    "name": "Garaj System Integration, DevOps & Managed Services",
+    "source_file": "JB",
+    "description": "Integration and API orchestration across a technology estate, DevOps, and managed operations with defined SLAs.",
+    "key_facts": [
+      "40+ solutions delivered",
+      "Managed operations with 24/7 support"
+    ],
+    "government_use": "Turnkey projects that combine connectivity, cloud and software.",
+    "references": "—",
+    "keywords": [
+      "software development",
+      "system integration",
+      "integration",
+      "api",
+      "devops",
+      "implementation",
+      "consultancy",
+      "consulting",
+      "platform",
+      "roadmap",
+      "assessment",
+      "support services",
+      "application*",
+      "portal development"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "hw",
+    "sbu": "ent",
+    "brand": "Garaj",
+    "name": "Garaj Hardware Supply",
+    "source_file": "JB",
+    "description": "Hardware sourced and supplied as one of Garaj's 11 verticals, normally bundled with cloud, security or managed services.",
+    "key_facts": [
+      "One of Garaj's 11 verticals"
+    ],
+    "government_use": "Worth bidding when bundled with connectivity or services; needs OEM authorisation for most tenders.",
+    "references": "—",
+    "keywords": [
+      "laptop*",
+      "desktop*",
+      "hardware",
+      "it equipment",
+      "equipment",
+      "printer*",
+      "computer*",
+      "scanner*",
+      "appliance*"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "qai",
+    "sbu": "ent",
+    "brand": "Quantica",
+    "name": "Quantica Analytics as a Service",
+    "source_file": "JB",
+    "description": "Data science, business and digital analytics, consumer insights, geo-mapping, branch/ATM site planning, lookalike modelling and alternative credit scoring on a 2.8 PB telco data platform.",
+    "key_facts": [
+      "2.8 PB big-data cluster, 45+ source systems",
+      "75 m customer base, 2,000+ micro-segments",
+      "100+ data professionals; data stays in the Jazz environment"
+    ],
+    "government_use": "Population and mobility insights for planning, targeting of social programmes, alternative credit scoring for inclusion schemes.",
+    "references": "—",
+    "keywords": [
+      "ai",
+      "artificial intelligence",
+      "analytics",
+      "data science",
+      "machine learning",
+      "dashboard*",
+      "data platform",
+      "geo*",
+      "gis",
+      "site planning",
+      "credit scoring",
+      "survey*",
+      "insight*",
+      "assistant",
+      "chatbot",
+      "nerve center",
+      "ai-hubs",
+      "ai hubs"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "qmsg",
+    "sbu": "ent",
+    "brand": "Quantica",
+    "name": "Quantica Messaging (Bulk SMS/Voice, USSD, Boost)",
+    "source_file": "JB",
+    "description": "Bulk SMS and voice messages (CMT), two-way USSD sessions (Interact) and targeted SMS by persona, location and behaviour (Boost).",
+    "key_facts": [
+      "Targeting by persona, location and behaviour",
+      "Two-way USSD for feature phones"
+    ],
+    "government_use": "Citizen alerts, OTPs, payment notifications, disaster warnings, USSD surveys for feature-phone users.",
+    "references": "Zakat SMS notifications (Punjab, 2025)",
+    "keywords": [
+      "sms",
+      "messaging",
+      "otp",
+      "alert*",
+      "notification*",
+      "ussd",
+      "voice message*",
+      "robocall*",
+      "bulk"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "omni",
+    "sbu": "ent",
+    "brand": "Quantica",
+    "name": "Omni360 CPaaS",
+    "source_file": "JB",
+    "description": "Omni-channel platform orchestrating 15+ channels (SMS, voice, WhatsApp, email, social) with AI automation and a unified customer data platform.",
+    "key_facts": [
+      "15+ channels",
+      "99.9% uptime SLA",
+      "AI-powered automation"
+    ],
+    "government_use": "Citizen grievance and engagement platforms, WhatsApp service channels for departments.",
+    "references": "—",
+    "keywords": [
+      "whatsapp",
+      "omni*",
+      "citizen engagement",
+      "complaint*",
+      "grievance*",
+      "email campaign*",
+      "chat*",
+      "cpaas",
+      "customer engagement"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "qmkt",
+    "sbu": "ent",
+    "brand": "Quantica",
+    "name": "Precision & Contextual Marketing",
+    "source_file": "JB",
+    "description": "Campaigns designed and run on behavioural insights with real-time triggers and persona-based engagement.",
+    "key_facts": [
+      "Real-time triggers",
+      "Persona-based engagement"
+    ],
+    "government_use": "Public-awareness and behaviour-change campaigns for health, tax, voter or digital-literacy drives.",
+    "references": "—",
+    "keywords": [
+      "awareness",
+      "campaign*",
+      "outreach",
+      "advertis*",
+      "marketing",
+      "behaviour change",
+      "communication campaign*"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "cm2m",
+    "sbu": "ent",
+    "brand": "Jazz Business · IoT",
+    "name": "M2M Connectivity",
+    "source_file": "JB",
+    "description": "Managed SIM estates with static IP, VPN, APN and IP whitelisting for tracking, fintech/POS, utility metering and industrial automation.",
+    "key_facts": [
+      "One utility automated 50,000 meter reads",
+      "SIM status and billing dashboards"
+    ],
+    "government_use": "Smart metering (AMI/AMR) for DISCOs, traffic signals, POS for collections.",
+    "references": "Utility metering case (50,000 meters)",
+    "keywords": [
+      "m2m",
+      "telemetry",
+      "meter*",
+      "amr",
+      "ami",
+      "pos terminal*",
+      "static ip",
+      "apn"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "qiot",
+    "sbu": "ent",
+    "brand": "Quantica · IoT",
+    "name": "Quantica Infinity IoT Platform & LoRaWAN",
+    "source_file": "JB",
+    "description": "One console to onboard and monitor devices, ingest LoRaWAN, cellular and IP sensor data, run alarm rules and dashboards; plus a PTA-licensed LoRaWAN network.",
+    "key_facts": [
+      "MQTT and HTTPS ingestion",
+      "PTA-licensed LoRaWAN for multi-year battery sensors"
+    ],
+    "government_use": "City sensor networks, water and energy monitoring, environmental monitoring.",
+    "references": "Built with DynaSys (2025)",
+    "keywords": [
+      "iot",
+      "lorawan",
+      "sensor*",
+      "device management",
+      "monitoring system",
+      "energy monitoring",
+      "smart meter*"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "iots",
+    "sbu": "ent",
+    "brand": "Jazz Business · IoT",
+    "name": "IoT Solutions & Smart City",
+    "source_file": "JB",
+    "description": "Ten managed IoT solutions (fleet, fuel, asset, surveillance, cold chain, push-to-talk, AI, building automation, smart retail) and turnkey smart-city, agriculture and security verticals.",
+    "key_facts": [
+      "Device, connectivity, platform and support in one contract",
+      "Smart city: air/water quality, parking, lighting, metering",
+      "Security: surveillance, biometric and number-plate access"
+    ],
+    "government_use": "Safe City and Smart Islamabad, municipal fleets, cold chain for vaccines, push-to-talk for field forces.",
+    "references": "—",
+    "keywords": [
+      "fleet",
+      "tracking",
+      "fuel",
+      "asset*",
+      "surveillance",
+      "camera*",
+      "cctv",
+      "anpr",
+      "number plate",
+      "parking",
+      "push to talk",
+      "ptt",
+      "cold chain",
+      "air quality",
+      "water quality",
+      "street light*",
+      "lighting",
+      "building automation",
+      "biometric*",
+      "smart city",
+      "safe city",
+      "traffic"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "sme",
+    "sbu": "ent",
+    "brand": "Jazz Business · SME",
+    "name": "Workforce & Digital Business Tools",
+    "source_file": "JB",
+    "description": "Mobile device management, field-force tracking and field forms, Odoo CRM/ERP, digital invoicing, POS and Privacy Defender mobile security.",
+    "key_facts": [
+      "Privacy Defender PKR 250 per user per month",
+      "Field Force and Field Forms apps"
+    ],
+    "government_use": "Inspector and enumerator tracking, digital invoicing for tax compliance (Connected Punjab), device management for government phones.",
+    "references": "—",
+    "keywords": [
+      "workforce",
+      "field force",
+      "field staff",
+      "mobile device management",
+      "mdm",
+      "erp",
+      "crm",
+      "digital invoic*",
+      "point of sale",
+      "workflow",
+      "field forms",
+      "privacy defender",
+      "mobile security"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "jccol",
+    "sbu": "fin",
+    "brand": "JazzCash",
+    "name": "JazzCash Collections & Bill Payments",
+    "source_file": "JC",
+    "description": "Collections through app, USSD and the retail network: government fees and taxes, challans, licence and passport fees, education fees, utility bills, loan repayments and donations.",
+    "key_facts": [
+      "Widest retail network for cash-in",
+      "Real-time alerts, reconciliation reports",
+      "15 collection types incl. tax, challan, passport and licence fees"
+    ],
+    "government_use": "P2G collections under KP's cashless mandate, e-challans, fees for departments and boards.",
+    "references": "FBR, PRA, Excise & Taxation, Board of Revenue, NADRA and passport fees, Punjab/Islamabad/Karachi traffic challans, Punjab Food Authority, 9 DISCOs, WASAs",
+    "keywords": [
+      "fee collection",
+      "challan*",
+      "tax payment*",
+      "government payment*",
+      "revenue collection",
+      "p2g",
+      "bill payment*",
+      "utility bill*",
+      "fee*",
+      "donation*",
+      "education payment*",
+      "collection*"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "jcg2p",
+    "sbu": "fin",
+    "brand": "JazzCash",
+    "name": "JazzCash Disbursements (G2P, Salary, Welfare)",
+    "source_file": "JC",
+    "description": "Salary, INGO welfare, government programme and microloan payouts to wallets, cards or over the counter, with a maker-checker-approver corporate portal.",
+    "key_facts": [
+      "MasterCard and PayPak debit cards for cash-out",
+      "Transaction-status API and daily/weekly/monthly reports",
+      "Biometric cash-out at agents"
+    ],
+    "government_use": "Social protection, disaster relief, zakat, farmer subsidies, stipends and payroll.",
+    "references": "BISP, PDMA, Punjab Skills Development Fund; Punjab Zakat and Agriculture departments",
+    "keywords": [
+      "disbursement*",
+      "stipend*",
+      "cash transfer*",
+      "payroll",
+      "salary",
+      "income support",
+      "zakat",
+      "subsid*",
+      "welfare",
+      "g2p",
+      "relief"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "jcpg",
+    "sbu": "fin",
+    "brand": "JazzCash",
+    "name": "JazzCash Payment Gateway",
+    "source_file": "JC",
+    "description": "Online payments by wallet, card, voucher or bank account, with recurring payments, refund API and discount management.",
+    "key_facts": [
+      "4 payment methods",
+      "Recurring and refund APIs"
+    ],
+    "government_use": "Online fee and ticket payments on government portals.",
+    "references": "Pakistan Railways, Airblue, Daewoo Express",
+    "keywords": [
+      "payment gateway",
+      "gateway",
+      "online payment*",
+      "e-payment*",
+      "card payment*",
+      "checkout"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "jcqr",
+    "sbu": "fin",
+    "brand": "JazzCash",
+    "name": "JazzCash Retail Payments (QR, Till, Tap Pay)",
+    "source_file": "JC",
+    "description": "QR and Till acceptance, Tap Pay for Business (tap on phone) and payment links for merchants and counters.",
+    "key_facts": [
+      "Tap on Phone turns a smartphone into a card terminal",
+      "QR integrations and smart-device payments"
+    ],
+    "government_use": "Counters at offices, hospitals and schools under KP's Digital Payment Act; parking and toll collection.",
+    "references": "—",
+    "keywords": [
+      "qr",
+      "cashless",
+      "merchant*",
+      "till",
+      "tap pay",
+      "tap on phone",
+      "payment link*",
+      "parking",
+      "digital payment*"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "jcmore",
+    "sbu": "fin",
+    "brand": "JazzCash",
+    "name": "JazzCash Cards, Savings, ReadyCash & BNPL",
+    "source_file": "JC",
+    "description": "Debit cards, conventional savings, ReadyCash instant loans, buy now pay later, rewards and gift hubs, and an in-app marketplace.",
+    "key_facts": [
+      "MasterCard and PayPak cards",
+      "Instant ReadyCash loans"
+    ],
+    "government_use": "Beneficiary cards for programmes, savings for financial-inclusion schemes.",
+    "references": "—",
+    "keywords": [
+      "debit card*",
+      "prepaid card*",
+      "paypak",
+      "savings",
+      "buy now pay later",
+      "bnpl",
+      "nano loan*",
+      "readycash"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "mmbl",
+    "sbu": "fin",
+    "brand": "Mobilink Bank",
+    "name": "Mobilink Bank Business & Inclusion Loans",
+    "source_file": "MB",
+    "description": "Microenterprise, Bint-e-Hawa women's business, Karobar Plus, freelancer, school, salary/pension, house, e-bike and SME loans from PKR 25,000 to PKR 5 million.",
+    "key_facts": [
+      "Up to PKR 5 m; approval in 3–5 days for SME loans",
+      "Embedded insurance incl. income protection and maternity cover for women",
+      "Solar financing through house, Karobar and salary loans"
+    ],
+    "government_use": "Lending partner for government and donor inclusion programmes (women, youth, freelancers, schools).",
+    "references": "—",
+    "keywords": [
+      "microfinance",
+      "loan*",
+      "credit",
+      "financial inclusion",
+      "women entrepreneur*",
+      "female entrepreneur*",
+      "freelanc*",
+      "msme",
+      "sme",
+      "school loan*",
+      "house loan*",
+      "housing finance",
+      "e-bike*"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "mmagri",
+    "sbu": "fin",
+    "brand": "Mobilink Bank",
+    "name": "Mobilink Bank Agri, Livestock & Solar Finance",
+    "source_file": "MB",
+    "description": "Agri Plus, Livestock, Agri Passbook, Tractor and Khushhal Kissan loans, with weather-index livestock insurance and solar tube-well financing.",
+    "key_facts": [
+      "Livestock loans with climate-index insurance up to PKR 500,000",
+      "Tractor loans up to PKR 5 m over 10 years"
+    ],
+    "government_use": "Delivery partner for provincial farmer-support and climate-resilience schemes.",
+    "references": "—",
+    "keywords": [
+      "agri*",
+      "farmer*",
+      "livestock",
+      "tractor*",
+      "kissan",
+      "kisan",
+      "crop*",
+      "horticulture",
+      "solar",
+      "tube well*",
+      "dairy"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "mmdep",
+    "sbu": "fin",
+    "brand": "Mobilink Bank",
+    "name": "Mobilink Bank Accounts & Deposits",
+    "source_file": "MB",
+    "description": "Asaan and Asaan Digital accounts, Bint-e-Hawwa accounts for women, Sahulat current accounts (open to government, trusts and NGOs), Business Plus, savings and Mustaqbil term deposits.",
+    "key_facts": [
+      "Sahulat accounts eligible for Government, trusts and NGOs",
+      "Accounts from PKR 100, biometric opening"
+    ],
+    "government_use": "Beneficiary and pension accounts, programme collection accounts.",
+    "references": "—",
+    "keywords": [
+      "bank account*",
+      "account opening",
+      "deposit*",
+      "pension*",
+      "branchless",
+      "asaan account",
+      "term deposit*",
+      "banking"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "ins",
+    "sbu": "fin",
+    "brand": "Mobilink Bank · FikrFree",
+    "name": "Embedded Life & Health Insurance (FikrFree, partners)",
+    "source_file": "MB",
+    "description": "Life, health and accident plans with Jubilee, TPL and Adamjee through Mobilink Bank, Sehatyab health for employees, and FikrFree handset cover.",
+    "key_facts": [
+      "Health cover from PKR 2,000 a year",
+      "FikrFree: theft up to PKR 100,000, screen up to PKR 50,000"
+    ],
+    "government_use": "Health and life cover bundled with social and inclusion programmes.",
+    "references": "—",
+    "keywords": [
+      "health insurance",
+      "life insurance",
+      "health cover",
+      "hospitali*",
+      "takaful",
+      "micro-insurance",
+      "handset insurance"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "jsure",
+    "sbu": "fin",
+    "brand": "JazzSure",
+    "name": "JazzSure General Insurance & Bonds",
+    "source_file": "JS",
+    "description": "Conventional and Takaful general insurance: property, marine, engineering and solar, liability, cyber, crop and area-yield index, livestock, group health and motor; plus bid, performance, mobilisation-advance and supply bonds.",
+    "key_facts": [
+      "Bid, performance and supply bonds",
+      "Crop and area-yield index cover",
+      "Cyber insurance"
+    ],
+    "government_use": "Crop and livestock schemes, asset insurance for public infrastructure, bid and performance bonds for JazzWorld's own tenders.",
+    "references": "—",
+    "keywords": [
+      "insurance",
+      "crop insurance",
+      "livestock insurance",
+      "area yield",
+      "index insurance",
+      "cyber insurance",
+      "property insurance",
+      "marine",
+      "bond*",
+      "performance bond",
+      "bid security",
+      "guarantee*",
+      "group health",
+      "motor insurance",
+      "solar insurance",
+      "engineering insurance"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "tam",
+    "sbu": "plat",
+    "brand": "Tamasha",
+    "name": "Tamasha Content & Awareness",
+    "source_file": "PUB",
+    "description": "Video streaming platform usable for public-awareness content.",
+    "key_facts": [],
+    "government_use": "Health, voter and digital-literacy campaigns.",
+    "references": "—",
+    "keywords": [
+      "video*",
+      "content",
+      "media",
+      "streaming"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "sim",
+    "sbu": "plat",
+    "brand": "SIMOSA",
+    "name": "SIMOSA Self-care & Digital Journeys",
+    "source_file": "PUB",
+    "description": "Self-care app and digital journey tooling.",
+    "key_facts": [],
+    "government_use": "Citizen portals and app journeys.",
+    "references": "—",
+    "keywords": [
+      "self-service",
+      "citizen portal",
+      "e-portal",
+      "mobile app",
+      "identity",
+      "onboarding",
+      "kyc"
+    ],
+    "partner_led": false
+  },
+  {
+    "id": "gn",
+    "sbu": "plat",
+    "brand": "GameNow",
+    "name": "GameNow Gamified Learning",
+    "source_file": "PUB",
+    "description": "Gaming platform adaptable to gamified learning.",
+    "key_facts": [],
+    "government_use": "Skills and digital-literacy programmes.",
+    "references": "—",
+    "keywords": [
+      "training",
+      "learning",
+      "skills",
+      "bootcamp*",
+      "education",
+      "students"
+    ],
+    "partner_led": false
+  }
+]

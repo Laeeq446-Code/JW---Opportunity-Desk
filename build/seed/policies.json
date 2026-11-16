@@ -1,0 +1,243 @@
+[
+ {
+  "id": "P-DNPA",
+  "title": "Digital Nation Pakistan Act 2025: creates the Pakistan Digital Authority and a National Digital Masterplan",
+  "date": "2025-01-27",
+  "kind": "Law",
+  "issuer": "Parliament / MoITT",
+  "themes": [
+   "dpi",
+   "app",
+   "cloud",
+   "ai"
+  ],
+  "mandate": "Statutory duty to digitise federal services through a masterplan and shared digital public infrastructure.",
+  "u": "https://www.app.com.pk/national/passage-of-digital-nation-pakistan-bill-marks-a-milestone-for-pakistans-digital-future-shaza-fatima/",
+  "src": "APP"
+ },
+ {
+  "id": "P-CFP",
+  "title": "Cloud First Policy: public bodies to adopt cloud before on-premise IT",
+  "date": "2022-02-16",
+  "kind": "Policy",
+  "issuer": "Federal cabinet / MoITT",
+  "themes": [
+   "cloud"
+  ],
+  "mandate": "Cloud is the default for new government IT; data classification decides where data may sit.",
+  "u": "https://www.dawn.com/news/1676072",
+  "src": "Dawn"
+ },
+ {
+  "id": "P-NCSP",
+  "title": "National Cyber Security Policy 2021",
+  "date": "2021-07-27",
+  "kind": "Policy",
+  "issuer": "Federal cabinet / MoITT",
+  "themes": [
+   "cyber"
+  ],
+  "mandate": "Every public institution to have a cyber security function and incident response, with national CERTs.",
+  "u": "https://propakistani.pk/2021/07/27/cabinet-approves-national-cyber-security-policy-2021/",
+  "src": "ProPakistani"
+ },
+ {
+  "id": "P-DIGPAY",
+  "title": "Government targets 15 billion digital transactions by June 2026; government payments through Raast",
+  "date": "2025-10-30",
+  "kind": "Policy",
+  "issuer": "Federal government / SBP",
+  "themes": [
+   "pay",
+   "inclusion"
+  ],
+  "mandate": "Move government receipts and payments to digital channels and expand merchant QR acceptance.",
+  "u": "https://meatechwatch.com/2025/10/30/pakistan-targets-doubling-digital-transactions-to-15-billion-by-june-2026/",
+  "src": "MEA Tech Watch"
+ },
+ {
+  "id": "P-G13",
+  "title": "National AI Policy 2025: AI fund, AI council, compute and AI cloud for institutions",
+  "date": "2025-07-30",
+  "kind": "Policy",
+  "issuer": "MoITT",
+  "themes": [
+   "ai",
+   "cloud",
+   "edu"
+  ],
+  "mandate": "AI fund, AI council, and compute and AI cloud access for public institutions.",
+  "u": "https://www.moitt.gov.pk/SiteImage/Misc/files/National%20AI%20Policy.pdf",
+  "src": "MoITT"
+ },
+ {
+  "id": "P-G15",
+  "title": "National Data Governance Policy 2026: sensitive government data must stay in Pakistan",
+  "date": "2026-06-29",
+  "kind": "Policy",
+  "issuer": "MoITT / PDA",
+  "themes": [
+   "cloud",
+   "dpi",
+   "cyber"
+  ],
+  "mandate": "Sensitive government data must stay in Pakistan; data exchange layer for agencies.",
+  "u": "https://www.brecorder.com/news/amp/40427660",
+  "src": "Business Recorder"
+ },
+ {
+  "id": "P-G20",
+  "title": "NADRA Digital ID and Data Exchange Layer regulations; PDA building DPI sub-stacks",
+  "date": "2025-12-19",
+  "kind": "Regulation",
+  "issuer": "NADRA / PDA",
+  "themes": [
+   "dpi",
+   "app"
+  ],
+  "mandate": "NADRA digital ID and data exchange regulations; PDA building DPI sub-stacks.",
+  "u": "https://www.biometricupdate.com/202512/pakistan-to-modernize-identity-system-digital-authority-creating-dpi-sub-stacks",
+  "src": "Biometric Update"
+ },
+ {
+  "id": "P-G3",
+  "title": "National Digital Masterplan advancing: governance, economy, society pillars",
+  "date": "2026-09-29",
+  "kind": "Policy",
+  "issuer": "Pakistan Digital Authority",
+  "themes": [
+   "dpi",
+   "app",
+   "cloud"
+  ],
+  "mandate": "Masterplan pillars for digital governance, economy and society.",
+  "u": "https://mettisglobal.news/Govt-plans-National-Digital-Masterplan-63807",
+  "src": "Mettis Global"
+ },
+ {
+  "id": "P-G9",
+  "title": "KP Promotion of Digital Payment Act 2026 approved",
+  "date": "2026-08-22",
+  "kind": "Law",
+  "issuer": "Govt of KP",
+  "themes": [
+   "pay"
+  ],
+  "mandate": "KP public bodies to accept and make payments digitally.",
+  "u": "https://propakistani.pk/2026/08/22/kp-approves-digital-payment-law/",
+  "src": "ProPakistani"
+ },
+ {
+  "id": "P-G12",
+  "title": "New Public Procurement Rules 2026; awareness sessions for agencies and vendors",
+  "date": "2026-10-14",
+  "kind": "Regulation",
+  "issuer": "PPRA",
+  "themes": [
+   "app"
+  ],
+  "mandate": "New procurement rules; e-procurement on EPADS for all federal agencies.",
+  "u": "https://ppra.gov.pk/announcements",
+  "src": "PPRA"
+ },
+ {
+  "id": "P-G16",
+  "title": "PSDP 2026-27 gives IT & Telecom Division Rs19.58bn (+20.7%)",
+  "date": "2026-06-13",
+  "kind": "Budget",
+  "issuer": "MoITT",
+  "themes": [
+   "conn",
+   "cloud",
+   "app"
+  ],
+  "mandate": "PSDP allocation for IT and Telecom Division projects in FY2026-27.",
+  "u": "https://www.brecorder.com/news/40425309",
+  "src": "Business Recorder"
+ },
+ {
+  "id": "P-G17",
+  "title": "Proposed: $1bn National AI Ecosystem Development Program and Rs70bn Digital Infrastructure Connectivity Plan",
+  "date": "2026-02-13",
+  "kind": "Budget",
+  "issuer": "MoITT",
+  "themes": [
+   "ai",
+   "cloud",
+   "conn"
+  ],
+  "mandate": "Proposed national AI ecosystem programme and digital infrastructure fund.",
+  "u": "https://www.brecorder.com/news/amp/40407007",
+  "src": "Business Recorder"
+ },
+ {
+  "id": "P-G2",
+  "title": "USF FY2026-27 budget of Rs32.90bn; 9 new NG-BSD and 4 NG-OFNS projects",
+  "date": "2026-09-22",
+  "kind": "Budget",
+  "issuer": "USF / MoITT",
+  "themes": [
+   "conn"
+  ],
+  "mandate": "USF budget funds new next-generation broadband and optic fibre projects.",
+  "u": "https://tribune.com.pk/story/2630874/usf-approves-rs329b-to-push-4g-projects",
+  "src": "Express Tribune"
+ },
+ {
+  "id": "P-G4",
+  "title": "$200m ADB loan for FBR digitalisation recommended to ECNEC",
+  "date": "2026-09-11",
+  "kind": "Loan",
+  "issuer": "FBR / ADB",
+  "themes": [
+   "app",
+   "cloud",
+   "cyber"
+  ],
+  "mandate": "ADB financing for FBR digitalisation.",
+  "u": "https://www.dawn.com/news/2029139/pakistan-greenlights-200m-adb-loan-despite-questions-over-digitalisation-project",
+  "src": "Dawn"
+ },
+ {
+  "id": "P-G7",
+  "title": "Connected Punjab: $249m programme ($70m World Bank, $179m Punjab)",
+  "date": "2026-05-24",
+  "kind": "Loan",
+  "issuer": "Govt of Punjab / World Bank",
+  "themes": [
+   "conn",
+   "edu",
+   "ai"
+  ],
+  "mandate": "World Bank and Punjab financing for the Connected Punjab programme.",
+  "u": "https://www.phoneworld.com.pk/punjab-to-launch-249m-digital-transformation-drive-with-world-bank-support/",
+  "src": "PhoneWorld"
+ },
+ {
+  "id": "P-G8",
+  "title": "ADB proposes $130m to digitise five DISCOs",
+  "date": "2026-06-02",
+  "kind": "Loan",
+  "issuer": "Power Division / ADB",
+  "themes": [
+   "iot"
+  ],
+  "mandate": "ADB proposal to digitise five power distribution companies.",
+  "u": "https://profit.pakistantoday.com.pk/2026/06/02/adb-proposes-dollar130-million-project-to-digitise-power-distribution-network-across-five-discos",
+  "src": "Profit"
+ },
+ {
+  "id": "P-G10",
+  "title": "ADB BUILD: $400m facility for border upgrades and digital customs",
+  "date": "2026-08-27",
+  "kind": "Loan",
+  "issuer": "ADB (CAREC)",
+  "themes": [
+   "app",
+   "iot"
+  ],
+  "mandate": "ADB facility for border upgrades and digital customs.",
+  "u": "https://techx.pk/adb-build-facility-pakistan-digital-trade-border/",
+  "src": "TechX"
+ }
+]
