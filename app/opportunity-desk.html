@@ -330,7 +330,7 @@ AIX.text=function(prompt,onText){
   return apiCall({messages:[{role:'user',content:prompt}],max_tokens:1400}).then(function(j){var t=apiText(j);if(onText)onText(t);return t})};
 AIX.json=function(prompt){
   if(AIX.mode==='claude')return AIX.s.json(prompt,{modelTier:'default'});
-  return AIX.text(prompt+'\n\nReply with only the JSON value.').then(function(t){var m=t.match(/```(?:json)?\s*([\s\S]*?)```/);var s=m?m[1]:t;var a=s.search(/[\[{]/),b=Math.max(s.lastIndexOf(']'),s.lastIndexOf('}'));return JSON.parse(s.slice(a,b+1))})};
+  return AIX.text(prompt+'\n\nReply with only the JSON value.').then(function(t){var m=t.match(/```(?:json)?\s*([\s\S]*?)```/);var s=m?m[1]:t;var a=s.search(/[\[{]/),b=Math.max(s.lastIndexOf(']'),s.lastIndexOf('}'));var body=s.slice(a,b+1);try{return JSON.parse(body)}catch(e){var objs=[];(body.match(/\{[^{}]*\}/g)||[]).forEach(function(o){try{objs.push(JSON.parse(o))}catch(_){}});if(body.charAt(0)==='['&&objs.length)return objs;throw e}})};
 AIX.agent=function(turns,tools,onStep,onText,signal){
   var wrap=tools.map(function(t){return{name:t.name,description:t.description,inputSchema:t.schema,execute:function(inp){onStep(t.name,inp);try{return t.run(inp||{})}catch(e){return{error:String(e&&e.message||e)}}}}});
   if(AIX.mode==='claude')return AIX.s(turns,{modelTier:'default',tools:wrap,signal:signal,onText:function(u){onText(u.text)}}).then(function(r){return r.text});
