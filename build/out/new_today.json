@@ -1,64 +1,26 @@
 [
  {
-  "id": "EPADS-194175",
-  "title": "Hiring of Website Hosting Services (Pakistan-Based Hosting) for NDRMF for Three (03) Years (No.004/26/IT)",
-  "buyer": "National Disaster Risk Management Fund (NDRMF)",
-  "score": 67,
-  "band": "Pursue",
-  "play": "lead",
-  "sbus": [
-   "Enterprise",
-   "Connectivity"
-  ],
-  "products": [
-   "Garaj Sovereign Cloud (IaaS, Storage, DBaaS)",
-   "Business Internet (DIA) & Hosting"
-  ],
-  "closes": "2026-11-30",
-  "days": 10,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/194175"
- },
- {
-  "id": "EPADS-156516",
-  "title": "Procurement of Group Life Insurance for EOBI Employees for three years",
-  "buyer": "Employee Old Age Benefits Institution (EOBI)",
-  "score": 65,
-  "band": "Pursue",
-  "play": "lead",
-  "sbus": [
-   "Financial"
-  ],
-  "products": [
-   "Embedded Life & Health Insurance (FikrFree, partners)",
-   "JazzSure General Insurance & Bonds"
-  ],
-  "closes": "2026-12-07",
-  "days": 17,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/156516"
- },
- {
-  "id": "EPMS-17276",
-  "title": "Service of Health and Life Insurance Policies at NIBAF-P",
-  "buyer": "State Bank of Pakistan (SBP)",
-  "score": 60,
+  "id": "EPMS-FW0000035562",
+  "title": "Hiring of IT Services",
+  "buyer": "Ministry of Interior",
+  "score": 64,
   "band": "Qualify",
-  "play": "lead",
+  "play": "partner",
   "sbus": [
-   "Financial"
+   "Enterprise"
   ],
   "products": [
-   "Embedded Life & Health Insurance (FikrFree, partners)",
-   "JazzSure General Insurance & Bonds"
+   "Garaj System Integration, DevOps & Managed Services"
   ],
-  "closes": "2026-11-20",
-  "days": 0,
-  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000017276E"
+  "closes": "2026-12-03",
+  "days": 12,
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/FW0000035562E"
  },
  {
-  "id": "EPADS-206928",
-  "title": "FCS/MDR/TE/046/26",
+  "id": "EPMS-33359",
+  "title": "Managed Service: Operations and Management Support For Identity and Acess Management (IAM) For 1 Year",
   "buyer": "Sui Northern Gas (SNGPL)",
-  "score": 56,
+  "score": 59,
   "band": "Qualify",
   "play": "lead",
   "sbus": [
@@ -67,15 +29,15 @@
   "products": [
    "Garaj Security & MSSP"
   ],
-  "closes": "2026-11-30",
-  "days": 10,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/206928"
+  "closes": "2026-12-02",
+  "days": 11,
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000033359E"
  },
  {
-  "id": "EPADS-172911",
-  "title": "ARRANGEMENT OF 12 NO. DESKTOP COMPUTERS FOR PRCL KARACHI",
-  "buyer": "Ministry of Commerce",
-  "score": 50,
+  "id": "EPMS-33517",
+  "title": "Monochrome Laser Multifunction Printers, Color Ink Tank Multifunction Printer and Scanners",
+  "buyer": "Sui Northern Gas (SNGPL)",
+  "score": 55,
   "band": "Qualify",
   "play": "partner",
   "sbus": [
@@ -84,15 +46,15 @@
   "products": [
    "Garaj Hardware Supply"
   ],
-  "closes": "2026-12-01",
+  "closes": "2026-12-02",
   "days": 11,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/172911"
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000033517E"
  },
  {
-  "id": "EPMS-18609",
-  "title": "PROC OF COMPUTERS (BRANDED)",
-  "buyer": "Defence procurement directorates",
-  "score": 46,
+  "id": "EPADS-209244",
+  "title": "Repair of IT Equipments",
+  "buyer": "Federal Board of Revenue (FBR)",
+  "score": 41,
   "band": "Watch",
   "play": "partner",
   "sbus": [
@@ -101,81 +63,13 @@
   "products": [
    "Garaj Hardware Supply"
   ],
-  "closes": "2026-12-08",
-  "days": 18,
-  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000018609E"
- },
- {
-  "id": "EPMS-18627",
-  "title": "ARRANGEMENT OF 12 Nos. DESKTOP COMPUTER FOR PRCL, KARACHI",
-  "buyer": "Pakistan Reinsurance Co.Ltd",
-  "score": 46,
-  "band": "Watch",
-  "play": "partner",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj Hardware Supply"
-  ],
-  "closes": "2026-12-01",
-  "days": 11,
-  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000018627E"
- },
- {
-  "id": "EPADS-207345",
-  "title": "Purchase of 2 x LED TVs for CCTV Survelliance System",
-  "buyer": "Frequency Allocation Board (FAB)",
-  "score": 39,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "IoT Solutions & Smart City"
-  ],
   "closes": "2026-11-23",
-  "days": 3,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/207345"
+  "days": 2,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209244"
  },
  {
-  "id": "EPADS-207897",
-  "title": "CCTV Cameras , etc required for SNGPL Office Abbottabad.RFQ No.ABT/032/26",
-  "buyer": "Sui Northern Gas (SNGPL)",
-  "score": 39,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "IoT Solutions & Smart City"
-  ],
-  "closes": "2026-11-23",
-  "days": 3,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/207897"
- },
- {
-  "id": "EPADS-207783",
-  "title": "Purchase of Printers",
-  "buyer": "WAPDA",
-  "score": 39,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj Hardware Supply"
-  ],
-  "closes": "2026-11-23",
-  "days": 3,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/207783"
- },
- {
-  "id": "EPADS-208158",
-  "title": "Huawei Cloud Engine S5735-L-V2-24 SLA (24 Ports)",
+  "id": "EPADS-209484",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Saadat Ullah Khan, AVP, SAP ID 5664, at Engineering Deptt:, NBP Regional Office, Qta.",
   "buyer": "National Bank of Pakistan (NBP)",
   "score": 39,
   "band": "Watch",
@@ -184,51 +78,269 @@
    "Enterprise"
   ],
   "products": [
-   "Garaj Sovereign Cloud (IaaS, Storage, DBaaS)"
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
   ],
-  "closes": "2026-11-25",
-  "days": 5,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/208158"
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209484"
  },
  {
-  "id": "EPADS-207405",
-  "title": "Procurement of VHF Walkie Talkie Sets with Antenna and Charger (Complete in all respect)",
-  "buyer": "Port authorities (KPT, PQA, GPA)",
-  "score": 38,
+  "id": "EPADS-209454",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Mr. Abdul Saqib Khan, OG-I, SAP ID: 17049, at Security Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
   "band": "Watch",
   "play": "monitor",
   "sbus": [
    "Enterprise"
   ],
   "products": [
-   "IoT Solutions & Smart City"
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
   ],
-  "closes": "2026-11-23",
-  "days": 3,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/207405"
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209454"
  },
  {
-  "id": "EPADS-207471",
-  "title": "Procurement of VHF Walkie Talkie Sets with Antenna and Charger (Complete in all respect)",
-  "buyer": "Port authorities (KPT, PQA, GPA)",
-  "score": 38,
+  "id": "EPADS-209463",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Engr. Zain-ul-Sadiqeen. Farhan, VP, SAP ID 5863, at SS Deptt:, NBP RO, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
   "band": "Watch",
   "play": "monitor",
   "sbus": [
    "Enterprise"
   ],
   "products": [
-   "IoT Solutions & Smart City"
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
   ],
-  "closes": "2026-11-26",
-  "days": 6,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/207471"
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209463"
  },
  {
-  "id": "EPADS-208236",
-  "title": "02 Printers",
-  "buyer": "State Life Insurance Corporation",
-  "score": 33,
+  "id": "EPADS-209475",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Syed Bilal, OG-III, SAP ID 21663, at I.T Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209475"
+ },
+ {
+  "id": "EPADS-209448",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Faisal Tariq, AVP, SAP ID 00016287, at Support Services Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209448"
+ },
+ {
+  "id": "EPADS-209481",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Saeed Ur Rehman, OG-III, SAP ID 5882, at Engineering Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209481"
+ },
+ {
+  "id": "EPADS-209490",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Sami Ur Rehman, VP, SAP ID 33342, at IDG Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209490"
+ },
+ {
+  "id": "EPADS-209457",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Abdul Manan, AVP, SAP ID 5656, at Support Services Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209457"
+ },
+ {
+  "id": "EPADS-209469",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Umair Ajmal, OG-I, SAP ID 5663, at I.T Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209469"
+ },
+ {
+  "id": "EPADS-209478",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Sheraz Khan, OG-I, SAP ID 30930, at I.T Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209478"
+ },
+ {
+  "id": "EPADS-209493",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Faran Ali, OG-I, SAP ID 31908, at RBG Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209493"
+ },
+ {
+  "id": "EPADS-209499",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Muhammad Arif, AVP, SAP ID 29241, at RBG Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209499"
+ },
+ {
+  "id": "EPADS-209496",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Abdul Waheed, OG-III, SAP ID 21897, at RBG Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209496"
+ },
+ {
+  "id": "EPADS-209502",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Syed Salman Ali, SVP, SAP ID 22675, at RBG Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209502"
+ },
+ {
+  "id": "EPADS-209169",
+  "title": "Supply & Installation of Hikvision 2MP cameras 02 No. along with networking cable CAT 6 100m at NBP Satellite Town Branch Quetta Balochistan.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 31,
+  "band": "Low",
+  "play": "monitor",
+  "sbus": [
+   "Connectivity"
+  ],
+  "products": [
+   "Managed Network, NOCaaS & Professional Services"
+  ],
+  "closes": "2026-11-21",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209169"
+ },
+ {
+  "id": "EPADS-209289",
+  "title": "Repair of two laser jet printers at NBP Internal Control Department NBP Regional Office Quetta Cantt Balochistan",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 31,
   "band": "Low",
   "play": "monitor",
   "sbus": [
@@ -238,7 +350,41 @@
    "Garaj Hardware Supply"
   ],
   "closes": "2026-11-21",
-  "days": 1,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/208236"
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209289"
+ },
+ {
+  "id": "EPADS-209271",
+  "title": "Purchase of I.T equipment",
+  "buyer": "Trade Dispute Resolution Organization (TDRO)",
+  "score": 31,
+  "band": "Low",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-11-25",
+  "days": 4,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209271"
+ },
+ {
+  "id": "EPADS-209151",
+  "title": "LAPTOP SED ULTRA 7",
+  "buyer": "National Engineering Services Pakistan (NESPAK)",
+  "score": 25,
+  "band": "Low",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-11-23",
+  "days": 2,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209151"
  }
 ]
