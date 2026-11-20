@@ -1,93 +1,131 @@
 [
  {
-  "id": "EPADS-206019",
-  "title": "FCS/MDR/TE/043/36",
-  "buyer": "Sui Northern Gas (SNGPL)",
-  "score": 56,
-  "band": "Qualify",
+  "id": "EPADS-194175",
+  "title": "Hiring of Website Hosting Services (Pakistan-Based Hosting) for NDRMF for Three (03) Years (No.004/26/IT)",
+  "buyer": "National Disaster Risk Management Fund (NDRMF)",
+  "score": 67,
+  "band": "Pursue",
   "play": "lead",
   "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj Security & MSSP"
-  ],
-  "closes": "2026-11-29",
-  "days": 9,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/206019"
- },
- {
-  "id": "EPADS-206865",
-  "title": "FCS/MDR/TE/044/26",
-  "buyer": "Sui Northern Gas (SNGPL)",
-  "score": 56,
-  "band": "Qualify",
-  "play": "lead",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj Security & MSSP"
-  ],
-  "closes": "2026-11-29",
-  "days": 9,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/206865"
- },
- {
-  "id": "EPADS-206925",
-  "title": "FCS/MDR/TE/045/26",
-  "buyer": "Sui Northern Gas (SNGPL)",
-  "score": 56,
-  "band": "Qualify",
-  "play": "lead",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj Security & MSSP"
-  ],
-  "closes": "2026-11-30",
-  "days": 10,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/206925"
- },
- {
-  "id": "EPADS-135810",
-  "title": "SSGC/LP/EPADS2/PROP/2205370 (SPARES FOR REMOTE MONITORING AND DATA ACQUISITION SYSTEM SOLAR PANELS WITH CABLES MODEL Q-CELL GERMANY MGP-30)",
-  "buyer": "Sui Southern Gas (SSGC)",
-  "score": 56,
-  "band": "Qualify",
-  "play": "lead",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Quantica Infinity IoT Platform & LoRaWAN"
-  ],
-  "closes": "2026-11-30",
-  "days": 10,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/135810"
- },
- {
-  "id": "EPMS-18194",
-  "title": "T-4270-FA-REQ-1126-2-00048-RENEWAL OF CISCO SMARTNET SERVICES",
-  "buyer": "Pakistan Security Printing Corporaion (PSPC) Pakistan Security Printing Corporation (PSPC)",
-  "score": 49,
-  "band": "Watch",
-  "play": "lead",
-  "sbus": [
+   "Enterprise",
    "Connectivity"
   ],
   "products": [
-   "Managed Network, NOCaaS & Professional Services"
+   "Garaj Sovereign Cloud (IaaS, Storage, DBaaS)",
+   "Business Internet (DIA) & Hosting"
   ],
   "closes": "2026-11-30",
   "days": 10,
-  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000018194E"
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/194175"
  },
  {
-  "id": "EPADS-206937",
-  "title": "Purchase of Heavy-Gauge Iron Pipes, 20 Feet in Length, with 5kg Barchi for Making a security grill at PSV MIS Office",
-  "buyer": "National Highways & Motorway Police (NHMP)",
+  "id": "EPADS-156516",
+  "title": "Procurement of Group Life Insurance for EOBI Employees for three years",
+  "buyer": "Employee Old Age Benefits Institution (EOBI)",
+  "score": 65,
+  "band": "Pursue",
+  "play": "lead",
+  "sbus": [
+   "Financial"
+  ],
+  "products": [
+   "Embedded Life & Health Insurance (FikrFree, partners)",
+   "JazzSure General Insurance & Bonds"
+  ],
+  "closes": "2026-12-07",
+  "days": 17,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/156516"
+ },
+ {
+  "id": "EPMS-17276",
+  "title": "Service of Health and Life Insurance Policies at NIBAF-P",
+  "buyer": "State Bank of Pakistan (SBP)",
+  "score": 60,
+  "band": "Qualify",
+  "play": "lead",
+  "sbus": [
+   "Financial"
+  ],
+  "products": [
+   "Embedded Life & Health Insurance (FikrFree, partners)",
+   "JazzSure General Insurance & Bonds"
+  ],
+  "closes": "2026-11-20",
+  "days": 0,
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000017276E"
+ },
+ {
+  "id": "EPADS-206928",
+  "title": "FCS/MDR/TE/046/26",
+  "buyer": "Sui Northern Gas (SNGPL)",
+  "score": 56,
+  "band": "Qualify",
+  "play": "lead",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Security & MSSP"
+  ],
+  "closes": "2026-11-30",
+  "days": 10,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/206928"
+ },
+ {
+  "id": "EPADS-172911",
+  "title": "ARRANGEMENT OF 12 NO. DESKTOP COMPUTERS FOR PRCL KARACHI",
+  "buyer": "Ministry of Commerce",
+  "score": 50,
+  "band": "Qualify",
+  "play": "partner",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-12-01",
+  "days": 11,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/172911"
+ },
+ {
+  "id": "EPMS-18609",
+  "title": "PROC OF COMPUTERS (BRANDED)",
+  "buyer": "Defence procurement directorates",
+  "score": 46,
+  "band": "Watch",
+  "play": "partner",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-12-08",
+  "days": 18,
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000018609E"
+ },
+ {
+  "id": "EPMS-18627",
+  "title": "ARRANGEMENT OF 12 Nos. DESKTOP COMPUTER FOR PRCL, KARACHI",
+  "buyer": "Pakistan Reinsurance Co.Ltd",
+  "score": 46,
+  "band": "Watch",
+  "play": "partner",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-12-01",
+  "days": 11,
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000018627E"
+ },
+ {
+  "id": "EPADS-207345",
+  "title": "Purchase of 2 x LED TVs for CCTV Survelliance System",
+  "buyer": "Frequency Allocation Board (FAB)",
   "score": 39,
   "band": "Watch",
   "play": "monitor",
@@ -95,34 +133,102 @@
    "Enterprise"
   ],
   "products": [
-   "Garaj System Integration, DevOps & Managed Services"
+   "IoT Solutions & Smart City"
   ],
-  "closes": "2026-11-20",
-  "days": 0,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/206937"
+  "closes": "2026-11-23",
+  "days": 3,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/207345"
  },
  {
-  "id": "EPADS-206862",
-  "title": "Repair of Laser Jet Printer, installation of network cable and wifi routers etc.",
-  "buyer": "Federal Public Service Commission (FPSC)",
-  "score": 28,
-  "band": "Low",
+  "id": "EPADS-207897",
+  "title": "CCTV Cameras , etc required for SNGPL Office Abbottabad.RFQ No.ABT/032/26",
+  "buyer": "Sui Northern Gas (SNGPL)",
+  "score": 39,
+  "band": "Watch",
   "play": "monitor",
   "sbus": [
-   "Connectivity"
+   "Enterprise"
   ],
   "products": [
-   "SD-WAN, Managed Wi-Fi & Office-in-a-Box"
+   "IoT Solutions & Smart City"
   ],
-  "closes": "2026-11-20",
-  "days": 0,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/206862"
+  "closes": "2026-11-23",
+  "days": 3,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/207897"
  },
  {
-  "id": "EPADS-207147",
-  "title": "Repair of Laptops",
-  "buyer": "Pakistan Bureau of Statistics (PBS)",
-  "score": 23,
+  "id": "EPADS-207783",
+  "title": "Purchase of Printers",
+  "buyer": "WAPDA",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-11-23",
+  "days": 3,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/207783"
+ },
+ {
+  "id": "EPADS-208158",
+  "title": "Huawei Cloud Engine S5735-L-V2-24 SLA (24 Ports)",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Sovereign Cloud (IaaS, Storage, DBaaS)"
+  ],
+  "closes": "2026-11-25",
+  "days": 5,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/208158"
+ },
+ {
+  "id": "EPADS-207405",
+  "title": "Procurement of VHF Walkie Talkie Sets with Antenna and Charger (Complete in all respect)",
+  "buyer": "Port authorities (KPT, PQA, GPA)",
+  "score": 38,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "IoT Solutions & Smart City"
+  ],
+  "closes": "2026-11-23",
+  "days": 3,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/207405"
+ },
+ {
+  "id": "EPADS-207471",
+  "title": "Procurement of VHF Walkie Talkie Sets with Antenna and Charger (Complete in all respect)",
+  "buyer": "Port authorities (KPT, PQA, GPA)",
+  "score": 38,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "IoT Solutions & Smart City"
+  ],
+  "closes": "2026-11-26",
+  "days": 6,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/207471"
+ },
+ {
+  "id": "EPADS-208236",
+  "title": "02 Printers",
+  "buyer": "State Life Insurance Corporation",
+  "score": 33,
   "band": "Low",
   "play": "monitor",
   "sbus": [
@@ -131,8 +237,8 @@
   "products": [
    "Garaj Hardware Supply"
   ],
-  "closes": "2026-11-20",
-  "days": 0,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/207147"
+  "closes": "2026-11-21",
+  "days": 1,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/208236"
  }
 ]
