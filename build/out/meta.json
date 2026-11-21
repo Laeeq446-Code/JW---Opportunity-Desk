@@ -3,22 +3,22 @@
   "EPADS": {
    "name": "EPADS 2.0 federal e-procurement",
    "url": "https://epads.gov.pk",
-   "pulled": "2026-11-20T21:00:09.000Z",
-   "rows": 1299,
+   "pulled": "2026-11-21T12:25:09.000Z",
+   "rows": 1317,
    "note": "Every open federal procurement on the public board (10 listing pages)."
   },
   "EPMS": {
    "name": "PPRA EPMS active tenders",
    "url": "https://epms.ppra.gov.pk/public/tenders/active-tenders",
-   "pulled": "2026-11-20T21:01:40.000Z",
-   "rows": 1976,
+   "pulled": "2026-11-21T12:26:39.000Z",
+   "rows": 1986,
    "note": "Every active federal tender notice on the PPRA board (38 listing pages)."
   },
   "WB": {
    "name": "World Bank procurement notices API (Pakistan)",
    "url": "https://search.worldbank.org/api/v2/procnotices?format=json&project_ctry_name_exact=Pakistan",
-   "pulled": "2026-11-20T21:01:47.000Z",
-   "rows": 20,
+   "pulled": "2026-11-21T12:26:51.000Z",
+   "rows": 25,
    "note": "Last 600 Pakistan notices read; open ones kept, ICT-related closed ones kept as history."
   },
   "PITB": {
@@ -36,24 +36,24 @@
    "note": "Federal tenders captured by the earlier Tender Desk scans. Used for demand history and renewal timing only."
   }
  },
- "dups_removed": 345,
+ "dups_removed": 354,
  "scan": {
-  "at": "2026-11-20T20:59:33.000Z",
+  "at": "2026-11-21T12:24:34.000Z",
   "sources": {
    "epads": {
     "ok": true,
-    "rows": 1299,
+    "rows": 1317,
     "secs": 35
    },
    "epms": {
     "ok": true,
-    "rows": 1976,
-    "secs": 91
+    "rows": 1986,
+    "secs": 90
    },
    "wb": {
     "ok": true,
-    "rows": 20,
-    "secs": 8
+    "rows": 25,
+    "secs": 12
    },
    "pitb": {
     "ok": false,
@@ -62,12 +62,12 @@
    },
    "news": {
     "ok": true,
-    "rows": 277,
-    "secs": 18
+    "rows": 263,
+    "secs": 17
    }
   }
  },
  "today": "2026-11-21",
- "open_total": 2956,
- "hist_total": 3873
+ "open_total": 2980,
+ "hist_total": 3874
 }
