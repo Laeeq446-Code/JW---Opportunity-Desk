@@ -1,1 +1,71 @@
-[]
+[
+ {
+  "id": "EPADS-208566",
+  "title": "Purchase of Computer Hardware & IT Equipment",
+  "buyer": "Federal Ombudsman offices",
+  "score": 53,
+  "band": "Qualify",
+  "play": "partner",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-12-07",
+  "days": 15,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/208566"
+ },
+ {
+  "id": "EPADS-209487",
+  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Miss Kaneez Fatima, OG-III, SAP ID 31793, at HR Deptt:, NBP Regional Office, Qta.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply",
+   "Garaj System Integration, DevOps & Managed Services"
+  ],
+  "closes": "2026-11-23",
+  "days": 1,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209487"
+ },
+ {
+  "id": "EPADS-209940",
+  "title": "Montelukast Tablets (IH)",
+  "buyer": "Public universities and boards",
+  "score": 28,
+  "band": "Low",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-11-23",
+  "days": 1,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209940"
+ },
+ {
+  "id": "EPADS-209934",
+  "title": "Ecitalopram Tablets (IH)",
+  "buyer": "Public universities and boards",
+  "score": 25,
+  "band": "Low",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-11-23",
+  "days": 1,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/209934"
+ }
+]
