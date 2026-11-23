@@ -3,30 +3,30 @@
   "EPADS": {
    "name": "EPADS 2.0 federal e-procurement",
    "url": "https://epads.gov.pk",
-   "pulled": "2026-11-22T20:16:40.000Z",
-   "rows": 1316,
+   "pulled": "2026-11-23T14:20:42.000Z",
+   "rows": 1192,
    "note": "Every open federal procurement on the public board (10 listing pages)."
   },
   "EPMS": {
    "name": "PPRA EPMS active tenders",
    "url": "https://epms.ppra.gov.pk/public/tenders/active-tenders",
-   "pulled": "2026-11-22T20:18:02.000Z",
-   "rows": 1793,
+   "pulled": "2026-11-23T14:21:58.000Z",
+   "rows": 1898,
    "note": "Every active federal tender notice on the PPRA board (38 listing pages)."
   },
   "WB": {
    "name": "World Bank procurement notices API (Pakistan)",
    "url": "https://search.worldbank.org/api/v2/procnotices?format=json&project_ctry_name_exact=Pakistan",
-   "pulled": "2026-11-22T20:18:10.000Z",
+   "pulled": "2026-11-23T14:22:05.000Z",
    "rows": 25,
    "note": "Last 600 Pakistan notices read; open ones kept, ICT-related closed ones kept as history."
   },
   "PITB": {
    "name": "Punjab Information Technology Board (PITB) tender notices",
    "url": "https://pitb.gov.pk/tendernotices",
-   "pulled": "2026-11-19T12:48:23.000Z",
-   "rows": 6,
-   "note": "451 notices read back to 2023-11-03; closed ones kept as history."
+   "pulled": "2026-11-23T14:22:11.000Z",
+   "rows": 10,
+   "note": "457 notices read back to 2023-11-03; closed ones kept as history."
   },
   "EPMS-H": {
    "name": "PPRA EPMS history (Tender Desk scans, Feb to Jul 2026)",
@@ -36,38 +36,38 @@
    "note": "Federal tenders captured by the earlier Tender Desk scans. Used for demand history and renewal timing only."
   }
  },
- "dups_removed": 357,
+ "dups_removed": 354,
  "scan": {
-  "at": "2026-11-22T20:16:05.000Z",
+  "at": "2026-11-23T14:20:11.000Z",
   "sources": {
    "epads": {
     "ok": true,
-    "rows": 1316,
-    "secs": 35
+    "rows": 1192,
+    "secs": 31
    },
    "epms": {
     "ok": true,
-    "rows": 1793,
-    "secs": 82
+    "rows": 1898,
+    "secs": 76
    },
    "wb": {
     "ok": true,
     "rows": 25,
-    "secs": 9
+    "secs": 7
    },
    "pitb": {
-    "ok": false,
-    "error": "HTTPSConnectionPool(host='pitb.gov.pk', port=443): Max retries exceeded with url: /tendernotices (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1018)')))",
-    "secs": 1
+    "ok": true,
+    "rows": 457,
+    "secs": 6
    },
    "news": {
     "ok": true,
-    "rows": 259,
-    "secs": 19
+    "rows": 256,
+    "secs": 18
    }
   }
  },
  "today": "2026-11-23",
- "open_total": 2783,
- "hist_total": 3874
+ "open_total": 2771,
+ "hist_total": 3876
 }
