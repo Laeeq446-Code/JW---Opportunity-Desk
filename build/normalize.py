@@ -205,6 +205,24 @@ for key, src, buyer, home in [("pitb", "PITB", "Punjab Information Technology Bo
             out_open.append(rec); n_open += 1
         else:
             out_hist.append(rec)
+    # An addendum, corrigendum or extension replaces the notice it amends: one row, the later closing date.
+    AMD = re.compile(r"^(addendum|corrigendum|extension|revised|amendment)( no\.? ?\d+)?\s*[-:–]?\s*", re.I)
+    mine = [r for r in out_open if r["s"] == src]
+    base = {}
+    for r in mine:
+        if not AMD.match(r["t"]):
+            base.setdefault(AMD.sub("", r["t"]).lower().strip(), r)
+    for r in mine:
+        if AMD.match(r["t"]):
+            k = AMD.sub("", r["t"]).lower().strip()
+            b0 = base.get(k)
+            if b0 is not None and b0 is not r:
+                if (r.get("cl") or "") > (b0.get("cl") or ""):
+                    b0["cl"] = r["cl"]
+                b0["st"] = (b0.get("st") or "") + ("" if "C" in (b0.get("st") or "") else "C")
+                b0["amend"] = r["u"]
+                r["dup"] = b0["id"]; n_open -= 1
+    out_open[:] = [r for r in out_open if not (r["s"] == src and "dup" in r)]
     meta["sources"][src] = {"name": buyer + " tender notices", "url": home, "pulled": q["now"], "rows": n_open,
                            "note": f"{len(q['rows'])} notices read back to {min(r[2] for r in q['rows'] if r[2])}; closed ones kept as history."}
 
@@ -276,8 +294,118 @@ for bn, rows in by_buyer.items():
                     q["cl_other"] = r.get("cl")
                 if not q.get("d") and r.get("d"): q["d"] = r["d"]
                 break
+# Third pass: the pairs the first two miss. The same notice is often posted on EPADS and on EPMS with a
+# reworded title ("NGFW" and "NG Firewalls"), a parent body as buyer on one portal ("Power Division" for
+# QESCO), or a closing date extended on one portal only. A pair is merged when the buyers are compatible,
+# the closing dates are within 21 days, and either the titles are near-identical, or one title is contained
+# in the other and the closing date and time are the same. The EPADS row is kept.
+SYN = {"ngfw": "firewall", "firewalls": "firewall", "ng": "", "acess": "access", "procumrement": "", "rocurement": "",
+       "laptops": "laptop", "computers": "computer", "switches": "switch", "licenses": "license", "licences": "license",
+       "licence": "license", "services": "", "service": "", "nos": "", "qty": "", "lot": "", "items": "", "item": ""}
+UMBRELLA = re.compile(r"^(power division|ministry of|federal government|government of|cabinet division|petroleum division|finance division|establishment division|aviation division|defence production)", re.I)
+BSTOP = set("of the and for pakistan limited ltd pvt private company co corporation authority department directorate office government".split())
+
+
+def tset(t):
+    t = re.sub(r"[\w.]+(?:/[\w.\-]+)+", " ", (t or "").lower())  # reference codes such as SSGC/LP/EPADS2/PT/2181291
+    w = re.sub(r"[^a-z0-9 ]", " ", t).split()
+    out = set()
+    for x in w:
+        x = SYN.get(x, x)
+        if not x or x in STOP or any(c.isdigit() for c in x) or len(x) < 2:
+            continue
+        out.add(x[:-1] if len(x) > 4 and x.endswith("s") and not x.endswith("ss") else x)
+    return frozenset(out)
+
+
+def grams(t):
+    z = " ".join(sorted(t))
+    return {z[i:i + 3] for i in range(max(0, len(z) - 2))}
+
+
+def bset(b):
+    return frozenset(x for x in re.sub(r"[^a-z0-9 ]", " ", (b or "").lower()).split() if x not in BSTOP and len(x) > 1)
+
+
+def buyers_compatible(a, b):
+    """True, False, or "umbrella" when one side is a parent ministry or division and the other is not."""
+    if not a or not b:
+        return True
+    ua, ub = bool(UMBRELLA.match(a)), bool(UMBRELLA.match(b))
+    A, B = bset(a), bset(b)
+    if ua and ub:
+        return A == B
+    if ua or ub:
+        return "umbrella"
+    if not A or not B:
+        return True
+    ab = lambda s: set(re.findall(r"\(([A-Za-z]{2,8})\)", s))
+    if ab(a) & ab(b):
+        return True
+    return len(A & B) / len(A | B) >= 0.34 or A <= B or B <= A
+
+
+def day_gap(x, y):
+    try:
+        return abs((datetime.fromisoformat(x[:10]) - datetime.fromisoformat(y[:10])).days)
+    except Exception:
+        return 99
+
+
+live = [r for r in out_open if "dup" not in r]
+ep3 = [r for r in live if r["s"] == "EPADS" and not r.get("also")]
+for r in ep3:
+    r["_t"] = tset(r["t"]); r["_g"] = grams(r["_t"])
+for r in [x for x in live if x["s"] == "EPMS"]:
+    rt = tset(r["t"])
+    if len(rt) < 2:
+        continue
+    rg = grams(rt)
+    best, bs = None, 0.0
+    for q in ep3:
+        if q.get("also") or not r.get("cl") or not q.get("cl"):
+            continue
+        gap = day_gap(r["cl"], q["cl"])
+        if gap > 21 or (r.get("cat") and q.get("cat") and r["cat"] != q["cat"]):
+            continue
+        bc = buyers_compatible(r.get("bn", ""), q.get("bn", ""))
+        if not bc:
+            continue
+        qt = q["_t"]
+        same_raw = re.sub(r"[^a-z0-9]", "", r["t"].lower()) == re.sub(r"[^a-z0-9]", "", q["t"].lower())
+        if same_raw and gap <= 7:
+            best, bs = q, 1.0
+            break
+        if len(qt) < 2:
+            continue
+        if bc == "umbrella":
+            # a parent ministry on one portal: only an identical title within a week counts
+            if rt == qt and len(rt) >= 3 and gap <= 7 and 1.0 > bs:
+                best, bs = q, 1.0
+            continue
+        jac = len(rt & qt) / len(rt | qt)
+        tri = len(rg & q["_g"]) / len(rg | q["_g"]) if rg and q["_g"] else 0
+        same_close = (r["cl"] or "")[:16] == (q["cl"] or "")[:16] and len(r["cl"]) > 10
+        small, big = (rt, qt) if len(rt) <= len(qt) else (qt, rt)
+        contained = len(small) >= 2 and small <= big
+        sc = 0.0
+        if rt == qt or tri >= 0.9:
+            sc = 1.0
+        elif (jac >= 0.6 or tri >= 0.62) and gap <= 7:
+            sc = 0.8
+        elif contained and same_close:
+            sc = 0.75
+        if sc > bs:
+            best, bs = q, sc
+    if best is not None and bs >= 0.7:
+        best["also"] = r["u"]; r["dup"] = best["id"]; dups += 1
+        if (r.get("cl") or "")[:10] != (best.get("cl") or "")[:10]:
+            best["cl_other"] = r.get("cl")
+        if not best.get("d") and r.get("d"): best["d"] = r["d"]
+        if not best.get("sec") and r.get("sec"): best["sec"] = r["sec"]
+        if r.get("intl"): best["intl"] = 1
 for r in out_open:
-    r.pop("_k", None)
+    r.pop("_k", None); r.pop("_t", None); r.pop("_g", None)
 out_open = [r for r in out_open if "dup" not in r]
 meta["dups_removed"] = dups
 sl = load("scan_log")
