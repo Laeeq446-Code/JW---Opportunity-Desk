@@ -3,29 +3,29 @@
   "EPADS": {
    "name": "EPADS 2.0 federal e-procurement",
    "url": "https://epads.gov.pk",
-   "pulled": "2026-11-23T14:20:42.000Z",
-   "rows": 1192,
+   "pulled": "2026-11-24T05:50:59.000Z",
+   "rows": 1201,
    "note": "Every open federal procurement on the public board (10 listing pages)."
   },
   "EPMS": {
    "name": "PPRA EPMS active tenders",
    "url": "https://epms.ppra.gov.pk/public/tenders/active-tenders",
-   "pulled": "2026-11-23T14:21:58.000Z",
-   "rows": 1898,
+   "pulled": "2026-11-24T05:52:32.000Z",
+   "rows": 1865,
    "note": "Every active federal tender notice on the PPRA board (38 listing pages)."
   },
   "WB": {
    "name": "World Bank procurement notices API (Pakistan)",
    "url": "https://search.worldbank.org/api/v2/procnotices?format=json&project_ctry_name_exact=Pakistan",
-   "pulled": "2026-11-23T14:22:05.000Z",
-   "rows": 25,
+   "pulled": "2026-11-24T05:52:40.000Z",
+   "rows": 20,
    "note": "Last 600 Pakistan notices read; open ones kept, ICT-related closed ones kept as history."
   },
   "PITB": {
    "name": "Punjab Information Technology Board (PITB) tender notices",
    "url": "https://pitb.gov.pk/tendernotices",
-   "pulled": "2026-11-23T14:22:11.000Z",
-   "rows": 10,
+   "pulled": "2026-11-24T05:52:46.000Z",
+   "rows": 8,
    "note": "457 notices read back to 2023-11-03; closed ones kept as history."
   },
   "EPMS-H": {
@@ -36,38 +36,38 @@
    "note": "Federal tenders captured by the earlier Tender Desk scans. Used for demand history and renewal timing only."
   }
  },
- "dups_removed": 354,
+ "dups_removed": 404,
  "scan": {
-  "at": "2026-11-23T14:20:11.000Z",
+  "at": "2026-11-24T05:50:26.000Z",
   "sources": {
    "epads": {
     "ok": true,
-    "rows": 1192,
-    "secs": 31
+    "rows": 1201,
+    "secs": 33
    },
    "epms": {
     "ok": true,
-    "rows": 1898,
-    "secs": 76
+    "rows": 1865,
+    "secs": 92
    },
    "wb": {
     "ok": true,
-    "rows": 25,
-    "secs": 7
+    "rows": 20,
+    "secs": 8
    },
    "pitb": {
     "ok": true,
     "rows": 457,
-    "secs": 6
+    "secs": 7
    },
    "news": {
     "ok": true,
-    "rows": 256,
-    "secs": 18
+    "rows": 298,
+    "secs": 19
    }
   }
  },
- "today": "2026-11-23",
- "open_total": 2771,
- "hist_total": 3876
+ "today": "2026-11-24",
+ "open_total": 2690,
+ "hist_total": 3882
 }
