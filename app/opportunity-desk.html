@@ -238,6 +238,11 @@ h2{font-size:19px;line-height:1.35}.section .lead{margin-top:4px}
 .card.click{cursor:pointer}.card.click:hover{border-color:var(--ink-3)}
 .note-list{margin:0;padding-left:18px;color:var(--ink-3);font-size:12.5px;display:flex;flex-direction:column;gap:3px;max-width:90ch}
 .ai-tag{font-weight:600;letter-spacing:.03em}
+.segs{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
+.seg{border:0;border-left:1px solid var(--line);background:none;text-align:left;padding:12px 14px;display:flex;flex-direction:column;gap:3px;cursor:pointer;min-width:0;color:var(--ink)}.seg:first-child{border-left:0}
+.seg b{font:600 22px/1.1 var(--f-head);font-variant-numeric:tabular-nums}.seg span{font-size:12.5px;color:var(--ink-2)}.seg:hover{background:var(--sunk)}
+.seg[aria-pressed="true"]{background:var(--ink);color:var(--surface)}.seg[aria-pressed="true"] span{color:var(--surface)}.seg-ai[aria-pressed="true"]{background:var(--ai)}
+@media (max-width:900px){.segs{grid-template-columns:repeat(2,minmax(0,1fr))}.seg{border-left:0;border-top:1px solid var(--line)}.seg:nth-child(-n+2){border-top:0}.seg:nth-child(even){border-left:1px solid var(--line)}}
 @media (prefers-reduced-motion:no-preference){.sheet{animation:in .18s ease-out}@keyframes in{from{transform:translateX(24px);opacity:.6}}}
 </style>
 
@@ -319,7 +324,7 @@ var st={view:'overview',mj:'',msec:'',mp:'',rd:'',lens:'all',q:'',show:'rel',ban
 st.lens='all';
 function save(){ls('jwod',JSON.stringify({lens:st.lens}))}
 var LENSHASH={sales:'all',connectivity:'conn',enterprise:'ent',financial:'fin',platforms:'plat'};
-var VIEWS=[['overview','Today'],['desk','Tenders'],['buyers','Buyers'],['pipeline','Pipeline'],['market','Market'],['notes','Briefs'],['ask','Ask AI'],['method','Method']];
+var VIEWS=[['overview','Opportunities'],['pipeline','Pipeline'],['buyers','Buyers'],['desk','All tenders'],['market','Market'],['notes','Briefs'],['ask','Ask AI'],['method','Method']];
 function lensName(){return st.lens==='all'?'Institutional Sales':SB[st.lens].name}
 function lensShort(){return st.lens==='all'?'JazzWorld':SB[st.lens].short}
 function inLens(x){var r=x.r;if(st.lens==='all')return true;if(r.sbus.indexOf(st.lens)>=0)return true;return st.attach&&r.attach.indexOf(st.lens)>=0}
@@ -396,7 +401,7 @@ function rowHtml(x){var t=x.t,r=x.r,d=TEAM.dec[t.id],tags=[];
   if(isNew(t))tags.push('<span class="tag new">New</span>');
   if(r.rel&&srcBadge(r))tags.push(srcBadge(r));
   tags.push(h(r.account.name));
-  if(r.rel)tags.push(PLAYL[r.play]);tags.push(h(SRC[t.s]||t.s));
+  if(r.rel)tags.push(PLAYL[r.play]);tags.push(h(SRC[t.s]||t.s));if(t.pub)tags.push('Published '+h(fmtD(t.pub)));
   if(r.rel&&r.preds.length)tags.push('<span class="tag fc">Forecast match</span>');else if(r.rel&&r.sigs.length)tags.push('<span class="tag fc">Signal-backed</span>');
   if(st.lens==='all'&&r.rel&&MULTIACC[akey(r.account,t)])tags.push(MULTIACC[akey(r.account,t)].nsb+' SBUs at this buyer');
   if(d)tags.push('<b>'+h(DECL[d.status]||d.status)+'</b>'+(d.owner?' &middot; '+h(d.owner):''));
@@ -568,25 +573,32 @@ function funnel(){if(!M)return null;var rel=M.detail,bid=rel.filter(function(d){
   var live=MR.filter(function(r){return r.src>0}).length;return{total:MR.length,rel:rel.length,bid:bid.length,buyers:Object.keys(orgs).length,live:live,base:MR.length-live}}
 var WB={status:'',text:''};
 function kpi(k){return'<div class="kpi"><b>'+k[0]+'</b><span>'+k[1]+'</span></div>'}
-function scanTxt(){var sc=D.meta.scan;if(!sc)return fmtDY(pulled);var pk=new Date(new Date(sc.at).getTime()+5*3600e3);return fmtDY(pk.toISOString())+', '+pk.toISOString().slice(11,16)+' PKT'}
-/* Today: the Institutional Sales start page. Everything on it is counted from the live tenders, by rule. */
+function pkt(iso){var d=new Date(new Date(iso).getTime()+5*3600e3);return{day:fmtDY(d.toISOString()),hm:d.toISOString().slice(11,16)}}
+function scanTxt(){var sc=D.meta.scan;if(!sc)return fmtDY(pulled);var p=pkt(sc.at);return p.day+', '+p.hm+' PKT'}
+/* scans are scheduled at 08:17 to 18:17 PKT every two hours (GitHub may start them late) */
+function nextScan(){var now=new Date(Date.now()+5*3600e3),h=now.getUTCHours(),m=now.getUTCMinutes(),slots=[8,10,12,14,16,18];for(var i=0;i<slots.length;i++){if(h<slots[i]||(h===slots[i]&&m<17))return'today '+('0'+slots[i]).slice(-2)+':17'}return'tomorrow 08:17'}
+var OSEG=[['all','Open opportunities'],['bid','Worth a bid'],['week','Close within 7 days'],['fresh','Published in the last 2 days'],['multi','Buyers asking across SBUs'],['ai','Found only by AI']];
+function inSeg(x,k){var r=x.r,t=x.t;if(k==='bid')return r.score>=50;if(k==='week')return r.days!=null&&r.days<=7;if(k==='fresh')return!!t.pub&&t.pub>=iso(-2);if(k==='multi')return r.sbus.length>1||!!MULTIACC[akey(r.account,t)];if(k==='ai')return r.source==='ai';return true}
+function oppList(){var seg=st.oseg||'all',q=st.q.trim().toLowerCase(),so=st.osort||'score';
+  var list=LIVE.filter(function(x){if(!x.r.rel||!inSeg(x,seg))return false;if(st.osbu&&x.r.sbus.indexOf(st.osbu)<0)return false;if(q&&((x.t.t||'')+' '+(x.t.bn||'')+' '+(x.t.b||'')+' '+(x.t.ref||'')).toLowerCase().indexOf(q)<0)return false;return true});
+  list.sort(so==='close'?function(a,b){return(a.r.days==null?9999:a.r.days)-(b.r.days==null?9999:b.r.days)||b.r.score-a.r.score}:so==='pub'?function(a,b){return(b.t.pub||'').localeCompare(a.t.pub||'')||b.r.score-a.r.score}:function(a,b){return b.r.score-a.r.score||(a.r.days||0)-(b.r.days||0)});
+  return list}
+/* Opportunities: every open tender that asks for a JazzWorld product, in one list. The tiles count and filter it. */
 function vOverview(){
-  var rel=LIVE.filter(function(x){return x.r.rel}),hot=rel.filter(function(x){return x.r.score>=50}),soon=hot.filter(function(x){return x.r.days!=null&&x.r.days<=7}),nw=rel.filter(function(x){return isNew(x.t)});
+  var seg=st.oseg||'all',so=st.osort||'score',rel=LIVE.filter(function(x){return x.r.rel});
+  var cnt={};OSEG.forEach(function(s){cnt[s[0]]=rel.filter(function(x){return inSeg(x,s[0])}).length});
+  var list=oppList();
   var srcs={};LIVE.forEach(function(x){srcs[SRC[x.t.s]||x.t.s]=1});var sl=Object.keys(srcs),srcTxt=sl.length>1?sl.slice(0,-1).join(', ')+' and '+sl[sl.length-1]:sl.join('');
-  var html='<div class="section"><div><h2>'+n(rel.length)+' open tenders ask for a JazzWorld product. '+n(hot.length)+' are worth a bid; '+n(soon.length)+' of those close within a week.</h2>'+
-    '<p class="lead">Read from '+n(LIVE.length)+' open tenders on '+h(srcTxt)+'. A notice posted on two portals is counted once. Last scan '+h(scanTxt())+'.</p></div>'+
-    '<div class="kpis">'+[[n(LIVE.length),'open tenders read'],[n(rel.length),'ask for a JazzWorld product'],[n(hot.length),'score Pursue or Qualify'],[n(soon.length),'of those close within 7 days'],[n(nw.length),'new in the latest scan']].map(kpi).join('')+'</div></div>';
-  var next=hot.slice().sort(function(a,b){return(a.r.days==null?999:a.r.days)-(b.r.days==null?999:b.r.days)||b.r.score-a.r.score}).slice(0,8);
-  html+='<div class="section"><div class="sec-head"><div><h2>Bid next</h2><p class="lead">Tenders that score Pursue or Qualify, nearest deadline first.</p></div><span style="flex:1"></span><button class="btn btn-sm" data-view="desk">All tenders</button></div>'+
-    '<div class="list">'+(next.length?next.map(rowHtml).join(''):'<div class="empty">No open tender scores Pursue or Qualify today.</div>')+'</div></div>';
-  if(nw.length){var fresh=nw.slice().sort(function(a,b){return b.r.score-a.r.score}).slice(0,6);
-    html+='<div class="section"><div class="sec-head"><div><h2>New in the latest scan</h2><p class="lead">'+n(nw.length)+' relevant tender'+(nw.length===1?'':'s')+' first seen in the scan of '+h(scanTxt())+', highest score first.</p></div></div><div class="list">'+fresh.map(rowHtml).join('')+'</div></div>'}
-  var multi=Object.keys(MULTIACC).map(function(k){return MULTIACC[k]}).sort(function(a,b){return b.nsb-a.nsb||b.rows.length-a.rows.length||b.best-a.best}).slice(0,6);
-  if(multi.length)html+='<div class="section"><div class="sec-head"><div><h2>Buyers asking across SBUs</h2><p class="lead">Each of these buyers has live tenders for products from more than one SBU. One account conversation can carry all of them.</p></div><span style="flex:1"></span><button class="btn btn-sm" data-view="buyers">All buyers</button></div><div class="cards">'+
-    multi.map(function(o){return'<div class="card click" data-acc="'+h(o.k)+'"><h3>'+h(o.name)+'</h3><p class="mute">'+o.rows.length+' live tender'+(o.rows.length===1?'':'s')+', best score '+o.best+(o.renew?', '+o.renew+' renewal'+(o.renew===1?'':'s')+' due':'')+'</p><div class="chips">'+SBK.filter(function(s){return o.sb[s]}).map(function(s){return'<span class="chip '+s+'">'+h(SB[s].short)+' '+o.sb[s]+'</span>'}).join('')+'</div></div>'}).join('')+'</div></div>';
-  var f=funnel();if(f){var wd=WORKDAYS,pd=function(v){return(v/wd).toFixed(v/wd<10?1:0)};
-    html+='<div class="section"><div class="sec-head"><div><h2>2026 so far: '+n(f.total)+' public tenders, '+n(f.rel)+' asking for a JazzWorld product</h2>'+
-      '<p class="lead">'+h(mktSpan())+', '+wd+' working days: about '+pd(f.total)+' tenders a working day, '+pd(f.rel)+' of them relevant. '+n(f.base)+' come from the Teknosys export to 14 October and '+n(f.live)+' from the daily scans since. The count grows with every scan.</p></div><span style="flex:1"></span><button class="btn btn-sm" data-view="market">Market</button></div></div>'}
+  var html='<div class="section"><div class="sec-head"><div><h2>'+n(cnt.all)+' open tenders ask for a JazzWorld product</h2>'+
+    '<p class="lead">Screened from the '+n(LIVE.length)+' tenders still open on '+h(srcTxt)+'. Last scan '+h(scanTxt())+'; next scan '+nextScan()+' PKT.</p></div></div>'+
+    '<div class="segs" role="group" aria-label="Filter the list">'+OSEG.map(function(s){return'<button class="seg'+(s[0]==='ai'?' seg-ai':'')+'" data-oseg="'+s[0]+'" aria-pressed="'+(seg===s[0])+'"><b>'+n(cnt[s[0]])+'</b><span>'+(s[0]==='ai'?AITAG+' ':'')+h(s[1])+'</span></button>'}).join('')+'</div>'+
+    '<div class="toolbar"><input type="search" id="f-q" placeholder="Search title, buyer or reference" value="'+h(st.q)+'" aria-label="Search">'+
+    '<select id="o-sbu" aria-label="SBU">'+opt('','All SBUs',st.osbu||'')+SBK.map(function(s){return opt(s,SB[s].name,st.osbu||'')}).join('')+'</select>'+
+    '<select id="o-sort" aria-label="Sort">'+opt('score','Highest score',so)+opt('close','Closing soonest',so)+opt('pub','Newest published',so)+'</select>'+
+    '<span class="count">'+n(list.length)+' shown</span><span class="sp"></span><button class="btn" id="f-csv">Save as CSV</button></div></div>';
+  html+=readerBar();
+  html+='<div class="list">'+(list.length?list.slice(0,300).map(rowHtml).join(''):'<div class="empty">No open tender matches these filters.</div>')+'</div>';
+  html+='<p class="faint">Each row shows the score, the products asked for, when it was published and when it closes. Open a row for the score breakdown, the sources and a bid brief. How the score works is on the Method page.</p>';
   return html}
 function weeklyBrief(){if(!AIX.mode)return;var rel=LIVE.filter(function(x){return x.r.rel&&inLens(x)}).sort(function(a,b){return b.r.score-a.r.score});
   var ev=evidence();var facts='LENS: '+lensName()+'\nTODAY: '+TODAYS+'\n\nTOP LIVE TENDERS\n'+rel.slice(0,10).map(function(x){return'- ['+x.t.id+'] '+x.t.t.slice(0,120)+' | '+x.r.account.name+' | score '+x.r.score+' | closes '+(x.t.cl||'').slice(0,10)+' | '+x.r.asked.map(function(p){return P[p.id].name}).join(', ')}).join('\n')+
@@ -695,20 +707,76 @@ function shortlistHtml(){var shortlist=Object.keys(TEAM.trends).map(function(k){
   return'<div class="section"><h3 style="font-size:15px">Team shortlist</h3><div class="cards">'+shortlist.map(function(v){return'<div class="card ai"><div class="eyebrow">'+AITAG+' Saved by '+h(v.byName||who(v))+' &middot; '+h(fmtDY(v.at))+' &middot; '+v.met+' of 5 tests</div><h3>'+h(v.title)+'</h3><p class="mute">'+h(v.why)+'</p><p><b style="font-weight:600">Pitch.</b> '+h(v.pitch)+'</p><dl class="kv"><dt>Owner here</dt><dd>'+h(v.owner)+'</dd><dt>Enabled by</dt><dd>'+h(v.policy)+'</dd></dl>'+pchips(v.products)+'<p class="faint"><a href="'+h(v.u)+'" target="_blank" rel="noopener">Source</a>'+(TEAM.canWrite?' &middot; <a href="#" data-unsave="'+h(v.k)+'">Remove</a>':'')+'</p></div>'}).join('')+'</div></div>'}
 
 /* ── Concept notes library ── */
-function vNotes(){var notes=Object.keys(TEAM.col.notes||{}).map(function(k){var v=TEAM.col.notes[k];v.k=k;return v}).filter(function(v){return v&&v.text}).sort(function(a,b){return(b.at||'').localeCompare(a.at||'')});
-  var ev=evidence(),sugg=[];var top=LIVE.filter(function(x){return x.r.rel&&inLens(x)}).sort(function(a,b){return b.r.score-a.r.score})[0];if(top)sugg.push(['tender',top.t.id,'Top live tender',top.t.t]);
-  var a1=ev.filter(function(e){return e.v==='act'&&prodIn(e.t.products)})[0];if(a1)sugg.push(['theme',a1.t.id,'Act-now theme',a1.t.label]);
-  var s1=ev.filter(function(e){return e.v==='shape'&&prodIn(e.t.products)})[0];if(s1)sugg.push(['theme',s1.t.id,'Shape-early theme',s1.t.label]);
-  var f1=I.predictions.filter(function(p){return prodIn(p.products)&&p.to>=TODAYS.slice(0,7)}).sort(function(a,b){return a.from.localeCompare(b.from)})[0];if(f1)sugg.push(['forecast',f1.id,'Nearest expected tender',f1.title]);
-  var mb=Object.keys(MULTIACC)[0];if(mb)sugg.push(['buyer',mb,'Buyer asking across SBUs',MULTIACC[mb].name]);
-  var html='<div class="section"><div><h2>Bid briefs and concept notes</h2><p class="lead">A bid brief covers one live tender: what is asked, the fit, how to win, what to confirm, and whether to bid. A concept note makes the first case for an opportunity before a tender exists: why now, who decides, what JazzWorld would offer, and whether to pursue, shape or watch. The rules assemble the facts and sources. AI writes a draft only when asked and cites each source by number. A person reviews and saves it here for the team.</p></div>'+
-   '<div class="cards">'+sugg.map(function(s){return'<div class="card"><div class="eyebrow">'+h(s[2])+'</div><h3>'+h(s[3])+'</h3><div><button class="btn btn-ai btn-sm" data-note-kind="'+s[0]+'" data-note-ref="'+h(s[1])+'">'+(s[0]==='tender'?'Open bid brief':'Open concept note')+'</button></div></div>'}).join('')+'</div></div>';
-  html+='<div class="section"><h3 style="font-size:15px">'+notes.length+' saved note'+(notes.length===1?'':'s')+'</h3>'+(notes.length?'<div class="news">'+notes.map(function(v){return'<div class="it"><div style="min-width:0"><a href="#" data-note-open="'+h(v.k)+'" style="font-weight:500">'+h(v.title)+'</a><div class="src">'+h({tender:'Bid brief',buyer:'Buyer',theme:'Theme',forecast:'Expected tender',policy:'Policy',signal:'Signal',news:'Signal',renewal:'Renewal'}[v.kind]||v.kind)+' &middot; '+h(v.byName||who(v))+' &middot; '+h(fmtDY(v.at))+(v.rec?' &middot; <b>'+h(v.rec)+'</b>':'')+'</div></div></div>'}).join('')+'</div>':'<div class="panel empty">'+(TEAM.mode?'No saved briefs or notes yet. Open one above or from any tender, buyer, theme or pipeline card.':'Saved notes are kept on the hosted page.')+'</div>')+'</div>';
+/* ── All tenders: every tender the scans hold, open or closed, relevant or not, newest published first.
+   The file is loaded only when this view opens, and rebuilt by every scan. ── */
+var ARCH={status:'',rows:null};
+function loadArchive(){if(ARCH.status)return;ARCH.status='loading';var s=document.createElement('script');s.src='data/archive.js?'+encodeURIComponent((D.meta.scan&&D.meta.scan.at)||TODAYS);s.charset='utf-8';
+  s.onload=function(){var A=window.JW_ARCHIVE;ARCH.status=A?'ready':'error';if(A){ARCH.meta=A;ARCH.rows=A.rows}if(st.view==='desk')render()};s.onerror=function(){ARCH.status='error';if(st.view==='desk')render()};document.head.appendChild(s)}
+function archStatus(r){var cl=r[2];if(!cl)return'';var c=new Date(cl.length<=10?cl+'T17:00':cl);return c<NOW?'Closed':'Open'}
+function archList(){var q=(st.aq||'').trim().toLowerCase(),src=st.asrc||'',sta=st.astat||'',rl=st.arel||'',mo=st.amon||'';
+  return ARCH.rows.filter(function(r){if(src&&r[3]!==src)return false;if(rl==='rel'&&!r[10])return false;if(rl==='not'&&r[10])return false;if(mo&&(r[1]||'').slice(0,7)!==mo)return false;
+    if(sta){var s=archStatus(r);if(sta==='open'&&s!=='Open')return false;if(sta==='closed'&&s!=='Closed')return false}
+    if(q&&(r[4]+' '+r[5]+' '+r[0]).toLowerCase().indexOf(q)<0)return false;return true})}
+function vArchive(){if(!ARCH.rows){loadArchive();return'<div class="panel empty">'+(ARCH.status==='error'?'The tender archive did not load. It appears after the next scan.':'Loading every tender the scans hold&hellip;')+'</div>'}
+  var A=ARCH.meta,all=ARCH.rows,open=all.filter(function(r){return archStatus(r)==='Open'}).length,rel=all.filter(function(r){return r[10]}).length,list=archList(),pg=st.apage||1,per=200;
+  var srcs={},mons={};all.forEach(function(r){srcs[r[3]]=1;if(r[1])mons[r[1].slice(0,7)]=1});
+  var html='<div class="section"><div class="sec-head"><div><h2>'+n(all.length)+' tenders held, newest first</h2>'+
+    '<p class="lead">Every tender the scans have read since 12 November, open or closed and relevant or not, plus the scanned history: PPRA EPMS from February to July and closed PITB and World Bank notices. A notice posted on two portals is one row. '+n(open)+' are still open and '+n(rel)+' ask for a JazzWorld product. The list grows with every scan; the last one ran '+h(A.scan?pkt(A.scan).day+', '+pkt(A.scan).hm+' PKT':fmtDY(A.today))+'. The Teknosys export is counted on the Market page.</p></div></div>'+
+    '<div class="toolbar"><input type="search" id="a-q" placeholder="Search title, buyer or reference" value="'+h(st.aq||'')+'" aria-label="Search all tenders">'+
+    '<select id="a-stat" aria-label="Status">'+opt('','Open and closed',st.astat||'')+opt('open','Open',st.astat||'')+opt('closed','Closed',st.astat||'')+'</select>'+
+    '<select id="a-rel" aria-label="Relevance">'+opt('','Relevant and not',st.arel||'')+opt('rel','Asks for a JazzWorld product',st.arel||'')+opt('not','Not relevant',st.arel||'')+'</select>'+
+    '<select id="a-src" aria-label="Source">'+opt('','All sources',st.asrc||'')+Object.keys(srcs).sort().map(function(s){return opt(s,SRC[s]||s,st.asrc||'')}).join('')+'</select>'+
+    '<select id="a-mon" aria-label="Month published">'+opt('','Any month',st.amon||'')+Object.keys(mons).sort().reverse().map(function(m){return opt(m,MON[+m.slice(5)-1]+' '+m.slice(0,4),st.amon||'')}).join('')+'</select>'+
+    '<span class="count">'+n(list.length)+' tender'+(list.length===1?'':'s')+'</span><span class="sp"></span><button class="btn" id="a-csv">Save all '+n(list.length)+' as CSV</button></div></div>';
+  html+='<div class="tbl"><table><thead><tr><th>Published</th><th>Closes</th><th style="min-width:340px">Tender</th><th>Buyer</th><th>Source</th><th>JazzWorld products</th></tr></thead><tbody>'+
+    list.slice((pg-1)*per,pg*per).map(function(r){var s=archStatus(r),live=BYID[r[0]]&&!BYID[r[0]].r.closed,pr=r[10]?r[10].split('.').map(function(i){return A.products[+i]}):[];
+      return'<tr'+(live?' class="click" data-id="'+h(r[0])+'"':'')+'><td class="num" style="white-space:nowrap">'+h(fmtDY(r[1]))+'</td><td class="num" style="white-space:nowrap">'+(r[2]?h(fmtDY(r[2])):'<span class="faint">Not stated</span>')+(s?'<div class="faint">'+s+'</div>':'')+'</td>'+
+        '<td>'+(live?h(tc(r[4])):'<a href="'+h(r[6])+'" target="_blank" rel="noopener">'+h(tc(r[4]))+'</a>')+'</td><td>'+h(r[5])+'</td><td>'+h(SRC[r[3]]||r[3])+'</td><td>'+(pr.length?pchips(pr,2):'<span class="faint">None</span>')+'</td></tr>'}).join('')+'</tbody></table></div>';
+  var pages=Math.ceil(list.length/per);if(pages>1)html+='<div class="toolbar"><button class="btn btn-sm" data-apage="'+(pg-1)+'"'+(pg<=1?' disabled':'')+'>Newer</button><span class="count">Page '+pg+' of '+pages+'</span><button class="btn btn-sm" data-apage="'+(pg+1)+'"'+(pg>=pages?' disabled':'')+'>Older</button></div>';
+  html+='<p class="faint">Open rows open the tender panel with its score and bid brief. Closed rows link to the notice on the portal. The CSV holds every column for the rows you have filtered, including the portal link, so it can be screened again outside this page.</p>';
+  return html}
+function archCsv(){if(!ARCH.rows)return;var A=ARCH.meta,rows=[['ID','Published','Closing','Status','Source','Title','Buyer','Category','Method','First seen by the scan','Asks for a JazzWorld product','Products','SBUs','Role','Link']];
+  archList().forEach(function(r){var pr=r[10]?r[10].split('.').map(function(i){return P[A.products[+i]]}).filter(Boolean):[],sb={};pr.forEach(function(p){sb[SB[p.sbu].name]=1});
+    rows.push([r[0],r[1],(r[2]||'').replace('T',' '),archStatus(r),SRC[r[3]]||r[3],r[4],r[5],CATN[r[7]]||r[7],METH[r[8]]||r[8],(r[9]||'').replace('T',' '),r[10]?'Yes':'No',pr.map(function(p){return p.name}).join('; '),Object.keys(sb).join(' + '),{1:'JazzWorld-led',2:'Partner-led',3:'Monitor only'}[r[11]]||'',r[6]])});
+  var txt='﻿'+rows.map(function(r){return r.map(function(c){c=String(c==null?'':c);return/[",\n]/.test(c)?'"'+c.replace(/"/g,'""')+'"':c}).join(',')}).join('\r\n');
+  try{var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([txt],{type:'text/csv'}));a.download='jw-all-tenders-'+TODAYS+'.csv';document.body.appendChild(a);a.click();a.remove()}catch(e){toast('The download did not start.')}}
+
+/* ── Briefs: the team's written calls on live tenders ── */
+function vNotes(){var notes=Object.keys(TEAM.col.notes||{}).map(function(k){var v=TEAM.col.notes[k];v.k=k;return v}).filter(function(v){return v&&v.title}).sort(function(a,b){return String(b.at||'').localeCompare(String(a.at||''))});
+  var briefed={};notes.forEach(function(v){if(v.kind==='tender')briefed[v.ref]=1});
+  var pursued=Object.keys(TEAM.dec).filter(function(k){var s=TEAM.dec[k].status;return(s==='pursue'||s==='bidding')&&BYID[k]&&!BYID[k].r.closed&&!briefed[k]}).map(function(k){return BYID[k]});
+  var due=LIVE.filter(function(x){return x.r.rel&&x.r.score>=50&&x.r.days!=null&&x.r.days<=14&&!briefed[x.t.id]&&!TEAM.dec[x.t.id]}).sort(function(a,b){return b.r.score-a.r.score}).slice(0,6);
+  var card=function(x){var r=x.r;return'<div class="card"><div class="eyebrow">'+r.score+' '+h(r.band?r.band.label:'')+' &middot; closes '+h(fmtDY(x.t.cl))+' ('+h(daysTxt(r))+')</div><h3>'+h(tc(x.t.t))+'</h3><p class="mute">'+h(x.t.bn||r.account.name)+'</p>'+pchips(r.asked.map(function(p){return p.id}),3)+
+    '<div class="dec"><button class="btn btn-ai btn-sm" data-note-kind="tender" data-note-ref="'+h(x.t.id)+'">'+AITAG+' Write bid brief</button><button class="btn btn-sm" data-id="'+h(x.t.id)+'">Open tender</button></div></div>'};
+  var html='<div class="section"><div class="sec-head"><div><h2>Briefs</h2><p class="lead">A bid brief is a one-page decision note on a live tender: what the buyer asks for, how JazzWorld fits, how to win, what to confirm in the documents, and a call of Bid, Bid with partner or No bid. The rules gather the facts and number every source. '+AITAG+' writes the draft when you ask and may cite only those sources. You review it, save it for the team, or download it as Word.</p></div></div>'+
+    '<p class="faint">'+(AIX.mode?'AI drafting is on. It uses the key held on the server, so no one needs their own.':'AI drafting is off here. '+aiUnavailable())+'</p></div>';
+  html+='<div class="section"><h3 style="font-size:15px">Saved briefs ('+notes.length+')</h3>'+(notes.length?'<div class="tbl"><table><thead><tr><th>Brief</th><th>Call</th><th>By</th><th>Saved</th></tr></thead><tbody>'+notes.map(function(v){return'<tr class="click" data-note-open="'+h(v.k)+'"><td>'+h(v.title)+'<div class="faint">'+h({tender:'Bid brief'}[v.kind]||'Concept note')+'</div></td><td>'+h(v.rec||'')+'</td><td>'+h(v.byName||who(v))+'</td><td class="num">'+h(fmtDY(v.at))+'</td></tr>'}).join('')+'</tbody></table></div>':'<div class="panel empty">'+(TEAM.mode?'No brief saved yet. Write one from the cards below or from any tender.':'Saved briefs are kept on the hosted page.')+'</div>')+'</div>';
+  if(pursued.length)html+='<div class="section"><div><h3 style="font-size:15px">Marked Pursue or Bidding, no brief yet ('+pursued.length+')</h3></div><div class="cards">'+pursued.map(card).join('')+'</div></div>';
+  if(due.length)html+='<div class="section"><div><h3 style="font-size:15px">Worth a bid, closing within 14 days, no call or brief yet</h3><p class="lead">Highest score first.</p></div><div class="cards">'+due.map(card).join('')+'</div></div>';
   return html}
 
-/* ── Bid briefs and concept notes.
-   Rules assemble the facts and the sources. AI writes a draft only when someone asks, and cites sources by number.
-   A live tender gets a bid brief (bid or not, and how). Buyers, themes, forecasts and renewals get a concept note (pursue, shape or watch). ── */
+
+/* ── Method: the terms on every screen, defined ── */
+function methodTerms(){var W=E.DEFAULTS.weights,S=E.DEFAULTS;
+  var rowsT=[['Open tenders read','Every tender from the latest scan whose closing time has not passed. The same notice on EPADS and PPRA EPMS counts once. The number falls through the day as deadlines pass and rises with each scan.'],
+   ['Asks for a JazzWorld product (relevant)','The title or published scope contains a phrase from the product rules below, and no exclusion applies (disposals, individual hires, property, consumables and printing, programme managers). The AI reader can add a tender the rules missed; such a tender is marked '+AITAG+' and capped at '+S.capAI+' until a person confirms it.'],
+   ['Published','The date the buyer advertised the tender on the portal.'],
+   ['Closes','The bid deadline on the portal. Where the two portals differ, the later date is kept.'],
+   ['New in the latest scan','The scan read this tender for the first time. It is usually published the same day or the day before.'],
+   ['Worth a bid','A score of '+S.bands[1].min+' or more: the Pursue and Qualify bands.'],
+   ['JazzWorld-led, Partner-led, Monitor only','Set by rule from the procurement method and the products asked for. Partner-led means part of the scope needs an OEM or delivery partner. Monitor only covers petty purchases, quotations and individual hires.']];
+  var parts=[['Fit',W.fit,'How directly the tender names a catalogue product: a named product in the title scores highest, one in the scope less, generic words least.'],['Breadth',W.breadth,'How many SBUs and products the tender asks for.'],['Buyer',W.account,'Tier A: a public JazzWorld relationship, or the buyer is named in a tracked signal or forecast. Tier B: a buyer with a digital budget. Tier C: everyone else.'],
+   ['Size',W.size,'Bid security where the portal states it; otherwise the procurement method (framework, two-stage or international tenders score high, quotations low).'],['Time',W.time,'Days left to prepare a bid.'],['Signal',W.signal,'A forecast or tracked signal names this buyer and these products.']];
+  return'<div class="section"><div><h2>How to read the screens</h2><p class="lead">Every number on the Opportunities, Pipeline and Buyers pages comes from the definitions below. Nothing is scored by hand.</p></div>'+
+    '<div class="tbl"><table><tbody>'+rowsT.map(function(r){return'<tr><td style="width:28%"><b style="font-weight:500">'+r[0]+'</b></td><td>'+r[1]+'</td></tr>'}).join('')+'</tbody></table></div></div>'+
+    '<div class="section"><div><h3 style="font-size:15px">The score, 0 to 100</h3><p class="lead">Six parts, each worth the points shown, then deductions and caps.</p></div><div class="tbl"><table><thead><tr><th>Part</th><th class="num">Points</th><th>What it measures</th></tr></thead><tbody>'+
+    parts.map(function(p){return'<tr><td>'+p[0]+'</td><td class="num">'+p[1]+'</td><td>'+p[2]+'</td></tr>'}).join('')+
+    '<tr><td>Deductions</td><td class="num">&minus;'+S.partnerMax+' / &minus;'+S.rushPoints+'</td><td>Up to '+S.partnerMax+' when part of the scope needs a partner; '+S.rushPoints+' when the tender closes in under '+S.rushDays+' days.</td></tr>'+
+    '<tr><td>Caps</td><td class="num">'+S.capPartner+' / '+S.capMonitor+' / '+S.capAI+'</td><td>Partner-led bids at '+S.capPartner+'; petty purchases, quotations and individual hires at '+S.capMonitor+'; tenders found only by AI at '+S.capAI+'.</td></tr></tbody></table></div>'+
+    '<div class="tbl"><table><thead><tr><th>Band</th><th>Score</th><th>Meaning</th></tr></thead><tbody>'+
+    [['Pursue',S.bands[0].min+' and above','Bid. Strong fit, a buyer worth the effort, time to prepare.'],['Qualify',S.bands[1].min+' to '+(S.bands[0].min-1),'Read the documents before deciding.'],['Watch',S.bands[2].min+' to '+(S.bands[1].min-1),'Relevant but weak: small, partner-heavy or late.'],['Low','Below '+S.bands[2].min,'Relevant on paper only.']].map(function(b){return'<tr><td><b style="font-weight:500">'+b[0]+'</b></td><td class="num">'+b[1]+'</td><td>'+b[2]+'</td></tr>'}).join('')+'</tbody></table></div>'+
+    '<p class="faint">Scans run six times a day, from 08:17 to 18:17 PKT, on EPADS, PPRA EPMS, PITB and the World Bank. GitHub sometimes starts them late; each scan reads every open tender, so a late or missed scan loses nothing.</p></div>'}
+function oppCsvRows(){return oppList()}
 var NOTE={};
 var GRP=[['tender','This tender'],['buyer','The buyer'],['theme','Theme'],['fc','Forecasts'],['sig','Signals'],['renew','Renewals'],['hist','The buyer in 2026'],['comp','Comparable 2026 tenders'],['link','Linked elsewhere, different buyer'],['news','Pakistani news'],['pol','Policy'],['abroad','Abroad'],['mkt','Market'],['cat','Catalogue']];
 var GRPN={},GRPO={};GRP.forEach(function(g,i){GRPN[g[0]]=g[1];GRPO[g[0]]=i});
@@ -939,7 +1007,8 @@ function ask(q){q=String(q||'').trim();if(!q||CHAT.busy||!AIX.mode)return;
 function scrollEnd(){setTimeout(function(){window.scrollTo(0,document.body.scrollHeight)},30)}
 
 /* ── How it works ── */
-function vMethod(){
+function vMethod(){return methodTerms()+vMethod0()}
+function vMethod0(){
   var v=D.validation||{},rel=LIVE.filter(function(x){return x.r.rel}),W=E.DEFAULTS.weights;
   var rev=Object.keys(TEAM.dec).filter(function(k){return BYID[k]&&BYID[k].r.rel&&TEAM.dec[k].status}),nr=rev.filter(function(k){return TEAM.dec[k].status==='notrel'}).length,ms=Object.keys(TEAM.dec).filter(function(k){return TEAM.dec[k].status==='missed'}).length;
   var html='<div class="section"><div><h2>Where rules decide and where AI reads</h2><p class="lead">Rules and an AI reader screen every tender side by side, and the page shows where they agree. Everything else that is counted comes from published rules. AI also reads Pakistani headlines, drafts bid briefs and concept notes on request, and answers questions. Its output is always marked '+AITAG+'. AI never sets a score on its own or changes a team call.</p></div>'+
@@ -1071,7 +1140,7 @@ function decide(id,status){var x=BYID[id];if(!TEAM.mode||!x)return;var nm=myName
   teamWrite('decisions',id,data).then(function(){toast(status?'Saved: '+DECL[status]:'Cleared')}).catch(function(){toast('That did not save. You may have view-only access.')})}
 
 function csv(){var rows=[['Score','Band','Role','Title','Buyer','SBUs','Products asked for','Closing','Days left','Source','Reference','Team call','Owner','Link']];
-  filtered().forEach(function(x){var t=x.t,r=x.r,d=TEAM.dec[t.id]||{};rows.push([r.rel?r.score:'',r.band?r.band.label:'',r.rel?PLAYL[r.play]:'',t.t,r.account.name,r.sbus.map(function(s){return SB[s].name}).join(' + '),r.asked.map(function(p){return P[p.id].name}).join('; '),(t.cl||'').slice(0,10),r.days==null?'':r.days,SRC[t.s]||t.s,t.ref||t.id,DECL[d.status]||'',d.owner||'',t.u])});
+  (st.view==='overview'?oppList():filtered()).forEach(function(x){var t=x.t,r=x.r,d=TEAM.dec[t.id]||{};rows.push([r.rel?r.score:'',r.band?r.band.label:'',r.rel?PLAYL[r.play]:'',t.t,r.account.name,r.sbus.map(function(s){return SB[s].name}).join(' + '),r.asked.map(function(p){return P[p.id].name}).join('; '),(t.cl||'').slice(0,10),r.days==null?'':r.days,SRC[t.s]||t.s,t.ref||t.id,DECL[d.status]||'',d.owner||'',t.u])});
   var txt='﻿'+rows.map(function(r){return r.map(function(c){c=String(c==null?'':c);return/[",\n]/.test(c)?'"'+c.replace(/"/g,'""')+'"':c}).join(',')}).join('\r\n');
   var fn='jw-opportunities-'+TODAYS+'.csv';
   if(window.claude&&window.claude.use){window.claude.use('downloads').then(function(dl){if(dl)return dl.save({filename:fn,data:txt});toast('Downloads are not available here.')}).catch(function(){});return}
@@ -1087,14 +1156,21 @@ function rerender(){if(st.open)openSheet();render()}
 function render(){
   $('fresh').innerHTML=freshHtml();
   var pc=Object.keys(TEAM.dec).filter(function(k){var s=TEAM.dec[k].status;return s==='pursue'||s==='bidding'||s==='submitted'}).length;
-  $('tabs').innerHTML=VIEWS.map(function(v){var extra=v[0]==='ask'?'':v[0]==='pipeline'&&pc?' <span class="cnt">'+pc+'</span>':'';return'<button data-view="'+v[0]+'"'+(st.view===v[0]?' aria-current="page"':'')+'>'+v[1]+extra+'</button>'}).join('');
-  var f=document.activeElement&&document.activeElement.id,pos=(f==='f-q'||f==='ask-q')?document.activeElement.selectionStart:null,draft=$('ask-q')?$('ask-q').value:'';
-  $('view').innerHTML=({overview:vOverview,desk:vDesk,pipeline:vPipeline,market:vMarket,buyers:vBuyers,trends:vTrends,notes:vNotes,ask:vAsk,method:vMethod}[st.view]||vOverview)();
+  $('tabs').innerHTML=VIEWS.map(function(v){var extra=(v[0]==='ask'||v[0]==='notes')?' <span class="ai-tag">AI</span>':v[0]==='pipeline'&&pc?' <span class="cnt">'+pc+'</span>':'';return'<button data-view="'+v[0]+'"'+(st.view===v[0]?' aria-current="page"':'')+'>'+v[1]+extra+'</button>'}).join('');
+  var f=document.activeElement&&document.activeElement.id,pos=(f==='f-q'||f==='ask-q'||f==='a-q')?document.activeElement.selectionStart:null,draft=$('ask-q')?$('ask-q').value:'';
+  $('view').innerHTML=({overview:vOverview,desk:vArchive,pipeline:vPipeline,market:vMarket,buyers:vBuyers,trends:vTrends,notes:vNotes,ask:vAsk,method:vMethod}[st.view]||vOverview)();
   if($('ask-q')&&draft)$('ask-q').value=draft;
   if(f&&$(f)){$(f).focus();if(pos!=null)try{$(f).setSelectionRange(pos,pos)}catch(e){}}}
 function go(view){st.view=view;try{if(location.hash!=='#'+view)history.replaceState(null,'','#'+view)}catch(e){}render();window.scrollTo(0,0)}
 function route(){var k=(location.hash||'').replace('#','');if(LENSHASH[k]){st.view='desk'}else if(VIEWS.some(function(v){return v[0]===k}))st.view=k;render()}
 
+/* controls for Opportunities and All tenders */
+document.addEventListener('click',function(e){var el=e.target.closest('[data-oseg],[data-apage],#a-csv');if(!el)return;
+  if(el.dataset.oseg){st.oseg=el.dataset.oseg;render()}
+  else if(el.dataset.apage){st.apage=+el.dataset.apage;render();window.scrollTo(0,0)}
+  else if(el.id==='a-csv')archCsv()});
+var atmr;document.addEventListener('input',function(e){if(e.target.id==='a-q'){st.aq=e.target.value;st.apage=1;clearTimeout(atmr);atmr=setTimeout(render,200)}});
+document.addEventListener('change',function(e){var id=e.target.id,m={'o-sbu':'osbu','o-sort':'osort','a-stat':'astat','a-rel':'arel','a-src':'asrc','a-mon':'amon'};if(m[id]){st[m[id]]=e.target.value;if(id.indexOf('a-')===0)st.apage=1;render()}});
 document.addEventListener('click',function(e){var el=e.target.closest('[data-note-kind],[data-note-open],[data-note-del],[data-mp],#note-draft,#note-save,#note-dl,#rd-go,#rs-go,#val-go,#wb-go,#m-clr,#f-more,[data-view],[data-id],[data-acc],[data-close],[data-prod],[data-dec],[data-theme],[data-map],[data-save],[data-unsave],[data-ask],[data-confirm],#ai-go,#acc-go,#f-csv,#f-clrp,#sl-go,#sl-close,#ask-go,#ask-stop,#ask-clear,#dec-owner-save');if(!el)return;
   if(el.dataset.noteKind){e.preventDefault();st.open={note:{k:el.dataset.noteKind,r:el.dataset.noteRef}};openSheet()}
   else if(el.dataset.noteOpen){e.preventDefault();var sv=TEAM.col.notes[el.dataset.noteOpen];st.open={note:{k:sv.kind,r:sv.ref,s:el.dataset.noteOpen}};openSheet()}
