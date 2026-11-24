@@ -161,7 +161,8 @@
     if (t.st && t.st.indexOf('X') >= 0) { r.reason = 'Cancelled by the buyer'; return r; }
     if (t.kind === 'D') { r.reason = 'Disposal or auction, not a purchase'; return r; }
     for (var i = 0; i < ctx.exclude.length; i++) if (ctx.exclude[i].rx.test(Tt)) {
-      r.reason = { disposal: 'Disposal or auction, not a purchase', individual: 'Hiring of an individual, not a company bid', property: 'Property hire or purchase' }[ctx.exclude[i].k];
+      r.reason = { disposal: 'Disposal or auction, not a purchase', individual: 'Hiring of an individual, not a company bid', property: 'Property hire, purchase or valuation', consumables: 'Consumables or printing, not a JazzWorld product', oversight: 'A firm hired to manage or monitor a programme' }[ctx.exclude[i].k] || 'Excluded by rule';
+      r.excludedBy = ctx.exclude[i].k;
       if (ctx.exclude[i].k !== 'individual') return r;
       r.individual = true;
     }
