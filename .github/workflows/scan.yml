@@ -1,9 +1,11 @@
-# Reads the portals and news four times a day, every day, rebuilds the site data and commits it.
-# Cloudflare Pages redeploys on each commit. Times are UTC: 04:00, 07:00, 10:00, 13:00 = 09:00, 12:00, 15:00, 18:00 PKT.
+# Reads the portals and news six times a day, every day, rebuilds the site data and commits it.
+# Cloudflare Pages redeploys on each commit. Six slots a day, off the hour, because GitHub drops and delays
+# scheduled runs that start on the hour. Times are UTC: 03:17 to 13:17 every two hours = 08:17 to 18:17 PKT.
+# A missed slot is covered by the next one; each scan reads every open tender, so nothing is lost.
 name: scan
 on:
   schedule:
-    - cron: "0 4,7,10,13 * * *"
+    - cron: "17 3,5,7,9,11,13 * * *"
   workflow_dispatch: {}
 permissions:
   contents: write
@@ -37,6 +39,7 @@ jobs:
       - name: Finish data
         run: |
           node build/make_data.js
+          node build/make_market_live.js
           python build/make_standalone.py
       - name: Post new tenders to Teams
         env:
@@ -49,4 +52,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add raw archive app/data dist build/out
           git diff --cached --quiet || git commit -m "Scan $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git pull --rebase origin main
           git push
