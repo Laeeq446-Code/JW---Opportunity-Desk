@@ -85,14 +85,14 @@ const monIx = pub => { const m = (pub || '').slice(0, 7); if (!/^2026-\d\d$/.tes
 const SRCN = { EPADS: 1, EPMS: 2, PITB: 3, KPITB: 3, PSCA: 3, WB: 4 };
 
 /* ── 3. the ledger: every distinct tender the scans have seen ──
-   id -> [pub, src, cat, mth, title, buyer, url, firstSeen, alsoUrl, desc] */
+   id -> [pub, src, cat, mth, title, buyer, url, firstSeen, alsoUrl, desc, closing] */
 const ledPath = path.join(ARC, 'ledger.json');
 const led = rd(ledPath, {});
 const seen = rd(path.join(ARC, 'seen.json'), {});
 const open = O('tenders_open.json');
 open.forEach(t => {
   const prev = led[t.id];
-  led[t.id] = [t.pub || '', t.s, t.cat || '', t.mth || '', String(t.t || '').slice(0, 200), t.bn || t.b || '', t.u || '', (prev && prev[7]) || seen[t.id] || today, t.also || '', String(t.d || '').slice(0, 300)];
+  led[t.id] = [t.pub || '', t.s, t.cat || '', t.mth || '', String(t.t || '').slice(0, 200), t.bn || t.b || '', t.u || '', (prev && prev[7]) || seen[t.id] || today, t.also || '', String(t.d || '').slice(0, 300), t.cl || (prev && prev[10]) || ''];
 });
 /* tenders seen before the ledger existed: only the id and the day first seen are known */
 Object.keys(seen).forEach(id => { if (!led[id]) led[id] = ['', id.split('-')[0], '', '', '', '', '', seen[id], '', '']; });
@@ -150,3 +150,22 @@ fs.writeFileSync(path.join(ROOT, 'app', 'data', 'market.js'), 'window.JW_MARKET=
 console.log('market: base', baseN, '(rule drops', dropped + ')', '+ live', live, '(relevant', liveRel + ', details not kept', liveBare + ')', '= total', rows.length,
   '| months', months[0], 'to', months[months.length - 1], '| relevant detail', detail.length,
   '| size', (fs.statSync(path.join(ROOT, 'app', 'data', 'market.js')).size / 1e6).toFixed(2) + 'MB');
+
+/* ── 4. the archive: every tender the scans hold, open or closed, relevant or not, for the All tenders view ──
+   One row per tender: the ledger (everything seen since the scans began) plus the scanned history
+   (PPRA EPMS February to July, closed PITB and World Bank notices). The page loads it only when asked. */
+const hist = O('tenders_hist.json');
+const arch = [], inArch = new Set();
+const pushRow = (id, pub, cl, src, title, buyer, url, c, mth, fs0, d) => {
+  if (!title || inArch.has(id)) return; inArch.add(id);
+  const r = E.assess({ id, s: src, t: title, b: buyer, bn: buyer, cat: c, mth, pub, cl, u: url, d: d || '' }, ctx, now);
+  const pr = r.rel ? r.asked.map(p => PI[p.id]).filter(x => x != null).join('.') : '';
+  arch.push([id, pub || '', (cl || '').slice(0, 16), src, title.slice(0, 220), buyer || '', url || '', c || '', mth || '', (fs0 || '').slice(0, 16), pr, r.rel ? PLAY[r.play] || 0 : 0]);
+};
+Object.keys(led).forEach(id => { const v = led[id]; if (v[1] === 'EPMS' && v[6] && alsoSet.has(v[6])) return; pushRow(id, v[0], v[10], v[1], v[4], v[5], v[6], v[2], v[3], v[7], v[9]); });
+hist.forEach(t => pushRow(t.id, t.pub, t.cl, t.s, t.t, t.bn || t.b, t.u, t.cat, t.mth, '', t.d));
+arch.sort((a, b) => (b[1] || '').localeCompare(a[1] || '') || (b[9] || '').localeCompare(a[9] || ''));
+const archOut = { built: new Date().toISOString(), scan: (meta.scan && meta.scan.at) || '', today, products: P,
+  cols: ['id', 'published', 'closing', 'source', 'title', 'buyer', 'url', 'category', 'method', 'first_seen', 'products', 'role'], rows: arch };
+fs.writeFileSync(path.join(ROOT, 'app', 'data', 'archive.js'), 'window.JW_ARCHIVE=' + JSON.stringify(archOut) + ';\n');
+console.log('archive:', arch.length, 'tenders,', arch.filter(r => r[10]).length, 'relevant | size', (fs.statSync(path.join(ROOT, 'app', 'data', 'archive.js')).size / 1e6).toFixed(2) + 'MB');
