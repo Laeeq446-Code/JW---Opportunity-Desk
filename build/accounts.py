@@ -97,7 +97,7 @@ ACCOUNTS = [
     ("pitb", "Punjab Information Technology Board (PITB)", r"punjab information technology board|\bpitb\b", True, "Telecom & IT", "Punjab", "punjab"),
     ("psca", "Punjab Safe Cities Authority (PSCA)", r"punjab safe cit|\bpsca\b", True, "Law Enforcement & Cities", "Punjab", "punjab"),
     ("plra", "Punjab Land Records Authority (PLRA)", r"punjab land records|\bplra\b", True, "Governance", "Punjab", "punjab"),
-    ("sedpunjab", "School Education Department, Punjab", r"school education department|\bpesrp\b|pmiu pesrp", True, "Education", "Punjab", "punjab"),
+    ("sedpunjab", "School Education Department, Punjab", r"school education department(?!.*\b(balochistan|sindh|khyber))|\bpesrp\b|pmiu pesrp", True, "Education", "Punjab", "punjab"),
     ("zakatpb", "Zakat & Ushr Department, Punjab", r"zakat", False, "Social Protection", "Punjab", "punjab"),
     ("agripb", "Agriculture Department, Punjab", r"agriculture department", False, "Agriculture", "Punjab", "punjab"),
     ("punjab", "Government of Punjab (other)", r"punjab", False, "Provincial", "Punjab", "punjab"),
