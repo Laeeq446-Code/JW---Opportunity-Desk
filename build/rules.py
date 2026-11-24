@@ -155,7 +155,7 @@ RULES = {
             "virtual server*", "hosting of", "hosting and", "cloud based",
             "?hosting", "?server*", "?storage", "?virtuali*", "?vmware", "?compute", "?hci", "?hyper converged", "?gpu",
         ],
-        "not": {"cloud": "cloud seeding|cloud burst|cloudburst", "hosting of": "event|dinner|conference|ceremony|delegation|guests",
+        "not": {"cloud": "cloud seeding|cloud burst|cloudburst|cloud ?engine", "hosting of": "event|dinner|conference|ceremony|delegation|guests",
                 "hosting and": "event|dinner|catering|ceremony"},
     },
     "gdr": {
@@ -505,6 +505,7 @@ RULES = {
             "family takaful", "health takaful", "insurance of employees", "staff insurance", "group medical",
             "?insurance", "?hospitali*", "?medical", "?health",
         ],
+        "not": {"life insurance": "life insurance corporation|valuation", "takaful": "takaful division|printing"},
     },
     "jsure": {
         "mode": "own",
@@ -520,7 +521,7 @@ RULES = {
             "?insur*", "?coverage", "?liability", "?premium",
         ],
         "title_only": ["insurance", "reinsurance", "insurers", "insurer"],
-        "not": {"insurance": "including insurance|freight and insurance|cost insurance|insurance and freight|cif|with insurance|inclusive of insurance"},
+        "not": {"insurance": "including insurance|freight and insurance|cost insurance|insurance and freight|cif|with insurance|inclusive of insurance|insurance corporation|valuation"},
     },
 
     # ───────────────────────────── DIGITAL PLATFORMS ─────────────────────────────
@@ -573,7 +574,11 @@ CONTEXTS = {
 EXCLUDE_TITLE = {
     "disposal": r"^(open )?auction|auction of|disposal of|sale of (old|used|unserviceable|condemned|scrap)|scrap|condemned|unserviceable|obsolete",
     "individual": r"hiring of (an? )?(individual )?(consultant|specialist|expert|officer|coordinator|advisor|adviser|manager|engineer|assistant|associate|analyst|developer|programmer)s?( \(|$| for | on | at | - )(?!.*\b(firm|company|agency|services|consultancy services)\b)|individual consultant",
-    "property": r"hiring of (office|residential|rented) (building|accommodation|space)|purchase of (land|plot)|lease of (shop|land|building|canteen)|rent of (shop|building)",
+    "property": r"hiring of (office|residential|rented) (building|accommodation|space)|purchase of (land|plot)|lease of (shop|land|building|canteen)|rent of (shop|building)|valuation of|renting range",
+    # Supplies JazzWorld does not sell, even when the title names a digital system they are used in.
+    "consumables": r"^(?!.*\b(it equipments?|it items|it goods|computer items|computer equipments?|computer hardware|hardware|software|laptops?|switch(es)?|ip phones?|data cent\w*|datacent\w*|cctv|nvr|servers?|network\w*|video conferencing)\b).*(\b(thermal|paper|printer|receipt|ticket|till) (paper )?rolls?\b|^printing (of|and)|printing of (policy|file|forms?|books?|calendars?|diar|brochure|leaflet|card)|\bstationery\b|\bstationary\b|\btoners?\b|\btonners?\b|\bcartridges?\b|\bconsumables\b)",
+    # Firms hired to manage or monitor someone else's programme are not buying the programme's products.
+    "oversight": r"(management|monitoring|consultancy|consulting) firm for (the )?(project management|monitoring|third party)|project management and monitoring of|third party (validation|verification|monitoring|evaluation)",
 }
 
 # Scope areas JazzWorld cannot deliver alone. First match per category.
