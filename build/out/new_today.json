@@ -1,43 +1,60 @@
 [
  {
-  "id": "EPADS-212352",
-  "title": "Design, Development, Deployment, Hosting and Three (3) Years' Managed Support of an Enterprise AI Assistant for Ministry of National Food Security & Research (MNFSR)",
-  "buyer": "Ministry of National Food Security and Research",
-  "score": 65,
+  "id": "EPADS-207663",
+  "title": "Procurement of HT Type CT/PT operated 3-Phase 4 Wire 3x63/110V, 5/10Amp, 50Hz class 0.5s TOU smart AMR Energy Meters 4G GSM/GPRS (LDIP)",
+  "buyer": "LESCO",
+  "score": 71,
   "band": "Pursue",
   "play": "lead",
   "sbus": [
    "Enterprise"
   ],
   "products": [
-   "Quantica Analytics as a Service",
-   "Garaj Sovereign Cloud (IaaS, Storage, DBaaS)"
+   "M2M Connectivity"
   ],
-  "closes": "2026-12-31",
-  "days": 37,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/212352"
+  "closes": "2026-12-07",
+  "days": 12,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/207663"
  },
  {
-  "id": "WB-OP00483172",
-  "title": "Hiring of Firm for Communication for Advocacy & Demand Creation (IPF-Activity # 4.1 & 4.3) Development / Digitalization of IEC Material on PHC Covering UHC Communication & its dissemination through Social & Electronic Media - and for SHCC on awareness",
-  "buyer": "Government of Sindh (other)",
+  "id": "EPADS-204378",
+  "title": "Tender-167 Hiring of Insurance Company for Group Health Family Takaful (GHFT)",
+  "buyer": "Karachi Tools Dies & Moulds Centre (KTDMC)",
+  "score": 68,
+  "band": "Pursue",
+  "play": "lead",
+  "sbus": [
+   "Financial"
+  ],
+  "products": [
+   "Embedded Life & Health Insurance (FikrFree, partners)",
+   "JazzSure General Insurance & Bonds"
+  ],
+  "closes": "2026-12-09",
+  "days": 14,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/204378"
+ },
+ {
+  "id": "EPADS-116395",
+  "title": "REPAIR AND REPLACEMENT OF PARTS FOR GLACIAL LAKE OUTBURST FLOOD EARLY WARNING SYSTEM (GLOF EWS)",
+  "buyer": "Pakistan Meteorological Department (PMD)",
   "score": 64,
   "band": "Qualify",
-  "play": "partner",
+  "play": "lead",
   "sbus": [
    "Enterprise"
   ],
   "products": [
-   "Garaj System Integration, DevOps & Managed Services"
+   "Quantica Infinity IoT Platform & LoRaWAN"
   ],
-  "closes": "2026-12-17",
-  "days": 23,
-  "u": "https://projects.worldbank.org/en/projects-operations/procurement-detail/OP00483172"
+  "closes": "2026-12-07",
+  "days": 12,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/116395"
  },
  {
-  "id": "EPMS-80824",
-  "title": "Cloud Server and Email Services",
-  "buyer": "Pakistan Medical and Dental Council (PMDC)",
+  "id": "EPADS-212847",
+  "title": "RENEWAL OF SUPPORT AND SERVICES FOR VPN NEXT GENERATION FIREWALL AND DMZ WEB APPLICATION FIREWALL (WAF) SOLUTIONS AT NBP INTERNET SEGMENT",
+  "buyer": "National Bank of Pakistan (NBP)",
   "score": 63,
   "band": "Qualify",
   "play": "lead",
@@ -45,35 +62,120 @@
    "Enterprise"
   ],
   "products": [
-   "Garaj Sovereign Cloud (IaaS, Storage, DBaaS)",
-   "Productivity & Licences (Microsoft 365, Odoo, Garaj 24/7)"
+   "Garaj Security & MSSP",
+   "Garaj System Integration, DevOps & Managed Services"
   ],
-  "closes": "2026-12-08",
-  "days": 14,
-  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000080824E"
+  "closes": "2026-12-07",
+  "days": 12,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/212847"
  },
  {
-  "id": "EPMS-80868",
-  "title": "Procurement Notice-Non Consulting Services",
-  "buyer": "M/o National Food Security & Research",
-  "score": 52,
+  "id": "EPADS-210549",
+  "title": "Procurement of Enterprise Biometric Attendance System and ERP Integration",
+  "buyer": "Public universities and boards",
+  "score": 61,
   "band": "Qualify",
   "play": "lead",
   "sbus": [
    "Enterprise"
   ],
   "products": [
-   "Quantica Analytics as a Service",
-   "Garaj Sovereign Cloud (IaaS, Storage, DBaaS)"
+   "IoT Solutions & Smart City",
+   "Garaj System Integration, DevOps & Managed Services"
   ],
-  "closes": "2026-12-14",
-  "days": 20,
-  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000080868E"
+  "closes": "2026-12-17",
+  "days": 22,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/210549"
  },
  {
-  "id": "EPMS-80860",
-  "title": "PROCUREMENT OF HIGH SPEED CAMERA",
-  "buyer": "Defence procurement directorates",
+  "id": "PITB-0a481c9a",
+  "title": "PROCUREMENT OF IT HARDWARE/IT EQUIPMENT FOR RAWALPINDI INSTITUTE OF CARDIOLOGY PROEJCT ON TURNKEY BASIS (ITOPS-15)",
+  "buyer": "Punjab Information Technology Board (PITB)",
+  "score": 61,
+  "band": "Qualify",
+  "play": "partner",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-12-10",
+  "days": 15,
+  "u": "https://pitb.gov.pk/system/files?file=BD_ITOPS_15_Published_1.pdf"
+ },
+ {
+  "id": "EPMS-80897",
+  "title": "REVAMPING AND REFURBISHMENT OF DIFFERENT FACILITIES AT PAKISTAN SPORTS COMPLEX, ISLAMABAD: (SH-I: Supply, Installation, Testing & Commissioning of Electrical Works, Lights (Internal & External) Along with Allied Works at Jinnah Stadium) (SH-II: Supply, Installation, Testing And Commissioning of Security Surveillance System",
+  "buyer": "Pakistan Sports Board",
+  "score": 58,
+  "band": "Qualify",
+  "play": "partner",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "IoT Solutions & Smart City"
+  ],
+  "closes": "2026-12-05",
+  "days": 10,
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000080897E"
+ },
+ {
+  "id": "EPADS-214881",
+  "title": "Software License renewal and CHAT GPT token renew",
+  "buyer": "Digital Communication Department (DCD)",
+  "score": 57,
+  "band": "Qualify",
+  "play": "partner",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Productivity & Licences (Microsoft 365, Odoo, Garaj 24/7)"
+  ],
+  "closes": "2026-11-30",
+  "days": 5,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/214881"
+ },
+ {
+  "id": "EPADS-213426",
+  "title": "Campus LAN Access and Core Switches (SDN Ready) Support and Services.",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 57,
+  "band": "Qualify",
+  "play": "lead",
+  "sbus": [
+   "Connectivity"
+  ],
+  "products": [
+   "Managed Network, NOCaaS & Professional Services"
+  ],
+  "closes": "2026-12-07",
+  "days": 12,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/213426"
+ },
+ {
+  "id": "EPADS-212211",
+  "title": "CISCO ISE AAA LICENSING AND SUPPORT RENEWAL",
+  "buyer": "National Bank of Pakistan (NBP)",
+  "score": 54,
+  "band": "Qualify",
+  "play": "lead",
+  "sbus": [
+   "Connectivity"
+  ],
+  "products": [
+   "Managed Network, NOCaaS & Professional Services"
+  ],
+  "closes": "2026-12-07",
+  "days": 12,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/212211"
+ },
+ {
+  "id": "EPMS-80967",
+  "title": "CCTV CAMRA SYSTEM",
+  "buyer": "Sui Northern Gas (SNGPL)",
   "score": 51,
   "band": "Qualify",
   "play": "lead",
@@ -83,221 +185,68 @@
   "products": [
    "IoT Solutions & Smart City"
   ],
-  "closes": "2026-12-10",
-  "days": 16,
-  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000080860E"
+  "closes": "2026-12-08",
+  "days": 13,
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000080967E"
  },
  {
-  "id": "EPADS-205536",
-  "title": "Procurement of Laptops and Smartphones",
-  "buyer": "Competition Commission of Pakistan",
+  "id": "EPMS-18512",
+  "title": "Procurement of License for firewall USG-6630E",
+  "buyer": "Pakistan Telecommunication Authority (PTA)",
+  "score": 48,
+  "band": "Watch",
+  "play": "lead",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Security & MSSP"
+  ],
+  "closes": "2026-11-30",
+  "days": 5,
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000018512E"
+ },
+ {
+  "id": "EPMS-18006",
+  "title": "Procurement of Maintenance Services for CCTV Systems Installed at Different Locations of SBP BSC Field Offices",
+  "buyer": "State Bank of Pakistan (SBP)",
   "score": 44,
   "band": "Watch",
-  "play": "partner",
+  "play": "lead",
   "sbus": [
    "Enterprise"
   ],
   "products": [
-   "Garaj Hardware Supply"
-  ],
-  "closes": "2026-12-08",
-  "days": 14,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/205536"
- },
- {
-  "id": "EPADS-210531",
-  "title": "T-4272-FA-REQ-1126-1-00081-SUPPLY OF MULTIMEDIA PROJECTOR (As per BOQ)",
-  "buyer": "Pakistan Security Printing Corporation (Pvt.) Ltd",
-  "score": 43,
-  "band": "Watch",
-  "play": "partner",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj Hardware Supply"
-  ],
-  "closes": "2026-12-02",
-  "days": 8,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/210531"
- },
- {
-  "id": "EPADS-213852",
-  "title": "Payment for welding/ installation of iron grill PSV-MIS point",
-  "buyer": "National Highways & Motorway Police (NHMP)",
-  "score": 39,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj System Integration, DevOps & Managed Services"
-  ],
-  "closes": "2026-11-25",
-  "days": 1,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/213852"
- },
- {
-  "id": "EPADS-213657",
-  "title": "MAINTENANCE AND REPAIR OF AMI CELL 132 KV CANTT GRID STATION GEPCO GUJRANWALA",
-  "buyer": "GEPCO",
-  "score": 39,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "M2M Connectivity"
-  ],
-  "closes": "2026-11-25",
-  "days": 1,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/213657"
- },
- {
-  "id": "EPADS-212634",
-  "title": "Recharge Internet Device Package for Month of November, Beat 14 Quetta",
-  "buyer": "National Highways & Motorway Police (NHMP)",
-  "score": 39,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Connectivity"
-  ],
-  "products": [
-   "Corporate Mobile Plans & Group Data"
-  ],
-  "closes": "2026-11-25",
-  "days": 1,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/212634"
- },
- {
-  "id": "EPADS-212940",
-  "title": "Supply of Brand New Dell Desktop PC \"Model No. Dell Pro Tower QCT1250\" as per mentioned specification along with display LCD/LED complete in all respect to Mr. Faisal Tariq, AVP, SAP ID 00016287, at Support Services Deptt:, NBP Regional Office, Qta.",
-  "buyer": "National Bank of Pakistan (NBP)",
-  "score": 39,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj Hardware Supply",
-   "Garaj System Integration, DevOps & Managed Services"
-  ],
-  "closes": "2026-11-25",
-  "days": 1,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/212940"
- },
- {
-  "id": "EPADS-212481",
-  "title": "Procurement of Network Stabilizer etc. (MIS, PCSIR-KLC)",
-  "buyer": "Pakistan Council of Scientific Industrial Research (PCSIR)",
-  "score": 39,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj System Integration, DevOps & Managed Services"
-  ],
-  "closes": "2026-11-27",
-  "days": 3,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/212481"
- },
- {
-  "id": "EPADS-213504",
-  "title": "PROCUREMENT OF 8-PORT INDUSTRIAL MANAGED POE SWITCH",
-  "buyer": "Port authorities (KPT, PQA, GPA)",
-  "score": 38,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Connectivity"
-  ],
-  "products": [
-   "Managed Network, NOCaaS & Professional Services"
-  ],
-  "closes": "2026-11-26",
-  "days": 2,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/213504"
- },
- {
-  "id": "EPADS-212502",
-  "title": "4870-81889 Software installation of Q-Matic Machine and Service Level Agreement (SLA) for CVM solution with 1 year software support",
-  "buyer": "COMSATS University",
-  "score": 35,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj System Integration, DevOps & Managed Services"
+   "IoT Solutions & Smart City"
   ],
   "closes": "2026-11-25",
   "days": 0,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/212502"
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000018006E"
  },
  {
-  "id": "EPADS-213537",
-  "title": "4875-87185-Rate Contract for Acquiring SMS Package Services for CUI Lahore Campus",
-  "buyer": "COMSATS University",
-  "score": 35,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Quantica Messaging (Bulk SMS/Voice, USSD, Boost)"
-  ],
-  "closes": "2026-11-25",
-  "days": 1,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/213537"
- },
- {
-  "id": "EPADS-213390",
-  "title": "Wi-Fi Device",
+  "id": "EPADS-214146",
+  "title": "Requirement of Additional 08 x Digifort CCTV Camera Licenses",
   "buyer": "Public universities and boards",
-  "score": 35,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Connectivity"
-  ],
-  "products": [
-   "SD-WAN, Managed Wi-Fi & Office-in-a-Box"
-  ],
-  "closes": "2026-11-25",
-  "days": 1,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/213390"
- },
- {
-  "id": "EPADS-213738",
-  "title": "89127 Supply of Smart 85 Inch LED Display",
-  "buyer": "COMSATS University",
-  "score": 35,
+  "score": 39,
   "band": "Watch",
   "play": "monitor",
   "sbus": [
    "Enterprise"
   ],
   "products": [
-   "Garaj Hardware Supply"
+   "IoT Solutions & Smart City",
+   "Productivity & Licences (Microsoft 365, Odoo, Garaj 24/7)"
   ],
-  "closes": "2026-11-27",
-  "days": 3,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/213738"
+  "closes": "2026-11-26",
+  "days": 1,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/214146"
  },
  {
-  "id": "EPADS-212877",
-  "title": "repair of I.T. Equipment",
-  "buyer": "National Highways & Motorway Police (NHMP)",
-  "score": 34,
-  "band": "Low",
+  "id": "EPADS-215589",
+  "title": "Procurement of Miscellaneous IT items",
+  "buyer": "Zarai Taraqiati Bank (ZTBL)",
+  "score": 39,
+  "band": "Watch",
   "play": "monitor",
   "sbus": [
    "Enterprise"
@@ -306,15 +255,49 @@
    "Garaj Hardware Supply"
   ],
   "closes": "2026-11-26",
-  "days": 2,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/212877"
+  "days": 1,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/215589"
  },
  {
-  "id": "EPADS-213723",
-  "title": "87541 Repair of CCTV control UPS",
+  "id": "EPADS-214701",
+  "title": "4872-81367-Servicing of Telephone Exchange at CUI-Lahore",
   "buyer": "COMSATS University",
-  "score": 34,
-  "band": "Low",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Connectivity"
+  ],
+  "products": [
+   "Business Telephony & Contact Centre"
+  ],
+  "closes": "2026-11-30",
+  "days": 5,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/214701"
+ },
+ {
+  "id": "EPADS-214353",
+  "title": "Soil investigation of Bridge No. 25 (3×11' RCC Slab) into RCC box Culvert at Km No. 1258/58-6 on SDR - LLM section over Lahore Division",
+  "buyer": "Pakistan Railways",
+  "score": 39,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Quantica Analytics as a Service"
+  ],
+  "closes": "2026-12-12",
+  "days": 17,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/214353"
+ },
+ {
+  "id": "EPADS-214299",
+  "title": "CCTV Cameras, etc required for SNGPL Regioal Office Abbottabad. RFQ No.ABT/033/26",
+  "buyer": "Sui Northern Gas (SNGPL)",
+  "score": 38,
+  "band": "Watch",
   "play": "monitor",
   "sbus": [
    "Enterprise"
@@ -322,13 +305,64 @@
   "products": [
    "IoT Solutions & Smart City"
   ],
-  "closes": "2026-11-27",
-  "days": 3,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/213723"
+  "closes": "2026-11-26",
+  "days": 1,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/214299"
  },
  {
-  "id": "EPADS-213039",
-  "title": "Dot Matrix Printers Procurement 2026",
+  "id": "EPADS-214671",
+  "title": "PURCHASE OF CCTV CAMERAS",
+  "buyer": "State Life Insurance Corporation",
+  "score": 38,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "IoT Solutions & Smart City"
+  ],
+  "closes": "2026-11-26",
+  "days": 1,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/214671"
+ },
+ {
+  "id": "EPADS-214947",
+  "title": "Procurement of Laptop for Office Staff",
+  "buyer": "Pakistan Expo Centres Private Limited",
+  "score": 38,
+  "band": "Watch",
+  "play": "partner",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-12-01",
+  "days": 6,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/214947"
+ },
+ {
+  "id": "EPADS-215532",
+  "title": "Repair of Thermal Printers of Beat-19 and Purchase of 8GB Ram DDR4 for System HP of LHQ",
+  "buyer": "National Highways & Motorway Police (NHMP)",
+  "score": 36,
+  "band": "Watch",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-11-25",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/215532"
+ },
+ {
+  "id": "EPADS-214347",
+  "title": "Tablets",
   "buyer": "State Life Insurance Corporation",
   "score": 33,
   "band": "Low",
@@ -339,13 +373,47 @@
   "products": [
    "Garaj Hardware Supply"
   ],
-  "closes": "2026-11-25",
+  "closes": "2026-11-26",
   "days": 1,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/213039"
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/214347"
  },
  {
-  "id": "EPADS-213753",
-  "title": "142165 Supply of LAPTOP for MR UMER SAMI HAYAT, SVP",
+  "id": "EPADS-215316",
+  "title": "Purchase of Multimedia Projector",
+  "buyer": "WAPDA",
+  "score": 33,
+  "band": "Low",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-11-27",
+  "days": 2,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/215316"
+ },
+ {
+  "id": "EPADS-215448",
+  "title": "Purchasing of Dot Matrix Printers & Batteries",
+  "buyer": "State Life Insurance Corporation",
+  "score": 33,
+  "band": "Low",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-11-27",
+  "days": 2,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/215448"
+ },
+ {
+  "id": "EPADS-215157",
+  "title": "Request for Purchase of Brand-New Laptop for ITG Resource NBP Karachi City",
   "buyer": "National Bank of Pakistan (NBP)",
   "score": 31,
   "band": "Low",
@@ -356,32 +424,15 @@
   "products": [
    "Garaj Hardware Supply"
   ],
-  "closes": "2026-11-25",
+  "closes": "2026-11-26",
   "days": 1,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/213753"
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/215157"
  },
  {
-  "id": "EPADS-213717",
-  "title": "Technical Services | Reconciliation & Resolving differences rin transactions recorded in SAP with Oracle",
-  "buyer": "Pakistan Expo Centres Private Limited",
+  "id": "EPADS-215550",
+  "title": "Purchase of Laptop for P&R Sectt",
+  "buyer": "NUST",
   "score": 25,
-  "band": "Low",
-  "play": "monitor",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj System Integration, DevOps & Managed Services"
-  ],
-  "closes": "2026-11-25",
-  "days": 1,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/213717"
- },
- {
-  "id": "EPADS-212898",
-  "title": "Purchase of IT Equipment",
-  "buyer": "Federal Ombudsman offices",
-  "score": 23,
   "band": "Low",
   "play": "monitor",
   "sbus": [
@@ -390,8 +441,8 @@
   "products": [
    "Garaj Hardware Supply"
   ],
-  "closes": "2026-11-25",
-  "days": 1,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/212898"
+  "closes": "2026-11-26",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/215550"
  }
 ]
