@@ -3,28 +3,28 @@
   "EPADS": {
    "name": "EPADS 2.0 federal e-procurement",
    "url": "https://epads.gov.pk",
-   "pulled": "2026-11-26T12:36:03.000Z",
-   "rows": 1310,
+   "pulled": "2026-11-26T22:22:30.000Z",
+   "rows": 1329,
    "note": "Every open federal procurement on the public board (10 listing pages)."
   },
   "EPMS": {
    "name": "PPRA EPMS active tenders",
    "url": "https://epms.ppra.gov.pk/public/tenders/active-tenders",
-   "pulled": "2026-11-26T12:37:28.000Z",
-   "rows": 2079,
+   "pulled": "2026-11-26T22:23:50.000Z",
+   "rows": 1939,
    "note": "Every active federal tender notice on the PPRA board (38 listing pages)."
   },
   "WB": {
    "name": "World Bank procurement notices API (Pakistan)",
    "url": "https://search.worldbank.org/api/v2/procnotices?format=json&project_ctry_name_exact=Pakistan",
-   "pulled": "2026-11-26T12:37:35.000Z",
+   "pulled": "2026-11-26T22:23:57.000Z",
    "rows": 35,
    "note": "Last 600 Pakistan notices read; open ones kept, ICT-related closed ones kept as history."
   },
   "PITB": {
    "name": "Punjab Information Technology Board (PITB) tender notices",
    "url": "https://pitb.gov.pk/tendernotices",
-   "pulled": "2026-11-26T12:37:41.000Z",
+   "pulled": "2026-11-26T22:24:03.000Z",
    "rows": 13,
    "note": "462 notices read back to 2023-11-03; closed ones kept as history."
   },
@@ -36,19 +36,19 @@
    "note": "Federal tenders captured by the earlier Tender Desk scans. Used for demand history and renewal timing only."
   }
  },
- "dups_removed": 409,
+ "dups_removed": 412,
  "scan": {
-  "at": "2026-11-26T12:35:31.000Z",
+  "at": "2026-11-26T22:21:57.000Z",
   "sources": {
    "epads": {
     "ok": true,
-    "rows": 1310,
-    "secs": 32
+    "rows": 1329,
+    "secs": 33
    },
    "epms": {
     "ok": true,
-    "rows": 2079,
-    "secs": 85
+    "rows": 1939,
+    "secs": 81
    },
    "wb": {
     "ok": true,
@@ -62,12 +62,12 @@
    },
    "news": {
     "ok": true,
-    "rows": 320,
+    "rows": 334,
     "secs": 18
    }
   }
  },
- "today": "2026-11-26",
- "open_total": 3028,
+ "today": "2026-11-27",
+ "open_total": 2904,
  "hist_total": 3878
 }
