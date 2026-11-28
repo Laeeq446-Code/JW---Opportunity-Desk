@@ -1,43 +1,26 @@
 [
  {
-  "id": "EPADS-219513",
-  "title": "REPLACEMENT OF ROOF AND SPECIAL REPAIR TO STATION BUILDING EMINABAD ON SDR-LLM SECTION",
-  "buyer": "Pakistan Railways",
-  "score": 64,
+  "id": "EPMS-81291",
+  "title": "Repair of I.T. Equipments",
+  "buyer": "Finance Division",
+  "score": 52,
   "band": "Qualify",
   "play": "partner",
   "sbus": [
    "Enterprise"
   ],
   "products": [
-   "Quantica Analytics as a Service"
+   "Garaj Hardware Supply"
   ],
-  "closes": "2026-12-22",
-  "days": 24,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/219513"
- },
- {
-  "id": "EPADS-207060",
-  "title": "FCS/MDR/TE/047/26",
-  "buyer": "Sui Northern Gas (SNGPL)",
-  "score": 59,
-  "band": "Qualify",
-  "play": "lead",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj Security & MSSP"
-  ],
-  "closes": "2026-12-14",
+  "closes": "2026-12-15",
   "days": 16,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/207060"
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000081291E"
  },
  {
-  "id": "EPADS-198009",
-  "title": "Procurement for IT Equipment",
-  "buyer": "Supreme Judicial Council of Pakistan",
-  "score": 47,
+  "id": "EPMS-80758",
+  "title": "T-4272-FA-REQ-1126-1-00081-SUPPLY OF MULTIMEDIA PROJECTOR (As per BOQ)",
+  "buyer": "Pakistan Security Printing Corporaion (PSPC) Pakistan Security Printing Corporation (PSPC)",
+  "score": 40,
   "band": "Watch",
   "play": "partner",
   "sbus": [
@@ -46,25 +29,42 @@
   "products": [
    "Garaj Hardware Supply"
   ],
-  "closes": "2026-12-14",
-  "days": 16,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/198009"
+  "closes": "2026-12-02",
+  "days": 3,
+  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000080758E"
  },
  {
-  "id": "EPADS-211122",
-  "title": "Procurement of New Desktop Rendering Computers",
-  "buyer": "National Engineering Services Pakistan (NESPAK)",
-  "score": 46,
+  "id": "EPADS-219705",
+  "title": "Special Repair of MIS Room # 247 & 251 at WAPDA House Peshawar.",
+  "buyer": "TESCO",
+  "score": 39,
   "band": "Watch",
-  "play": "partner",
+  "play": "monitor",
   "sbus": [
    "Enterprise"
   ],
   "products": [
-   "Garaj Hardware Supply"
+   "Garaj System Integration, DevOps & Managed Services"
   ],
-  "closes": "2026-12-09",
-  "days": 11,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/211122"
+  "closes": "2026-11-30",
+  "days": 1,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/219705"
+ },
+ {
+  "id": "EPADS-219624",
+  "title": "Procurement of CCTV Camera",
+  "buyer": "Pakistan Scientific and Technological Information Centre (PASTIC)",
+  "score": 33,
+  "band": "Low",
+  "play": "monitor",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "IoT Solutions & Smart City"
+  ],
+  "closes": "2026-11-29",
+  "days": 0,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/219624"
  }
 ]
