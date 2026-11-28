@@ -1,112 +1,43 @@
 [
  {
-  "id": "EPADS-166467",
-  "title": "Request for Proposal for Development of AI Based Markaz CRM for IT Industry",
-  "buyer": "Pakistan Software Export Board (PSEB)",
-  "score": 73,
-  "band": "Pursue",
-  "play": "lead",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Quantica Analytics as a Service",
-   "Omni360 CPaaS"
-  ],
-  "closes": "2026-12-17",
-  "days": 19,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/166467"
- },
- {
-  "id": "EPADS-219078",
-  "title": "Body Camera Recorder 2K (Memory Card support 256GB / Sim / 4G wifi Supported, day night version, dustproof waterproof - IP65 / IP69)",
-  "buyer": "Government of Khyber Pakhtunkhwa (other)",
+  "id": "EPADS-219513",
+  "title": "REPLACEMENT OF ROOF AND SPECIAL REPAIR TO STATION BUILDING EMINABAD ON SDR-LLM SECTION",
+  "buyer": "Pakistan Railways",
   "score": 64,
   "band": "Qualify",
+  "play": "partner",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Quantica Analytics as a Service"
+  ],
+  "closes": "2026-12-22",
+  "days": 24,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/219513"
+ },
+ {
+  "id": "EPADS-207060",
+  "title": "FCS/MDR/TE/047/26",
+  "buyer": "Sui Northern Gas (SNGPL)",
+  "score": 59,
+  "band": "Qualify",
   "play": "lead",
   "sbus": [
-   "Connectivity"
-  ],
-  "products": [
-   "SD-WAN, Managed Wi-Fi & Office-in-a-Box"
-  ],
-  "closes": "2026-12-16",
-  "days": 18,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/219078"
- },
- {
-  "id": "EPMS-FW0000080981",
-  "title": "Repair of Hardware, Software and I.T Equipment",
-  "buyer": "Ministry of Interior",
-  "score": 58,
-  "band": "Qualify",
-  "play": "partner",
-  "sbus": [
    "Enterprise"
   ],
   "products": [
-   "Garaj Hardware Supply"
+   "Garaj Security & MSSP"
   ],
-  "closes": "2026-12-05",
-  "days": 7,
-  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/FW0000080981E"
+  "closes": "2026-12-14",
+  "days": 16,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/207060"
  },
  {
-  "id": "EPADS-219324",
-  "title": "Purchase of Jazz 4G Wifi Device Unlock ( Model -D523) with One month package",
-  "buyer": "National Highways & Motorway Police (NHMP)",
-  "score": 39,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Connectivity"
-  ],
-  "products": [
-   "SD-WAN, Managed Wi-Fi & Office-in-a-Box"
-  ],
-  "closes": "2026-11-28",
-  "days": 0,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/219324"
- },
- {
-  "id": "EPADS-219123",
-  "title": "Proucrement of Mother Boards for Computers",
-  "buyer": "NADRA",
-  "score": 39,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Enterprise"
-  ],
-  "products": [
-   "Garaj Hardware Supply"
-  ],
-  "closes": "2026-12-02",
-  "days": 4,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/219123"
- },
- {
-  "id": "EPADS-219336",
-  "title": "Supply of IP Phones & Audio Conference Phones",
-  "buyer": "National Telecommunication Corporation (NTC)",
-  "score": 39,
-  "band": "Watch",
-  "play": "monitor",
-  "sbus": [
-   "Connectivity"
-  ],
-  "products": [
-   "Business Telephony & Contact Centre"
-  ],
-  "closes": "2026-12-03",
-  "days": 5,
-  "u": "https://epads.gov.pk/opportunities/federal/procurements/219336"
- },
- {
-  "id": "EPMS-80953",
-  "title": "Procurement of Laptop for Office Staff",
-  "buyer": "Pakistan Expo Centres (Pvt) Limited",
-  "score": 38,
+  "id": "EPADS-198009",
+  "title": "Procurement for IT Equipment",
+  "buyer": "Supreme Judicial Council of Pakistan",
+  "score": 47,
   "band": "Watch",
   "play": "partner",
   "sbus": [
@@ -115,8 +46,25 @@
   "products": [
    "Garaj Hardware Supply"
   ],
-  "closes": "2026-12-01",
-  "days": 3,
-  "u": "https://epms.ppra.gov.pk/public/tenders/tender-details/TS0000080953E"
+  "closes": "2026-12-14",
+  "days": 16,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/198009"
+ },
+ {
+  "id": "EPADS-211122",
+  "title": "Procurement of New Desktop Rendering Computers",
+  "buyer": "National Engineering Services Pakistan (NESPAK)",
+  "score": 46,
+  "band": "Watch",
+  "play": "partner",
+  "sbus": [
+   "Enterprise"
+  ],
+  "products": [
+   "Garaj Hardware Supply"
+  ],
+  "closes": "2026-12-09",
+  "days": 11,
+  "u": "https://epads.gov.pk/opportunities/federal/procurements/211122"
  }
 ]
